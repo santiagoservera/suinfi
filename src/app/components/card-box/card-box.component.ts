@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { ButtonBoxComponent } from '../button-box/button-box.component';
+
 
 @Component({
   selector: 'app-card-box',
   standalone: true,
-  imports: [ButtonBoxComponent],
+  imports: [],
   templateUrl: './card-box.component.html',
   styleUrl: './card-box.component.css'
 })
 export class CardBoxComponent {
-
+ 
 }

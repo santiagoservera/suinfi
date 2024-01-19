@@ -77,4 +77,47 @@
     
   }
 
- 
+ /* Clases de boton */
+
+ button {
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  cursor: pointer;
+  color: #ffffff;
+  width: 9em;
+  height: 3em;
+  line-height: 2em;
+  text-align: center;
+  background: #238e5d;
+  background-size: 300%;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+button:hover {
+  
+  border: none;
+  background-color: #522F8E;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+button:hover::before {
+  filter: blur(20px);
+}
+
+button:active {
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
