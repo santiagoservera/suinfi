@@ -5,20 +5,21 @@ button {
     font-size: 14px;
     font-family: "Barlow Condensed", sans-serif;
     cursor: pointer;
-    color: #fff;
+    color: #ffffff;
     width: 9em;
     height: 3em;
     line-height: 2em;
     text-align: center;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background: #238e5d;
     background-size: 300%;
-    border-radius: 30px;
+    border-radius: 10px;
     z-index: 1;
   }
   
   button:hover {
-    animation: ani 8s linear infinite;
+    
     border: none;
+    background-color: #522F8E;
   }
   
   @keyframes ani {
@@ -29,20 +30,6 @@ button {
     100% {
       background-position: 400%;
     }
-  }
-  
-  button:before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    z-index: -1;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 400%;
-    border-radius: 35px;
-    transition: 1s;
   }
   
   button:hover::before {

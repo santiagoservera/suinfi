@@ -1,29 +1,36 @@
-.backgroundGradiant{
+.box{
     background: rgb(19,19,32);
     background: linear-gradient(166deg, rgb(14, 14, 22) 13%, rgb(22, 19, 37) 44%, rgb(79, 47, 133) 75%);
-    margin: 0;
-}
-
-body {
     height: 100vh;
-  }
-
-
-h1, h4 {
-    text-align: center;
-    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    z-index: 99999;
     font-family: "Barlow Condensed", sans-serif;
-    font-weight: 300;
-    
-    
-  }
-
-
-h1{
-    font-size: 3em;
-    padding-top: 50px;
-    
 }
+
+.itemBox h1{
+  font-size: 3em;
+  padding-top: 50px;
+  color: white; 
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
+.itemBox h4{
+  text-align: center;
+  color: white;  
+  font-weight: 300;
+}
+
+
+
+
 
 
 .cardBox {
@@ -32,10 +39,26 @@ h1{
   justify-content: center;
   gap: 200px;
   margin-top: 50px;
-  margin-bottom: -30px; 
+  
  
 }
+.cardBox a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+}
 
+.cardBox a:hover{
+  color: green;
+  
+}
+
+.itemCard{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
 
 .divisor {
   background-color: white;
@@ -45,6 +68,22 @@ h1{
   justify-content: space-between;
   align-items: center;
   margin-top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  position: absolute ;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (max-width: 768px){
+  .cardBox{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .itemCard h3{
+    color: white;
+  }
 }
 
 
