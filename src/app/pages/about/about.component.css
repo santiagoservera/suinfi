@@ -1,0 +1,13 @@
+.custom-img {
+    background-image: url('/assets/images/banner-left.png');
+    width: 100%; 
+    background-repeat: no-repeat;
+   
+}
+
+.video-container{
+    background-image: url('/assets/images/video-bg.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+}

@@ -21,7 +21,9 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
-      
+      backgroundImage: {
+        'custom-image': 'url("./assets/images/banner-left.png")',
+      },
     },
   },
   plugins: [
