@@ -1,19 +1,19 @@
 .custom-img {
-    background-image: url('/assets/images/banner-left.png');
+    background-image: url('/assets/images/banner-left.webp');
     width: 100%; 
     background-repeat: no-repeat;
    
 }
 
 .video-container{
-    background-image: url('/assets/images/video-bg.jpg');
+    background-image: url('/assets/images/video-bg.webp');
     width: 100%;
     background-repeat: no-repeat;
     height: 100%;
 }
 
 .contactus-container{
-    background-image: url('/assets/images/cta-bg.jpg');
+    background-image: url('/assets/images/cta-bg.webp');
     width: 100%;
     background-repeat: no-repeat;
     height: 200%;
