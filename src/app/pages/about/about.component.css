@@ -11,3 +11,10 @@
     background-repeat: no-repeat;
     height: 100%;
 }
+
+.contactus-container{
+    background-image: url('/assets/images/cta-bg.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 200%;
+}
