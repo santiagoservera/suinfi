@@ -1,60 +1,70 @@
 
-<div class="w-full flex justify-between items-center bg-white p-5 "> <!-- pre-header -->
-    <div class="flex gap-3" >
-        <div class="flex items-center mr-4 ">
-            <img src="../../../assets/icons/telef.svg" alt=""> 
-            <p  class='text-[#a586bc]'>+54 9 2644585555</p>
+<div class="flex justify-between items-center bg-white p-3 "> <!-- pre-header -->
+    <div class="flex gap-4 font-normal text-sm  " >
+        <div class="flex items-center ">
+            <img src="../../../assets/icons/telef.svg" class="w-5 h-5 mr-4" alt=""> 
+            <p  class='text-[#a586bc] '>+54 9 2644585555</p>
         </div>
-        <div class="flex items-center mr-4 ">
-            <img src="../../../assets/icons/msj.svg" alt="">
+        <div class="flex items-center  ">
+            <img src="../../../assets/icons/msj.svg" class="w-5 h-5 mr-4" alt="">
             <p class='text-[#a586bc]' >info&#64;suinfi.com</p>
         </div>
-        <div class="flex items-center mr-4 ">
-            <img src="../../../assets/icons/ubic.svg" alt="">
+        <div class="flex items-center ">
+            <img src="../../../assets/icons/ubic.svg" class="w-5 h-5 mr-4" alt="" >
             <p class='text-[#a586bc]' >Rivadavia 524 Este Capital San Juan ARG</p>
         </div>
     </div> 
 
-    <div class="flex gap-3">
-        <a href="https://www.facebook.com/people/Suinfi/61553712893461/">
-        <img src="../../../assets/icons/facebook.svg" alt="">
+    <div class="flex gap-2 mr-7 text-sm">
+        <a href="https://www.facebook.com/people/Suinfi/61553712893461/"
+         >
+        <img  src="../../../assets/icons/facebook.svg"  alt="" class="w-5 h-5" >
         </a>
 
         <a href="https://twitter.com/suinfi_info">
-        <img src="../../../assets/icons/twiiter.svg" alt="">
+        <img src="../../../assets/icons/twiiter.svg" alt=""class="w-5 h-5">
         </a>
 
-        <a href="https://www.linkedin.com/company/suinfi/?viewAsMember=true">
-        <img src="../../../assets/icons/linkedin.svg" alt="">
+        <a href="https://www.linkedin.com/company/suinfi/?viewAsMember=true" >
+        <img src="../../../assets/icons/linkedin.svg" alt="" class="w-5 h-5">
         </a>
 
-        <a href="https://www.instagram.com/suinfi/">
-        <img src="../../../assets/icons/instagram.svg" alt="">
+        <a href="https://www.instagram.com/suinfi/" >
+        <img src="../../../assets/icons/instagram.svg" alt="" class="w-5 h-5">
         </a>
     </div>
     
 </div>
 <!-- header-navbar -->
-<nav class="flex items-center justify-between p-8 bg-gradient-to-r from-[rgb(86,1,227)] to-[rgb(197,60,255)] h-[110px] ">
-    <div class="flex items-center">
-        <a href="#" class="text-xl font-bold">
-            <img src="assets/images/logo.png" alt="" style="max-width: 85px;">
-        </a>
-    </div>
-    <div class="flex space-x-4">
-        <a href="#" class="flex items-center"><i class="fas fa-home mr-1"></i> Home</a>
-        <a href="#" class="flex items-center"><i class="fas fa-cogs mr-1"></i> Service</a>
-        <a href="#" class="flex items-center"><i class="fas fa-folder mr-1"></i> Projects</a>
-        <div class="group relative">
-            <button class="flex items-center group-hover:text-gray-300">
-                <i class="fas fa-file-alt mr-1"></i> Pages
-            </button>
-            <div class="hidden absolute right-0 mt-2 space-y-2 bg-white border rounded-md shadow-lg group-hover:block">
-                <a href="#" class="block px-4 py-2">About Us</a>
-                <a href="#" class="block px-4 py-2">FAQs</a>
-            </div>
-        </div>
-        <a href="#" class="flex items-center"><i class="fas fa-folder mr-1"></i> Infos</a>
-        <a href="#" class="flex items-center"><i class="fas fa-envelope mr-1"></i> Contact</a>
-    </div>
+<nav class="flex items-center justify-between p-8 bg-gradient-to-r from-[rgb(86,1,227)] to-[rgb(197,60,255)] h-[110px]">
+  <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <img  class="max-w-200 ml-8" src="assets/images/logo.png" alt="" style="max-width: 85px;">
+  </div>
+  <div class="block lg:hidden">
+    <button id='boton' class=" flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns=""><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    </button>
+  </div>
+  <div id='menu' class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+    <div class="flex justify-end text-base uppercase lg:flex-grow h-110 line-height-110 border-transparent tracking-wider">
+      <a href="#responsive-header" class="font-normal  block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-20  h-110 line-height-110 border-transparent tracking-wider transition-opacity duration-700 ease-in-out hover:opacity-80 ">
+        Home
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-20 transition-opacity duration-700  ease-in-out hover:opacity-80 " >
+        Service
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-20 transition-opacity duration-700  ease-in-out hover:opacity-80 ">
+        Projects
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-20 transition-opacity duration-700 ease-in-out hover:opacity-80 " >
+        Pages
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-20 transition-opacity duration-700 ease-in-out hover:opacity-80 " >
+        Infos
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-20 transition-opacity duration-700 ease-in-out hover:opacity-80 ">
+        Contact
+      </a>
+    </div>  
+  </div>
 </nav>
