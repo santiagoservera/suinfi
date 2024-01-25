@@ -11,4 +11,5 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 })
 export class AppComponent {
   title = 'suinfi';
+  
 }

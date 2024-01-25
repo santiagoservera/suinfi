@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
-
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -9,5 +8,12 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  isScrolled: boolean = false;
 
+  constructor(private elRef: ElementRef) {}
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    this.isScrolled = window.scrollY > 0;
+  }
 }
