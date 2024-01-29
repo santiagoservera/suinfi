@@ -1,7 +1,7 @@
-<div [class.hidden]="isScrolled"  class="  flex justify-between items-center bg-white px-[77px] py-3">
+<div [class.hidden]="isScrolled"  class="hidden  lg:flex justify-between items-center bg-white px-[77px] py-3">
   <!-- pre-header -->
-  <div class="flex gap-4 font-normal text-sm">
-    <div class="flex items-center">
+  <div class=" gap-4 font-normal text-sm hidden lg:flex">
+    <div class="flex items-center flex-col lg:flex-row">
       <img src="../../../assets/icons/telef.svg" class="w-5 h-5 mr-4" alt="" />
       <p class="text-[#a586bc]">+54 9 2644585555</p>
     </div>
@@ -33,8 +33,31 @@
     </a>
   </div>
 </div>
+
+<header class="w-full bg-[linear-gradient(90deg,_rgba(85,0,227,1)_0%,_rgba(198,61,255,1)_100%)]  flex justify-between items-center px-10 py lg:px-40 lg:py-4">
+  <img class="object-cover w-20" src="assets/images/logo.png" alt="logo Suinfi" />
+
+  <ul class='hidden lg:flex text-white  gap-10'>
+
+      <li><a href="#responsive-header">HOME</a></li>
+      <li><a href="#responsive-header">SERVICES</a></li>
+      <li><a href="#responsive-header">PROJECTS</a></li>
+      <li><a href="#responsive-header">PAGES</a></li>
+      <li><a href="#responsive-header">INFOS</a></li>
+      <li><a href="#responsive-header">CONTACT</a></li>
+      
+  </ul>
+
+  <svg class='block lg:hidden' xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#ffffff" d="M4 18q-.425 0-.712-.288T3 17q0-.425.288-.712T4 16h16q.425 0 .713.288T21 17q0 .425-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12q0-.425.288-.712T4 11h16q.425 0 .713.288T21 12q0 .425-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7q0-.425.288-.712T4 6h16q.425 0 .713.288T21 7q0 .425-.288.713T20 8z" /></svg>
+</header>
+
+
+
+
+
+
 <!-- header-navbar -->
-<nav [class.scrolled]="isScrolled" 
+<!-- <nav [class.scrolled]="isScrolled" 
   class="fixed flex items-center justify-between w-full p-8 bg-gradient-to-r from-[rgb(86,1,227)] to-[rgb(197,60,255)] h-[110px] z-50  "
 >
   <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -61,7 +84,7 @@
     class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
   >
     <div
-      class="flex justify-end text-base uppercase lg:flex-grow h-110 line-height-110 border-transparent tracking-wider"
+      class="hidden   lg:flex-grow h-110 line-height-110 border-transparent tracking-wider pb-5 justify-end text-base uppercase"
     >
       <a
         href="#responsive-header"
@@ -101,4 +124,4 @@
       </a>
     </div>
   </div>
-</nav>
+</nav> -->
