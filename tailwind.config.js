@@ -23,7 +23,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'custom-image': 'url("./assets/images/banner-left.png")',
-        'footer-image': 'url("./assets/images/cta-bg.webp")'
+        'footer-image': 'url("./assets/images/cta-bg.webp")',
+        'oursteps-image': 'url("./assets/images/video-bg.webp")'
       },
     },
   },
