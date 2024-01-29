@@ -1,16 +1,57 @@
 <!-- Nav-bar -->
 <app-navbar></app-navbar>
 <!-- Main-banner -->
-<div class="mr-20 mb-36 flex">
-  <section class="flex items-center ml-16 mt-16 mb-16"></section>
-  <div class="flex-1">
+
+<section class="flex justify-center items-center relative w-full h-[100vh] lg:justify-start">
+  <div class="absolute w-[861px] h-[746px] -top-1 right-0 z-[-1]">
+    <img
+      src="assets/images/banner-right.webp"
+      class=""
+      alt="banner-right"
+    />
+  </div>
+  <div class="absolute w-[194px] h-[655px] -top-5 left-0 z-[-1]">
+    <img
+      src="assets/images/banner-left.webp"
+      class=""
+      alt="banner-left"
+    />
+  </div>
+  <div class="flex flex-col items-center justify-center text-center w-[90%] h-[550px] bg-white rounded-3xl opacity-90 max-w-[570px] sm:gap-5 lg:ml-10 xl:items-start xl:text-start xl:pl-10 2xl:bg-inherit 2xl:pl-28 2xl:max-w-[800px]">
+    <h1 class="text-xl font-bold text-violet-700">SOFTWARE FACTORY</h1>
+    <div class="bg-[#DECDFA] h-0.5 w-[70%]"></div>
+    <h2 class="font-bold text-4xl opacity-80">
+      Dive <span class="text-[#5b03e4]">Into the Software</span> World
+      <span class="text-[#c03afe]">With SUINFI</span>
+    </h2>
+    <p class="text-[#8765be] leading-8 max-w-[800px] opacity-50 pb-5">
+      SUINFI is the best software factory for your company. We have a new way
+      to build technology that transforms businesses while caring for the
+      environment and society. Home, About, and FAQ.
+    </p>
+    <div class="flex flex-col sm:flex-row">
+      <button href="#" class="text-base text-white bg-[#5b03e4] py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden">
+      Discover More</button>
+
+      <p class="text-gray-500">or</p>
+
+      <button href="#" class="text-base text-white bg-purple-600 py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden"
+      >Check our FAQs</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- <div class="mr-20 mb-36 flex">
+  <section class="flex items-center mt-16 mb-16"></section>
+  <div class="">
     <img
       src="assets/images/banner-left.webp"
       alt="Banner Left"
       class="absolute top-[5px] left-0 w-194 h-655 z-[-1]"
     />
     <div
-      class="opacity-90 mt-[200px] ml-[90px] shadow-lg shodow-lg-right rounded-[50px] p-10 flex-col gap-20 lg:w-[45%] lg:flex-row flex-2 bg-white h-[800px] flex-wrap"
+      class="opacity-90 mt-[200px] shadow-lg shodow-lg-right rounded-[50px] p-10 flex-col gap-20 lg:w-[45%] lg:flex-row flex-2 bg-white h-[800px] flex-wrap lg:ml-[90px]"
     >
       <div class="">
         <div class="">
@@ -54,10 +95,12 @@
     <img
       src="assets/images/banner-right.webp"
       alt="Banner Right"
-      class="absolute right-0 top-1 bottom-0 w-861 h-746 -rotate-0 z-[-1]"
+      class="absolute right-0 top-1 bottom-0 w-[861px] h-[746px] -rotate-0 z-[-1] object-cover"
     />
   </div>
-</div>
+</div> -->
+<!-- Main-banner End -->
+
 <!-- Services-->
 <div>
   <app-services></app-services>
