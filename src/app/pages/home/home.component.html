@@ -2,7 +2,7 @@
 <app-navbar></app-navbar>
 <!-- Main-banner -->
 
-<section class="flex justify-center items-center relative w-full h-[100vh] lg:justify-start">
+<section class="flex justify-center items-center relative w-full h-[100vh] lg:justify-start lg:mb-28">
   <div class="absolute w-[861px] h-[746px] -top-1 right-0 z-[-1]">
     <img
       src="assets/images/banner-right.webp"
@@ -30,85 +30,27 @@
       environment and society. Home, About, and FAQ.
     </p>
     <div class="flex flex-col sm:flex-row">
-      <button href="#" class="text-base text-white bg-[#5b03e4] py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden">
+      <button routerLink="/about" class="text-base text-white bg-[#5b03e4] py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden">
       Discover More</button>
 
-      <p class="text-gray-500">or</p>
+      <p class="text-gray-500 p-4">or</p>
 
-      <button href="#" class="text-base text-white bg-purple-600 py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden"
+      <button routerLink="/faqs" class="text-base text-white bg-purple-600 py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden"
       >Check our FAQs</button>
     </div>
   </div>
 </section>
 
-
-<!-- <div class="mr-20 mb-36 flex">
-  <section class="flex items-center mt-16 mb-16"></section>
-  <div class="">
-    <img
-      src="assets/images/banner-left.webp"
-      alt="Banner Left"
-      class="absolute top-[5px] left-0 w-194 h-655 z-[-1]"
-    />
-    <div
-      class="opacity-90 mt-[200px] shadow-lg shodow-lg-right rounded-[50px] p-10 flex-col gap-20 lg:w-[45%] lg:flex-row flex-2 bg-white h-[800px] flex-wrap lg:ml-[90px]"
-    >
-      <div class="">
-        <div class="">
-          <h1 class="text-2xl font-semibold text-violet-700 mb-10">
-            SOFTWARE FACTORY
-          </h1>
-          <div class="bg-[#DECDFA] h-0.5 w-[35%] mb-4"></div>
-        </div>
-        <div class="">
-          <h2 class="font-bold w-[80%] mb-20 text-5xl opacity-80">
-            Dive <span class="text-[#5b03e4]">Into the Software</span> World
-            <span class="text-[#c03afe]">With SUINFI</span>
-          </h2>
-
-          <p class="text-[#8765be] leading-8 max-w-[430px] opacity-50">
-            SUINFI is the best software factory for your company. We have a new
-            way to build technology that transforms businesses while caring for
-            the environment and society. Home, About, and FAQ.
-          </p>
-
-          <div
-            class="mt-4 flex justify-center items-center space-x-4 h-[250px]"
-          >
-            <button
-              href="#"
-              class="text-base text-white bg-[#5b03e4] py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden"
-            >
-              Discover More
-            </button>
-            <p class="text-gray-500">or</p>
-            <button
-              href="#"
-              class="text-base text-white bg-purple-600 py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden"
-            >
-              Check our FAQs
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img
-      src="assets/images/banner-right.webp"
-      alt="Banner Right"
-      class="absolute right-0 top-1 bottom-0 w-[861px] h-[746px] -rotate-0 z-[-1] object-cover"
-    />
-  </div>
-</div> -->
 <!-- Main-banner End -->
 
 <!-- Services-->
-<div>
   <app-services></app-services>
-</div>
+
 <!-- Services End -->
 
 <!-- Projects -->
-  <app-projects></app-projects>
+ <app-projects 
+ ></app-projects>
 <!-- Projects End -->
 
 <!-- Info-->

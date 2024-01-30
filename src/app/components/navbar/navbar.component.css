@@ -1,0 +1,8 @@
+header.scrolled {
+    /* Estilos para la barra de navegación cuando está "scrolled" */
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0; /* La coloca al inicio de la página */
+    background-color: #fff; /* Cambia el fondo a blanco */
+    z-index: 999; /* Asegura que se posicione encima de otros elementos */
+    /* Otros estilos que desee aplicar en el estado "scrolled" */
+  }

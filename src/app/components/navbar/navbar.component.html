@@ -1,4 +1,4 @@
-<div [class.hidden]="isScrolled"  class="hidden  lg:flex justify-between items-center bg-white px-[77px] py-3">
+<div  class="hidden  lg:flex justify-between items-center bg-white px-[77px] py-3">
   <!-- pre-header -->
   <div class=" gap-4 font-normal text-sm hidden lg:flex">
     <div class="flex items-center flex-col lg:flex-row">
@@ -34,17 +34,17 @@
   </div>
 </div>
 
-<header class="w-full bg-[linear-gradient(90deg,_rgba(85,0,227,1)_0%,_rgba(198,61,255,1)_100%)]  flex justify-between items-center px-10 py lg:px-40 lg:py-4">
+<header  [class.scrolled]="isScrolled" class="w-full bg-[linear-gradient(90deg,_rgba(85,0,227,1)_0%,_rgba(198,61,255,1)_100%)]  flex justify-between items-center px-10 py lg:px-40 lg:py-4">
   <img class="object-cover w-20" src="assets/images/logo.png" alt="logo Suinfi" />
 
   <ul class='hidden lg:flex text-white  gap-10'>
 
-      <li><a href="#responsive-header">HOME</a></li>
-      <li><a href="#responsive-header">SERVICES</a></li>
-      <li><a href="#responsive-header">PROJECTS</a></li>
-      <li><a href="#responsive-header">PAGES</a></li>
-      <li><a href="#responsive-header">INFOS</a></li>
-      <li><a href="#responsive-header">CONTACT</a></li>
+      <li><a  class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">HOME</a></li>
+      <li><a  href="/home/#services" class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">SERVICES</a></li>
+      <li><a  href="/home/#projects"class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">PROJECTS</a></li>
+      <li><a  class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">PAGES</a></li>
+      <li><a  class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">INFOS</a></li>
+      <li><a  class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">CONTACT</a></li>
       
   </ul>
 
@@ -54,74 +54,3 @@
 
 
 
-
-
-<!-- header-navbar -->
-<!-- <nav [class.scrolled]="isScrolled" 
-  class="fixed flex items-center justify-between w-full p-8 bg-gradient-to-r from-[rgb(86,1,227)] to-[rgb(197,60,255)] h-[110px] z-50  "
->
-  <div class="flex items-center flex-shrink-0 text-white mr-6">
-    <img
-      class="max-w-200 ml-8"
-      src="assets/images/logo.png"
-      alt=""
-      style="max-width: 85px"
-    />
-  </div>
-  <div class="block lg:hidden">
-    <button
-      id="boton"
-      class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white"
-    >
-      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="">
-        <title>Menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-      </svg>
-    </button>
-  </div>
-  <div
-    id="menu"
-    class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
-  >
-    <div
-      class="hidden   lg:flex-grow h-110 line-height-110 border-transparent tracking-wider pb-5 justify-end text-base uppercase"
-    >
-      <a
-        href="#responsive-header"
-        class="font-normal block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-20 h-110 line-height-110 border-transparent tracking-wider transition-opacity duration-700 ease-in-out hover:opacity-80"
-      >
-        Home
-      </a>
-      <a
-        href="#responsive-header"
-        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-20 transition-opacity duration-700 ease-in-out hover:opacity-80"
-      >
-        Service
-      </a>
-      <a
-        href="#responsive-header"
-        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-20 transition-opacity duration-700 ease-in-out hover:opacity-80"
-      >
-        Projects
-      </a>
-      <a
-        href="#responsive-header"
-        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-20 transition-opacity duration-700 ease-in-out hover:opacity-80"
-      >
-        Pages
-      </a>
-      <a
-        href="#responsive-header"
-        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-20 transition-opacity duration-700 ease-in-out hover:opacity-80"
-      >
-        Infos
-      </a>
-      <a
-        href="#responsive-header"
-        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-20 transition-opacity duration-700 ease-in-out hover:opacity-80"
-      >
-        Contact
-      </a>
-    </div>
-  </div>
-</nav> -->
