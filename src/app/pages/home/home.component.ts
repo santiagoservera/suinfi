@@ -6,11 +6,12 @@ import { ServicesComponent } from '../services/services.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { InfoComponent } from '../../components/info/info.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent, CardBoxComponent, CardContactComponent,ServicesComponent, ProjectsComponent, InfoComponent,FooterComponent],
+  imports: [NavbarComponent, CardBoxComponent, CardContactComponent,ServicesComponent, ProjectsComponent, InfoComponent,FooterComponent,RouterLink,RouterOutlet],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

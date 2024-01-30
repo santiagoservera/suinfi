@@ -33,9 +33,13 @@ export class NavbarComponent {
   
     if (this.mainMenuRef) { // Verificamos si mainMenuRef tiene un valor
       this.mainMenuRef.nativeElement.classList.toggle('hidden');
-      this.mainMenuRef.nativeElement.classList.toggle('block'); 
+    
     }
   }
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
+  //scroll move section
   ngAfterViewInit() {
     this.mainMenuRef?.nativeElement.addEventListener('click', (event: MouseEvent) => {
       const clickedElement = event.target as Element; // Conversión a Element
