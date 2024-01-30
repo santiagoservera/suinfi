@@ -9,6 +9,12 @@
     padding: 0;
 }
 
+.container-width{
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 90%;
+}
+
 .projects .owl-nav {
     display: flex;
     position: absolute;
