@@ -1,19 +1,66 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Scroll } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink,CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
   isScrolled: boolean = false;
+  isMenuOpen: boolean = false;
 
-  constructor(private elRef: ElementRef) {}
+ 
+
+  constructor(private elRef: ElementRef) {
+    
+    
+  }
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
     this.isScrolled = window.scrollY > 0;
   }
+
+  //menu responsive 
+  @ViewChild('mainMenu') mainMenuRef?: ElementRef;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  
+    if (this.mainMenuRef) { // Verificamos si mainMenuRef tiene un valor
+      this.mainMenuRef.nativeElement.classList.toggle('hidden');
+      this.mainMenuRef.nativeElement.classList.toggle('block'); 
+    }
+  }
+  ngAfterViewInit() {
+    this.mainMenuRef?.nativeElement.addEventListener('click', (event: MouseEvent) => {
+      const clickedElement = event.target as Element; // Conversión a Element
+  
+      if (clickedElement.tagName === 'A') {
+        event.preventDefault();
+        const targetSectionId = clickedElement?.getAttribute('href')?.substring(1);
+        if (targetSectionId) {
+        const targetSection = document.getElementById(targetSectionId);
+        
+        if (targetSection) {
+          window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth',
+           
+          });
+        }
+      }
+      }
+    });
+  }
+ 
 }
+
+
+ 
+  
+

@@ -6,3 +6,5 @@ header.scrolled {
     z-index: 999; /* Asegura que se posicione encima de otros elementos */
     /* Otros estilos que desee aplicar en el estado "scrolled" */
   }
+
+

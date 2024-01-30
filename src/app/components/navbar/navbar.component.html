@@ -1,6 +1,8 @@
-<div  class="hidden  lg:flex justify-between items-center bg-white px-[77px] py-3">
+<div id="home"
+  class="hidden lg:flex justify-between items-center bg-white px-[77px] py-3"
+>
   <!-- pre-header -->
-  <div class=" gap-4 font-normal text-sm hidden lg:flex">
+  <div class="gap-4 font-normal text-sm hidden lg:flex">
     <div class="flex items-center flex-col lg:flex-row">
       <img src="../../../assets/icons/telef.svg" class="w-5 h-5 mr-4" alt="" />
       <p class="text-[#a586bc]">+54 9 2644585555</p>
@@ -34,23 +36,78 @@
   </div>
 </div>
 
-<header  [class.scrolled]="isScrolled" class="w-full bg-[linear-gradient(90deg,_rgba(85,0,227,1)_0%,_rgba(198,61,255,1)_100%)]  flex justify-between items-center px-10 py lg:px-40 lg:py-4">
-  <img class="object-cover w-20" src="assets/images/logo.png" alt="logo Suinfi" />
+<header
+  [class.scrolled]="isScrolled"
+  class="w-full bg-[linear-gradient(90deg,_rgba(85,0,227,1)_0%,_rgba(198,61,255,1)_100%)] flex justify-between items-center px-10 py lg:px-40 lg:py-4"
+>
+  <img
+    class="object-cover w-20"
+    src="assets/images/logo.png"
+    alt="logo Suinfi"
+  />
 
-  <ul class='hidden lg:flex text-white  gap-10'>
-
-      <li><a  class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">HOME</a></li>
-      <li><a  class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">SERVICES</a></li>
-      <li><a  class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">PROJECTS</a></li>
-      <li><a  class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">PAGES</a></li>
-      <li><a  class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">INFOS</a></li>
-      <li><a  class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">CONTACT</a></li>
-      
+  <ul #mainMenu class="lg:flex text-white gap-10 hidden dropdown-content">
+    <li>
+      <a 
+        href="#home"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >HOME</a
+      >
+    </li>
+    <li>
+      <a
+        href="#services"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >SERVICES</a
+      >
+    </li>
+    <li>
+      <a
+        href="#projects"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >PROJECTS</a
+      >
+    </li>
+    <li>
+      <a
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >PAGES</a
+      >
+    </li>
+    <li>
+      <a
+       href="#info"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >INFOS</a
+      >
+    </li>
+    <li>
+      <a
+        href="#contact"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >CONTACT</a
+      >
+    </li>
   </ul>
 
-  <svg class='block lg:hidden' xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#ffffff" d="M4 18q-.425 0-.712-.288T3 17q0-.425.288-.712T4 16h16q.425 0 .713.288T21 17q0 .425-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12q0-.425.288-.712T4 11h16q.425 0 .713.288T21 12q0 .425-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7q0-.425.288-.712T4 6h16q.425 0 .713.288T21 7q0 .425-.288.713T20 8z" /></svg>
+
+  <button
+    (click)="toggleMenu()"
+    class="block lg:hidden group cursor-pointer outline-none hover:rotate-90 duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="50px"
+      height="50px"
+      viewBox="0 0 24 24"
+      class="stroke-indigo-400 fill-none group-hover:fill-indigo-800 group-active:stroke-indigo-200 group-active:fill-indigo-600 group-active:duration-0 duration-300"
+    >
+      <path
+        d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+        stroke-width="1.5"
+      ></path>
+      <path d="M8 12H16" stroke-width="1.5"></path>
+      <path d="M12 16V8" stroke-width="1.5"></path>
+    </svg>
+  </button>
 </header>
-
-
-
-
