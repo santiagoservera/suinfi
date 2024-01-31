@@ -5,7 +5,35 @@ header.scrolled {
     z-index: 999; /* Asegura que se posicione encima de otros elementos */
     /* Otros estilos que desee aplicar en el estado "scrolled" */
   }
+
   .dropdown-content {
     transition: all 0.3s ease-in-out;
   }
+
+  
+/* Muestra el submenú cuando el enlace principal se encuentra en estado hover */
+li.group:hover .sub-menu {
+  display: block;
+}
+
+/* Estilo para el submenú */
+.sub-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+}
+
+.sub-menu a {
+  display: block;
+  color: gray;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.sub-menu a:hover {
+  background-color: #f0f0f0;
+}
 

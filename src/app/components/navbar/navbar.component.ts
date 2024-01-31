@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { Scroll } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink,CommonModule],
+  imports: [RouterLink,CommonModule,RouterOutlet],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
@@ -39,7 +39,8 @@ export class NavbarComponent {
   closeMenu() {
     this.isMenuOpen = false;
   }
-  //scroll move section
+  //end menu responsive
+  //scroll move action
   ngAfterViewInit() {
     this.mainMenuRef?.nativeElement.addEventListener('click', (event: MouseEvent) => {
       const clickedElement = event.target as Element; // Conversión a Element

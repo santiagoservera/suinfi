@@ -1,4 +1,4 @@
-<div id="home"
+<div 
   class="hidden lg:flex justify-between items-center bg-white px-[77px] py-3 "
 >
   <!-- pre-header -->
@@ -41,14 +41,70 @@
   class="w-full bg-[linear-gradient(90deg,_rgba(85,0,227,1)_0%,_rgba(198,61,255,1)_100%)] flex justify-between items-center px-10 py lg:px-40 lg:py-4"
 >
   <img
-    class="object-cover w-20"
+    routerLink="/home"
+    class="object-cover w-20 cursor-pointer"
     src="assets/images/logo.png"
     alt="logo Suinfi"
-    href="/home"
   />
-
-  <ul #mainMenu class="lg:flex lg:w-auto text-white gap-4 hidden dropdown-content w-full "
-  [ngClass]="{'hidden': !isMenuOpen}"  >
+  <!-- navbar responsive -->
+  <div #mainMenu class=""  [ngClass]="{'hidden': !isMenuOpen}" >
+    <ul (click)="closeMenu()" class="font-bold w-full h-[350px] text-black fixed top-[82px] flex-col items-center justify-center gap-10 left-0 z-[100] backdrop-blur md:hidden"
+  >
+    <li  class="flex items-center justify-center py-4 border rounded">
+      <a 
+        href="#home" (click)="closeMenu()"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 block w-full text-center"
+        >HOME</a
+      >
+    </li>
+    <li
+    class="flex items-center justify-center py-4 border rounded ">
+      <a
+        href="#services"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >SERVICES</a
+      >
+    </li>
+    <li
+    class="flex items-center justify-center py-4 border rounded">
+      <a
+        href="#projects"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >PROJECTS</a
+      >
+    </li>
+    <li 
+    class="relative group flex items-center justify-center py-4 border rounded">
+      <a
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 cursor-pointer"
+        >PAGES</a>
+        <ul class="sub-menu absolute left-0 hidden mt-2 space-y-2 bg-white text-gray-700 ">
+          <li><a href="about.html" class="block px-4 py-2 hover:bg-gray-200">About Us</a></li>
+          <li><a href="faqs.html" class="block px-4 py-2 hover:bg-gray-200">FAQs</a></li>
+        </ul>
+      
+    </li>
+    <li
+    class="flex items-center justify-center py-4 border rounded">
+      <a
+       href="#info"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >INFOS</a
+      >
+    </li>
+    <li
+    class="flex items-center justify-center py-4 border rounded">
+      <a
+        href="#contact"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >CONTACT</a
+      >
+    </li>
+  </ul>
+  </div>
+<!-- nav bar LG -->
+  <ul  class="hidden lg:flex text-white  gap-10 "
+  >
     <li  class="flex items-center justify-center py-4">
       <a 
         href="#home" (click)="closeMenu()"
@@ -72,12 +128,15 @@
         >PROJECTS</a
       >
     </li>
-    <li
-    class="flex items-center justify-center py-4 ">
+    <li 
+    class="relative group flex items-center justify-center">
       <a
-        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >PAGES</a
-      >
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 cursor-pointer"
+        >PAGES</a>
+        <ul class="sub-menu absolute left-0 hidden mt-7 space-y-2 bg-white text-gray-700">
+          <li><a routerLink="/about" class="block px-4 py-2 hover:bg-gray-200">About Us</a></li>
+          <li><a routerLink="/faqs" class="block px-4 py-2 hover:bg-gray-200">FAQs</a></li>
+        </ul>
       
     </li>
     <li

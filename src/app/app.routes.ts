@@ -28,5 +28,8 @@ export const routes: Routes = [
         path: 'faqs',
         component: FaqsComponent
     },
+    { path: '',
+     redirectTo: '/home', 
+     pathMatch: 'full' },
 
 ];
