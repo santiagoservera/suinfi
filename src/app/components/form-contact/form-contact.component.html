@@ -1,17 +1,17 @@
 <div class="bg-white w-[95%] rounded-3xl    " >
-  <form class="rounded-3xl w-[100%] h-[760px]  border border-violet-400 relative sm:h-[760px] md:h-[760px] xl:h-[680px]">
+  <form [formGroup]="contactForm" class="rounded-3xl w-[100%] h-[760px]  border border-violet-400 relative sm:h-[760px] md:h-[760px] xl:h-[680px]">
       <div class="p-4 text-center">
           <h1 class="text-4xl font-bold"><span class='text-[#5b03e4]'>Contact Us</span> & Get In <span class='text-[#c03afe]'>Touch</span></h1>
       </div> 
       <div class="w-[100%] flex flex-col justify-center mt-2 gap-4 items-center">
-          <input class='outline-none font-bold bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-[80%]' type="text" placeholder ='Your Name...' name="name"/>
-          <input class='outline-none font-bold bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-[80%]' type="text" placeholder='Your Surname...' name="surname"/>
-          <input class='outline-none font-bold bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-[80%]' type="text" placeholder='Your E-mail...'name="email" />
-          <input class='outline-none font-bold bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-[80%]' type="text" placeholder='Subject...' name="subject"/>
+          <input class='outline-none font-bold bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-[80%]' type="text" placeholder ='Your Name...' formControlName="name"/>
+          <input class='outline-none font-bold bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-[80%]' type="text" placeholder='Your Surname...' formControlName="surname"/>
+          <input class='outline-none font-bold bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-[80%]' type="text" placeholder='Your E-mail...' formControlName="email" />
+          <input class='outline-none font-bold bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-[80%]' type="text" placeholder='Subject...' formControlName="subject"/>
       </div>
       <div class="flex flex-col items-center justify-center mt-4 gap-4">
-          <textarea class='outline-none font-bold bg-[#f9ebff] w-[80%] h-[100px] rounded-3xl p-3 placeholder-black ' name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-          <button type="submit" class='bg-[#5b03e4] border-none text-white rounded-3xl w-[80%] h-11 max-h-[150px]' >Send Message Now</button>
+          <textarea class='outline-none font-bold bg-[#f9ebff] w-[80%] h-[100px] rounded-3xl p-3 placeholder-black resize-none' formControlName="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+          <button  (click)="send()" type="submit" class='bg-[#5b03e4] border-none text-white rounded-3xl w-[80%] h-11 max-h-[150px] ' >Send Message Now</button>
       </div>
       <div class="w-[100%] h-[25%] bg-gradient-to-r from-[rgb(86,1,227)] to-[rgb(197,60,255)] rounded-b-3xl absolute bottom-0 flex flex-col justify-center text-white gap-5  sm:h-[30%] md:h-[25%] md:flex-row lg:flex-row  lg:h-[15%] lg:justify-center items-center">
           <div class="flex flex-col items-center w-full">
