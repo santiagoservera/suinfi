@@ -13,7 +13,6 @@ export class NavbarComponent {
   isScrolled: boolean = false;
   isMenuOpen: boolean = false;
 
- 
 
   constructor(private elRef: ElementRef) {
     
@@ -24,7 +23,7 @@ export class NavbarComponent {
   onScroll() {
     this.isScrolled = window.scrollY > 0;
   }
-
+  
   //menu responsive 
   @ViewChild('mainMenu') mainMenuRef?: ElementRef;
   //menu lg
@@ -38,11 +37,28 @@ export class NavbarComponent {
     
     }
   }
-  
+  //close menu
   closeMenu() {
     this.isMenuOpen = false;
   }
   //end menu responsive
+
+  
+  //submenu-pages responsive
+  isPagesDropdownOpen: boolean = false;
+
+  @HostListener('click') openPagesDropdown() {
+    this.isPagesDropdownOpen = true;
+  }
+
+  @HostListener('document:click', ['$event'])
+closePagesDropdown(event: Event) {
+  if (!((event.target as HTMLElement).closest('.pages-dropdown') ||
+      (event.target as HTMLElement).classList.contains('pages-dropdown'))) {
+    this.isPagesDropdownOpen = false;
+  }
+}
+
   //scroll move action responsive
   ngAfterViewInit() {
     this.mainMenuRef?.nativeElement.addEventListener('click', (event: MouseEvent) => {

@@ -11,29 +11,20 @@ header.scrolled {
   }
 
   
-/* Muestra el submenú cuando el enlace principal se encuentra en estado hover */
+
 li.group:hover .sub-menu {
   display: block;
 }
 
-/* Estilo para el submenú */
-.sub-menu {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 20;
-}
-
-.sub-menu a {
+li.group:hover .sub-nav {
   display: block;
-  color: gray;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
 }
 
-.sub-menu a:hover {
-  background-color: #f0f0f0;
+.sub-nav:hover {
+  /* Desplaza hacia abajo los elementos de la lista adyacentes al pasar el mouse */
+  margin-bottom: 40px; /* Ajusta este valor para controlar el espacio */
 }
 
+.sub-nav:hover > ul {
+  display: block;
+}
