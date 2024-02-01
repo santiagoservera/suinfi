@@ -107,181 +107,185 @@
 </div>
 
 <!-- Parent div -->
-<section class="container-width lg:h-[800px] flex flex-col items-center justify-center gap-24 px-4 lg:px-0 py-4 lg:py-0">
-  <div class="mt-0 relative w-full">
-    <img
-      src="../../../assets/images/contact-left.webp"
-      alt=""
-      class="absolute -left-72 -top-10 ml-0 -z-10 w-[150px] h-[500px]"
-    />
-    <img
-      src="../../../assets/images/contact-left.webp"
-      alt=""
-      class="absolute -right-72 top-52 mr-0 -z-10 w-[150px] h-[500px] transform scale-x-[-1]"
-    />
-  </div>
-    <!-- Title -->
-    <div class="w-full flex flex-col gap-8">
-      <h2 class="text-3xl font-bold text-[#2a2a2a]">
-        Most <span class="text-[#5b03e4]">Frequently</span> Asked
-        <span class="text-[#c03afe]">Questions</span> ?
-      </h2>
-      <div class="line-dec bg-gradient-to-r from-[#5601e3] to-[#c53cff] h-[1.5px] w-[4%]"></div>
-      <p class="text-[14px] lg:text-sm text-[#949494]">
-        Committed to serving our clients, at SUINFI, we want you to be informed
-        about our way of working
-      </p>
+<section class="w-full relative">
+
+  <div class="container-width lg:h-[800px] flex flex-col items-center justify-center gap-24 px-4 lg:px-0 py-4 lg:py-0">
+    <div class="mt-0 w-full">
+      <img
+        src="../../../assets/images/contact-left.webp"
+        alt=""
+        class="absolute left-0 -top-10 ml-0 -z-10 w-[100px] h-[500px] "
+      />
+      <img
+        src="../../../assets/images/contact-left.webp"
+        alt=""
+        class="absolute right-0 bottom-0 mr-0 -z-10 w-[100px] h-[500px] transform scale-x-[-1]"
+      />
     </div>
-
-    <!-- Child div, but it is the parent of the accordion and the form -->
-    <!-- accordion frequently questions -->
-    <div class="flex flex-col lg:flex-row gap-5">
-      <div class="flex flex-col w-full lg:w-[50%] gap-12">
-        <div
-          class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]"
-          tabindex="1"
-        >
-          <div class="flex cursor-pointer items-center justify-between mx-1">
-            <span
-              class="font-bold text-[1.4em] text-[#2f2f2f] group-focus:text-[#5b03e4]"
-            >
-              Do we offer personal attention?
-            </span>
-            <img
-              src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
-              class="h-5 w-6 ml-3 transition-all duration-[500ms] group-focus:-rotate-180 filter filter-hue-rotate-180"
-            />
-          </div>
-          <div
-            class="text-[18px] invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700"
-          >
-            Yes! We offer personal attention and follow-up on each project.
-          </div>
-        </div>
-
-        <div
-          class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]"
-          tabindex="2"
-        >
-          <div class="flex cursor-pointer items-center justify-between mx-1">
-            <span
-              class="font-bold text-[1.4em] text-[#2f2f2f group-focus:text-[#5b03e4]"
-            >
-              Do we work with artificial intelligence?
-            </span>
-            <img
-              src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
-              class="h-5 w-6 ml-3 transition-all duration-[800ms] group-focus:-rotate-180"
-            />
-          </div>
-          <div
-            class="text-[18px] invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700"
-          >
-            At SUINFI, we merge innovation with cutting-edge technology. Our
-            commitment to excellence is reflected in our constant integration of
-            Artificial Intelligence at every stage of our work. From crafting
-            personalized solutions to developing state-of-the-art products,
-            Artificial Intelligence propels our vision towards an exciting
-            digital future.
-          </div>
-        </div>
-
-        <div
-          class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]"
-          tabindex="3"
-        >
-          <div class="flex cursor-pointer items-center justify-between mx-1">
-            <span
-              class="font-bold text-[1.4em] text-[#2f2f2f] group-focus:text-[#5b03e4]"
-            >
-              Does it apply to any industry?
-            </span>
-            <img
-              src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
-              class="h-5 w-6 ml-3 transition-all duration-[500ms] group-focus:-rotate-180"
-            />
-          </div>
-          <div
-            class="text-[18px]invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700"
-          >
-            Yes! Technology is necessary in any industry.
-          </div>
-        </div>
-
-        <div
-          class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]"
-          tabindex="3"
-        >
-          <div class="flex cursor-pointer items-center justify-between mx-1">
-            <span
-              class="font-bold text-[1.4em] text-[#2f2f2f] group-focus:text-[#5b03e4]"
-            >
-              Do we work with blockchain?
-            </span>
-            <img
-              src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
-              class="h-5 w-6 ml-3 transition-all duration-[500ms] group-focus:-rotate-180 drop-list-icon filter invert(17%) sepia(39%) saturate(6309%) hue-rotate(259deg) brightness(95%) contrast(142%)"
-            />
-          </div>
-          <div
-            class="text-[18px] invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700 text-[#3c3c3c]"
-          >
-            At SUINFI, we are committed to innovation and efficiency across all
-            sectors. From supply chain optimization to decentralized financial
-            solutions, our focus on blockchain drives progress and security in
-            the business world.
-          </div>
-        </div>
+      <!-- Title -->
+      <div class="w-full flex flex-col gap-8">
+        <h2 class="text-3xl font-bold text-[#2a2a2a]">
+          Most <span class="text-[#5b03e4]">Frequently</span> Asked
+          <span class="text-[#c03afe]">Questions</span> ?
+        </h2>
+        <div class="line-dec bg-gradient-to-r from-[#5601e3] to-[#c53cff] h-[1.5px] w-[4%]"></div>
+        <p class="text-[14px] lg:text-sm text-[#949494]">
+          Committed to serving our clients, at SUINFI, we want you to be informed
+          about our way of working
+        </p>
       </div>
-      <!-- form contact -->
-
-      <div class="w-full lg:w-[50%] flex flex-col gap-10">
-          <h1 class="text-[28px] text-center font-bold">
-            <span class="text-[#5b03e4]">Contact Us</span> & Get In
-            <span class="text-[#c03afe]">Touch</span>
-          </h1>
-          <form class="w-full flex flex-col items-center font-bold">
-            <div class="w-full grid grid-cols-2 gap-4">
-              <input
-                class="outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full"
-                type="text"
-                placeholder="Your Name..."
-                name="name"
-              />
-              <input
-                class="outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full"
-                type="text"
-                placeholder="Your Surname..."
-                name="surname"
-              />
-              <input
-                class="outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full"
-                type="text"
-                placeholder="Your E-mail..."
-                name="email"
-              />
-              <input
-                class="outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full"
-                type="text"
-                placeholder="Your Subject..."
-                name="subject"
+  
+      <!-- Child div, but it is the parent of the accordion and the form -->
+      <!-- accordion frequently questions -->
+  
+      <div class="flex flex-col lg:flex-row gap-5">
+        <div class="flex flex-col w-full lg:w-[50%] gap-12">
+          <div
+            class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]"
+            tabindex="1"
+          >
+            <div class="flex cursor-pointer items-center justify-between mx-1">
+              <span
+                class="font-bold text-[1.4em] text-[#2f2f2f] group-focus:text-[#5b03e4]"
+              >
+                Do we offer personal attention?
+              </span>
+              <img
+                src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
+                class="h-5 w-6 ml-3 transition-all duration-[500ms] group-focus:-rotate-180 filter filter-hue-rotate-180"
               />
             </div>
-            <div class="w-full mt-4">
-              <textarea
-                class="outline-none bg-[#f9ebff] w-full h-32 rounded-3xl p-3 placeholder-black"
-                name="message"
-                id=""
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="bg-[#5b03e4] border-none text-white rounded-3xl w-[80%] mx-auto h-11 max-h-24 lg:mt-4 "
+            <div
+              class="text-[18px] invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700"
             >
-              Send Message Now
-            </button>
-          </form>
+              Yes! We offer personal attention and follow-up on each project.
+            </div>
+          </div>
+  
+          <div
+            class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]"
+            tabindex="2"
+          >
+            <div class="flex cursor-pointer items-center justify-between mx-1">
+              <span
+                class="font-bold text-[1.4em] text-[#2f2f2f group-focus:text-[#5b03e4]"
+              >
+                Do we work with artificial intelligence?
+              </span>
+              <img
+                src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
+                class="h-5 w-6 ml-3 transition-all duration-[800ms] group-focus:-rotate-180"
+              />
+            </div>
+            <div
+              class="text-[18px] invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700"
+            >
+              At SUINFI, we merge innovation with cutting-edge technology. Our
+              commitment to excellence is reflected in our constant integration of
+              Artificial Intelligence at every stage of our work. From crafting
+              personalized solutions to developing state-of-the-art products,
+              Artificial Intelligence propels our vision towards an exciting
+              digital future.
+            </div>
+          </div>
+  
+          <div
+            class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]"
+            tabindex="3"
+          >
+            <div class="flex cursor-pointer items-center justify-between mx-1">
+              <span
+                class="font-bold text-[1.4em] text-[#2f2f2f] group-focus:text-[#5b03e4]"
+              >
+                Does it apply to any industry?
+              </span>
+              <img
+                src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
+                class="h-5 w-6 ml-3 transition-all duration-[500ms] group-focus:-rotate-180"
+              />
+            </div>
+            <div
+              class="text-[18px]invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700"
+            >
+              Yes! Technology is necessary in any industry.
+            </div>
+          </div>
+  
+          <div
+            class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]"
+            tabindex="3"
+          >
+            <div class="flex cursor-pointer items-center justify-between mx-1">
+              <span
+                class="font-bold text-[1.4em] text-[#2f2f2f] group-focus:text-[#5b03e4]"
+              >
+                Do we work with blockchain?
+              </span>
+              <img
+                src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
+                class="h-5 w-6 ml-3 transition-all duration-[500ms] group-focus:-rotate-180 drop-list-icon filter invert(17%) sepia(39%) saturate(6309%) hue-rotate(259deg) brightness(95%) contrast(142%)"
+              />
+            </div>
+            <div
+              class="text-[18px] invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700 text-[#3c3c3c]"
+            >
+              At SUINFI, we are committed to innovation and efficiency across all
+              sectors. From supply chain optimization to decentralized financial
+              solutions, our focus on blockchain drives progress and security in
+              the business world.
+            </div>
+          </div>
+        </div>
+        <!-- form contact -->
+  
+        <div class="w-full lg:w-[50%] flex flex-col gap-10">
+            <h1 class="text-[28px] text-center font-bold">
+              <span class="text-[#5b03e4]">Contact Us</span> & Get In
+              <span class="text-[#c03afe]">Touch</span>
+            </h1>
+            <form class="w-full flex flex-col items-center font-bold">
+              <div class="w-full grid grid-cols-2 gap-4">
+                <input
+                  class="outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full"
+                  type="text"
+                  placeholder="Your Name..."
+                  name="name"
+                />
+                <input
+                  class="outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full"
+                  type="text"
+                  placeholder="Your Surname..."
+                  name="surname"
+                />
+                <input
+                  class="outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full"
+                  type="text"
+                  placeholder="Your E-mail..."
+                  name="email"
+                />
+                <input
+                  class="outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full"
+                  type="text"
+                  placeholder="Your Subject..."
+                  name="subject"
+                />
+              </div>
+              <div class="w-full mt-4">
+                <textarea
+                  class="outline-none bg-[#f9ebff] w-full h-32 rounded-3xl p-3 placeholder-black"
+                  name="message"
+                  id=""
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-[#5b03e4] border-none text-white rounded-3xl w-[80%] mx-auto h-11 max-h-24 lg:mt-4 "
+              >
+                Send Message Now
+              </button>
+            </form>
+          </div>
         </div>
       </div>
 </section>

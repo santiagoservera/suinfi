@@ -1,23 +1,23 @@
 <div 
-  class="hidden lg:flex justify-between items-center bg-white px-[77px] py-3 "
+  class="hidden lg:flex justify-between items-center bg-white  py-3 container-width"
 >
   <!-- pre-header -->
   <div class="gap-4 font-normal text-sm hidden lg:flex">
     <div class="flex items-center flex-col lg:flex-row">
-      <img src="../../../assets/icons/telef.svg" class="w-5 h-5 mr-4" alt="" />
+      <img src="../../../assets/icons/telef.svg" class="w-5 h-5" alt="" />
       <p class="text-[#a586bc]">+54 9 2644585555</p>
     </div>
     <div class="flex items-center">
-      <img src="../../../assets/icons/msj.svg" class="w-5 h-5 mr-4" alt="" />
+      <img src="../../../assets/icons/msj.svg" class="w-5 h-5 " alt="" />
       <p class="text-[#a586bc]">info&#64;suinfi.com</p>
     </div>
     <div class="flex items-center">
-      <img src="../../../assets/icons/ubic.svg" class="w-5 h-5 mr-4" alt="" />
+      <img src="../../../assets/icons/ubic.svg" class="w-5 h-5 " alt="" />
       <p class="text-[#a586bc]">Rivadavia 524 Este Capital San Juan ARG</p>
     </div>
   </div>
 
-  <div class="flex gap-2 mr-7 text-sm">
+  <div class="flex gap-2  text-sm">
     <a href="https://www.facebook.com/people/Suinfi/61553712893461/">
       <img src="../../../assets/icons/facebook.svg" alt="" class="w-5 h-5" />
     </a>
@@ -38,8 +38,10 @@
 
 <header
   [class.scrolled]="isScrolled"
-  class="w-full bg-[linear-gradient(90deg,_rgba(85,0,227,1)_0%,_rgba(198,61,255,1)_100%)] flex justify-between items-center px-10 py lg:px-40 lg:py-4"
+  class="w-full bg-[linear-gradient(90deg,_rgba(85,0,227,1)_0%,_rgba(198,61,255,1)_100%)] "
 >
+<div class="container-width flex justify-between items-center   ">
+
   <img
     routerLink="/home"
     class="object-cover w-20 cursor-pointer"
@@ -103,9 +105,10 @@
   </ul>
   </div>
 <!-- nav bar LG -->
-  <ul  class="hidden lg:flex text-white  gap-10 "
+
+  <ul #lgMenu class="hidden lg:flex text-white  gap-10 "
   >
-    <li  class="flex items-center justify-center py-4">
+    <li  class="flex items-center justify-center ">
       <a 
         href="#home" (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 block w-full text-center"
@@ -113,7 +116,7 @@
       >
     </li>
     <li
-    class="flex items-center justify-center py-4 ">
+    class="flex items-center justify-center  ">
       <a
         href="#services"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
@@ -121,7 +124,7 @@
       >
     </li>
     <li
-    class="flex items-center justify-center py-4 ">
+    class="flex items-center justify-center  ">
       <a
         href="#projects"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
@@ -140,7 +143,7 @@
       
     </li>
     <li
-    class="flex items-center justify-center py-4 ">
+    class="flex items-center justify-center  ">
       <a
        href="#info"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
@@ -148,7 +151,7 @@
       >
     </li>
     <li
-    class="flex items-center justify-center py-4 ">
+    class="flex items-center justify-center  ">
       <a
         href="#contact"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
@@ -175,4 +178,5 @@
   </svg>
   
   </button>
+</div>
 </header>

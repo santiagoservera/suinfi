@@ -27,6 +27,8 @@ export class NavbarComponent {
 
   //menu responsive 
   @ViewChild('mainMenu') mainMenuRef?: ElementRef;
+  //menu lg
+  @ViewChild('lgMenu') lgMenuRef?: ElementRef;
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -36,13 +38,34 @@ export class NavbarComponent {
     
     }
   }
+  
   closeMenu() {
     this.isMenuOpen = false;
   }
   //end menu responsive
-  //scroll move action
+  //scroll move action responsive
   ngAfterViewInit() {
     this.mainMenuRef?.nativeElement.addEventListener('click', (event: MouseEvent) => {
+      const clickedElement = event.target as Element; // Conversión a Element
+  
+      if (clickedElement.tagName === 'A') {
+        event.preventDefault();
+        const targetSectionId = clickedElement?.getAttribute('href')?.substring(1);
+        if (targetSectionId) {
+        const targetSection = document.getElementById(targetSectionId);
+        
+        if (targetSection) {
+          window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth',
+           
+          });
+        }
+      }
+      }
+    });
+    //scroll move action lg
+    this.lgMenuRef?.nativeElement.addEventListener('click', (event: MouseEvent) => {
       const clickedElement = event.target as Element; // Conversión a Element
   
       if (clickedElement.tagName === 'A') {
