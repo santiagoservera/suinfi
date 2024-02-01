@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 
 @Component({
@@ -9,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './card-box.component.css'
 })
 export class CardBoxComponent {
- 
+  //Frontface image
+  @Input() imageFront: string = '';
+
+  //Backface image
+  @Input() imageBack: string = '';
+  
 }

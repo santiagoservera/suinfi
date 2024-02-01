@@ -4,12 +4,12 @@
 <div class="w-full h-full bg-transparent cursor-pointer group perspective">
   <div class="relative preserve-3d group-hover:my-rotate-y-180 duration-1000">
     <div class="absolute backface-hidden  w-[150px] h-[200px] lg:w-[250px] lg:h-[300px] lg:shadow-black lg:shadow-2xl"> 
-      <img src="/assets/images/logox.png" class="w-full h-full" />
+      <img [src]="imageFront" class="w-full h-full" />
     </div>
     <!-- Las clases "my-rotate y backface estan en tailwind.config" -->
     <div class="my-rotate-y-180 backface-hidden w-[150px] h-[200px] lg:w-[250px] lg:h-[300px] bg-white lg:shadow-black lg:shadow-2xl"> 
       <div class="">
-        <img class="h-[200px] w-[150px] lg:w-[250px] lg:h-[300px]" src="/assets/images/card-back.webp" /> 
+        <img class="h-[200px] w-[150px] lg:w-[250px] lg:h-[300px]" [src]="imageBack" /> 
         <div class="absolute bottom-0 left-0 right-0 text-center ">
           <button class="bg-green-500 px-1 py-2 text-gray-50 rounded-lg mb-3 font-bold text-xs lg:px-3  lg:text-base">Discover Now</button> 
         </div>
