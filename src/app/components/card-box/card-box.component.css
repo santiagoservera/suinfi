@@ -1,6 +1,6 @@
 .cube-container {
     box-shadow: 0 18px 40px 5px rgba(0,0,0,.4);
-    perspective: 800px;
+    perspective: 1000px;
 }
 
 .photo-cube {
