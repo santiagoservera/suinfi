@@ -13,18 +13,16 @@ header.scrolled {
   
 
 li.group:hover .sub-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 li.group:hover .sub-nav {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
-.sub-nav:hover {
-  /* Desplaza hacia abajo los elementos de la lista adyacentes al pasar el mouse */
-  margin-bottom: 40px; /* Ajusta este valor para controlar el espacio */
-}
 
 .sub-nav:hover > ul {
-  display: block;
+  display: inline-block;
 }

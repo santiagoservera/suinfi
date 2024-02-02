@@ -50,7 +50,7 @@
   />
   <!-- navbar responsive -->
   <div #mainMenu class=""  [ngClass]="{'hidden': !isMenuOpen}" >
-    <ul (click)="closeMenu()" class="font-bold w-full h-[405px] text-black fixed top-[82px] flex-col items-center justify-center gap-10 left-0 z-[100] bg-white md:hidden"
+    <ul class="font-bold w-full h-auto text-black fixed top-[82px] flex-col items-center justify-center gap-10 left-0 z-[100] bg-white lg:hidden"
   >
     <li  class="flex items-center justify-center py-4 border rounded">
       <a 
@@ -62,7 +62,7 @@
     <li
     class="flex items-center justify-center py-4 border rounded ">
       <a
-        href="#services"
+        href="#services" (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
         >SERVICES</a
       >
@@ -70,18 +70,18 @@
     <li
     class="flex items-center justify-center py-4 border rounded">
       <a
-        href="#projects"
+        href="#projects" (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
         >PROJECTS</a
       >
     </li>
 
-    <li class="relative group flex items-center justify-center py-4 border rounded">
-      <a class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 cursor-pointer flex items-center gap-3 sub-nav">PAGES
+    <li class="relative group flex flex-col items-center justify-center border rounded">
+      <a class="flex w-full transition-opacity duration-700 ease-in-out hover:opacity-80 items-center gap-2 justify-center py-4">PAGES
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></svg>
       </a>
-      <ul class="sub-nav absolute top-full left-0 z-10 hidden w-full h-[405px] bg-white">
-        <li class="flex items-center justify-center py-4 border rounded"><a routerLink="/about" class="bg-white transition-opacity duration-700 ease-in-out hover:opacity-80">About us   </a></li>
+      <ul class="sub-nav z-10 hidden w-full bg-white">
+        <li class="flex items-center justify-center py-4 border rounded"><a routerLink="/about" class="bg-white transition-opacity duration-700 ease-in-out hover:opacity-80">ABOUT US   </a></li>
         <li class="flex items-center justify-center py-4 border rounded"><a routerLink="/faqs" class="bg-white transition-opacity duration-700 ease-in-out hover:opacity-80">FAQs   </a></li>
       </ul>
     </li>
@@ -89,7 +89,7 @@
     <li
     class="flex items-center justify-center py-4 border rounded">
       <a
-       href="#info"
+       href="#info" (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
         >INFOS</a
       >
@@ -97,7 +97,7 @@
     <li
     class="flex items-center justify-center py-4 border rounded">
       <a
-        href="#contact"
+        href="#contact" (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
         >CONTACT</a
       >
@@ -132,7 +132,7 @@
       >
     </li>
     <li 
-    class="relative group flex ">
+    class="relative group flex">
       <a
         class="hover:text-white transition-opacity hover:opacity-80 cursor-pointer flex h-[85px] items-center justify-center"
         >PAGES<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></svg> 
