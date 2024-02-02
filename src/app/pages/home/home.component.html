@@ -2,47 +2,57 @@
 <app-navbar></app-navbar>
 <!-- Main-banner -->
 
-<section id="home" class="relative w-full h-[100vh]  lg:mb-28">
-  <div class="container-width flex justify-center items-center lg:justify-between ">
-  <div class="absolute w-[861px] h-[746px] -top-1 right-0 z-[-1]">
-    <img
-      src="assets/images/banner-right.webp"
-      class=""
-      alt="banner-right"
-    />
-  </div>
-  <div class="absolute w-[194px] h-[655px] -top-5 left-0 z-[-1]">
-    <img
-      src="assets/images/banner-left.webp"
-      class=""
-      alt="banner-left"
-    />
-  </div>
-  <div class="flex flex-col items-center justify-center text-center w-[90%] h-[550px] bg-white rounded-3xl opacity-90 max-w-[570px] gap-3 sm:gap-5  2xl:max-w-[800px]">
-    <h1 class="text-xl font-bold text-violet-700">SOFTWARE FACTORY</h1>
-    <div class="bg-[#DECDFA] h-0.5 w-[70%]"></div>
-    <h2 class="font-bold text-4xl opacity-80 lg:text-5xl">
-      Dive <span class="text-[#5b03e4]">Into the Software</span> World
-      <span class="text-[#c03afe]">With SUINFI</span>
-    </h2>
-    <p class="text-[#8765be] leading-8 max-w-[800px] opacity-50 pb-5">
-      SUINFI is the best software factory for your company. We have a new way
-      to build technology that transforms businesses while caring for the
-      environment and society. Home, About, and FAQ.
-    </p>
-    <div class="flex flex-col sm:flex-row">
-      <button routerLink="/about" class="text-base text-white bg-[#5b03e4] py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden">
-      Discover More</button>
+<section id="home" class="relative w-full h-[100vh] flex items-center justify-center mb-24 lg:mb-0">
+  <div
+    class="w-full lg:container-width h-[85%] flex justify-center items-center lg:justify-between"
+  >
+    <div class="absolute w-[194px] h-[655px] -top-5 left-0 z-[-1]">
+      <img src="assets/images/banner-left.webp" class="" alt="banner-left" />
+    </div>
+    <div class="absolute w-[861px] h-[746px] -top-1 right-0 -z-10">
+      <img src="assets/images/banner-right.webp" class="" alt="banner-right" />
+    </div>
+    <div
+      class="flex flex-col items-center w-[90%] md:w-[75%] lg:w-[65%] bg-white opacity-90 2xl:bg-transparent 2xl:opacity-100 py-4 md:p-10 2xl:p-0 rounded-xl"
+    >
+    <div class="flex flex-col items-center lg:items-start gap-8">
+      <h1 class="text-xl font-bold text-violet-700">SOFTWARE FACTORY</h1>
+      <div class="bg-[#DECDFA] h-0.5 w-[24%]"></div>
+      <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-5">
+        <h2 class="font-bold text-4xl opacity-80 lg:text-5xl">
+          Dive <span class="text-[#5b03e4]">Into the Software</span> World
+        </h2>
+        <h2 class="font-bold text-4xl opacity-80 lg:text-5xl text-[#c03afe]">With SUINFI</h2>
+      </div>
+      <div class="text-pretty text-[#AFAFAF] text-sm lg:text-[15px] text-center xl:text-left px-3 lg:px-0">
+        <p class="leading-8 max-w-[600px]">
+          SUINFI is the best software factory for your company. We have a new way
+          to build technology that transforms businesses while caring for the
+          environment and society.
+        </p>
+        <p><a href=""></a> Home, About, and FAQ.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row">
+        <button
+          routerLink="/about"
+          class="text-base text-white bg-[#5b03e4] py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden"
+        >
+          Discover More
+        </button>
 
-      <p class="text-gray-500 p-4">or</p>
+        <p class="text-gray-500 p-4 text-center">or</p>
 
-      <button routerLink="/faqs" class="text-base text-white bg-purple-600 py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden"
-      >Check our FAQs</button>
+        <button
+          routerLink="/faqs"
+          class="text-base text-white bg-purple-600 py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden"
+        >
+          Check our FAQs
+        </button>
+      </div>
+    </div>
     </div>
   </div>
-</div>
 </section>
-
 
 <!-- Main-banner End -->
 
@@ -51,17 +61,15 @@
 <!-- Services End -->
 
 <!-- Projects -->
- <app-projects id="projects"></app-projects>
+<app-projects id="projects"></app-projects>
 <!-- Projects End -->
 
 <!-- Info-->
-<app-info id="info"/>
+<app-info id="info" />
 <!-- Info-->
 
 <!-- Contact -->
-<app-card-contact id="contact"/> 
+<app-card-contact id="contact" />
 <!-- Contact -->
 
 <app-footer></app-footer>
-
-

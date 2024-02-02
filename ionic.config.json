@@ -1,0 +1,7 @@
+{
+  "name": "suinfi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
