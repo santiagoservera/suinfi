@@ -1,4 +1,4 @@
-import {  HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -7,10 +7,10 @@ import { Observable } from 'rxjs';
 })
 export class FormContactService {
 
- constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   sendData(data: any) {
-   return this.http.post('/src/app/components/php-form/index.php', data);
- }
+    return this.http.post('../components/php-form/index.php', data);
+  }
 
 }
