@@ -2,7 +2,7 @@
 <app-navbar></app-navbar>
 <!-- About us page -->
 <!-- Primera seccion -->
-  <div class="custom-img mx-auto  pb-24 flex flex-col items-center overflow-hidden lg:justify-center pt-20 lg:pt-5 lg:flex-row lg:pb-20">
+  <div class="custom-img mx-auto pb-24 flex flex-col items-center overflow-hidden lg:justify-center pt-20 lg:pt-5 lg:flex-row lg:pb-20">
     <section class="flex items-center pl-5 lg:pl-0 lg:pr-[8%] lg:pt-[13%] ">
       <div class="flex-1">
         <h1 class="text-lg font-bold font-sans text-violet-700 mb-2 w-full lg:text-2xl ">
@@ -47,37 +47,45 @@
 
 
 <!-- Segunda seccion (Video) -->
-<section class="flex flex-wrap lg:mx-auto bg-[url('assets/images/video-bg.webp')] bg-no-repeat mb-10 lg:items-center lg:overflow-hidden lg:flex lg:flex-nowrap lg:py-16 lg:w-full lg:h-[80vh] lg:justify-center">
-  <div class=" w-[100%] h-[100%]  relative  sm:flex sm:items-center sm:justify-center lg:w-full lg:h-[100%]">
-    <img
-      src="/assets/images/video-thumb.jpg"
-      alt="Imagen about"
-      class="rounded-xl w-[100%] h-[100%] lg:w-[80%] lg:h-[100%] md:w-[60%] md:h-[60%] sm:w-[60%] sm:h-[60%]"
-    />
-  </div>
-
-  <div class="w-full h-full ml-3 mr-3 lg:w-full lg:h-full  ">
-    <h1 class="text-3xl font-bold text-white font-sans mb-4 ">
-      Mission & Vision
-    </h1>
-    <div class="bg-[#DECDFA] h-0.5 w-[15%] mb-2 md:mb-6"></div>
-
-    <div class="">
-      <em class="text-lg font-semibold text-white font-sans">Mission</em>
-      <p class="text-base text-white font-sans w-[90%] mt-2 mb-2 lg:mb-10 lg:leading-8 lg:w-[95%]">
-        Our mission is to offer innovative and quality technological solutions
-        that enhance the success of our clients in the digital world, providing
-        personalized services and constant commitment.
-      </p>
-      <em class="text-lg font-semibold text-white font-sans ">Vision</em>
-      <p class="text-base text-white font-sans w-[90%] mt-2 mb-2 lg:leading-8 lg:w-[95%]">
-        Our vision is to inspire a world in which every organization, regardless
-        of its size or industry, has the digital tools and strategies necessary
-        to succeed in an environment in constant evolution. We seek to be the
-        preferred partner of our clients, providing technological solutions that
-        allow them to achieve their goals and stand out in the digital world.
-      </p>
+<section class="w-full my-16">
+  <div
+    class="w-full bg-center bg-cover bg-no-repeat md:h-[600px] pt-10 pb-28 md:pt-0 md:pb-0"
+    style="background-image: url(../../../assets/images/video-bg.webp)"
+  >
+  <div class="max-w-[1300px] mx-auto w-full flex flex-col md:flex-row justify-around items-center gap-5">
+    <div class="w-[95%] md:w-[60%] lg:w-[47%] relative -top-20 md:-top-10">
+      <img
+        src="/assets/images/video-thumb.jpg"
+        alt="Imagen about"
+        class="w-full h-full rounded-3xl"
+      />
     </div>
+
+    <div class="flex flex-col gap-5 px-3 md:px-0">
+      <h1 class="text-3xl text-white font-bold">
+        Mission & Vision
+      </h1>
+      <div class="bg-[#DECDFA] p-[1px] rounded-3xl w-[15%]"></div>
+      <div class="md:max-w-[600px] text-pretty">
+        <em class="text-lg font-semibold text-white">Mission</em>
+        <p class="text-[15px] text-base text-white md:leading-8">
+          Our mission is to offer innovative and quality technological solutions
+          that enhance the success of our clients in the digital world, providing
+          personalized services and constant commitment.
+        </p>
+      </div>
+      <div class="max-w-[600px] text-pretty">
+        <em class="text-lg font-semibold text-white">Vision</em>
+        <p class="text-[15px] text-base text-white md:leading-8">
+          Our vision is to inspire a world in which every organization, regardless
+          of its size or industry, has the digital tools and strategies necessary
+          to succeed in an environment in constant evolution. We seek to be the
+          preferred partner of our clients, providing technological solutions that
+          allow them to achieve their goals and stand out in the digital world.
+        </p>
+      </div>
+    </div>
+  </div>
   </div>
 </section>
 
