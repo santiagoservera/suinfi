@@ -6,7 +6,7 @@
 .photo-cube {
     transition: transform 0.5s ease-in-out;
     width: 220px;
-    height: 250px;
+    height: 300px;
     transform-style: preserve-3d;
     
 }

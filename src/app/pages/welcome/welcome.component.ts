@@ -13,5 +13,5 @@ export class WelcomeComponent {
   @Input() imageFront: string = '/assets/images/logox.png';
 
   @Input() imageSoftwareFactory: string = '/assets/images/card-back.webp';
-  @Input() imageEcommerce: string = '/assets/images/ecommerceImg.webp';
+  @Input() imageEcommerce: string = '/assets/images/ecommerceBack.webp';
 }
