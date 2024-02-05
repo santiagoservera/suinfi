@@ -1,5 +1,5 @@
-<div class="bg-white   w-[95%] rounded-3xl    " >
-  <form [formGroup]="contactForm" class="rounded-3xl w-[100%] h-[850px]  border border-violet-400 relative sm:h-[760px] md:h-[760px] xl:h-[680px]">
+<div class="bg-white   w-[95%] rounded-3xl" >
+  <form [formGroup]="contactForm" class="rounded-3xl w-[100%] h-[850px]  border border-violet-400 relative sm:h-[840px] md:h-[760px] xl:h-[680px]">
       <div class="p-4 text-center">
           <h1 class="text-4xl font-bold lg:py-10"><span class='text-[#5b03e4]'>Contact Us</span> & Get In <span class='text-[#c03afe]'>Touch</span></h1>
       </div> 
@@ -13,18 +13,22 @@
           <textarea class='outline-none font-bold bg-[#f9ebff] w-[74%] sm:w-[74%] md:w-[74%] h-[100px] rounded-3xl p-3 placeholder-black resize-none lg:w-[93%]' formControlName="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
           <button  (click)="send()" type="submit" class='bg-[#5b03e4] border-none text-white rounded-3xl w-[80%] h-11 max-h-[150px] lg:w-[93%]' >Send Message Now</button>
       </div>
-      <div class="w-[100%] h-[35%] bg-gradient-to-r from-[rgb(86,1,227)] to-[rgb(197,60,255)] rounded-b-3xl absolute bottom-0 flex flex-col justify-center  text-white gap-10 sm:h-[30%] md:h-[25%] md:flex-row lg:flex-row lg:h-[30%] lg:justify-center items-center xl:h-[30%] px-0 lg:px-5">
-          <div class="flex flex-col items-center w-full">
-            <svg class="h-[40px] sm:h-[30px] md:h-[50px] lg:h-[30px] flex justify-center items-center" xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
+      <div class="w-[100%] h-[35%] bg-gradient-to-r from-[rgb(86,1,227)] to-[rgb(197,60,255)] rounded-b-3xl absolute bottom-0 flex flex-col justify-center  text-white gap-10 sm:h-[36%] md:h-[25%] md:flex-row lg:flex-row lg:h-[30%] lg:justify-center items-center xl:h-[30%] px-0 lg:px-5">
+          <div class="flex flex-col items-center w-full pb-14">
+            <div class="lg:m-4">
+            <svg class="h-[40px] sm:h-[40px] md:h-[50px] lg:h-[40px] flex justify-center items-center" xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
+          </div>
             <span class="text-white text-sm md:text-base pt-1">+54 9 2644585555</span>
           </div>
-          <div class="flex flex-col items-center w-full">
-            <svg class="h-[40px]  sm:h-[30px] md:h-[50px] lg:h-[30px]" xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 16 15"><path fill="currentColor" d="M.5 2.5A1.5 1.5 0 0 1 2 1h12a1.5 1.5 0 0 1 1.5 1.5v1.208L8 7.926L.5 3.708z"/><path fill="currentColor" d="M.5 4.855V12.5A1.5 1.5 0 0 0 2 14h12a1.5 1.5 0 0 0 1.5-1.5V4.855L8 9.074z"/></svg>
+          <div class="flex flex-col items-center w-full pb-14">
+          <div class="m-4">
+            <svg class="h-[40px]  sm:h-[40px] md:h-[50px] lg:h-[40px]" xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 16 15"><path fill="currentColor" d="M.5 2.5A1.5 1.5 0 0 1 2 1h12a1.5 1.5 0 0 1 1.5 1.5v1.208L8 7.926L.5 3.708z"/><path fill="currentColor" d="M.5 4.855V12.5A1.5 1.5 0 0 0 2 14h12a1.5 1.5 0 0 0 1.5-1.5V4.855L8 9.074z"/></svg>
+          </div>
             <span class="text-white text-sm md:text-base pt-1">info&commat;suinfi.com</span>
           </div>
           <div class="flex flex-col items-center w-full pb-2">
-            <div>
-            <svg  class="h-[40px] sm:h-[30px] md:h-[50px] lg:h-[30px] " xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2A11.013 11.013 0 0 0 5 13a10.889 10.889 0 0 0 2.216 6.6s.3.395.349.452L16 30l8.439-9.953c.044-.053.345-.447.345-.447l.001-.003A10.885 10.885 0 0 0 27 13A11.013 11.013 0 0 0 16 2m0 15a4 4 0 1 1 4-4a4.005 4.005 0 0 1-4 4"/><circle cx="16" cy="13" r="4" fill="none"/></svg>
+            <div class="m-4">
+            <svg  class="h-[40px] sm:h-[40px] md:h-[50px] lg:h-[40px] " xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2A11.013 11.013 0 0 0 5 13a10.889 10.889 0 0 0 2.216 6.6s.3.395.349.452L16 30l8.439-9.953c.044-.053.345-.447.345-.447l.001-.003A10.885 10.885 0 0 0 27 13A11.013 11.013 0 0 0 16 2m0 15a4 4 0 1 1 4-4a4.005 4.005 0 0 1-4 4"/><circle cx="16" cy="13" r="4" fill="none"/></svg>
             </div>
             <span class="text-white text-center text-sm md:text-base pt-1">Rivadavia 524 Este, Capital San Juan, Argentina</span>
           </div>
