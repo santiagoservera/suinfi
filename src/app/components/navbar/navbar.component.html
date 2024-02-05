@@ -43,7 +43,7 @@
 <div class="container-width flex justify-between items-center   ">
 
   <img
-    routerLink="/home"
+    routerLink="/welcome"
     class="object-cover w-20 cursor-pointer"
     src="assets/images/logo.png"
     alt="logo Suinfi"
@@ -54,7 +54,18 @@
   >
     <li  class="flex items-center justify-center py-4 border rounded">
       <a 
-        href="#home" (click)="closeMenu()"
+      *ngIf="path === '/home'"
+      href="#home"
+      [class.active]="isHomeActive"
+        (click)="closeMenu()"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 block w-full text-center"
+        >HOME</a
+      >
+      <a 
+      *ngIf="path === '/about' || path === '/faqs' "
+      routerLink="/home"
+      [class.active]="isHomeActive"
+        (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 block w-full text-center"
         >HOME</a
       >
@@ -62,7 +73,18 @@
     <li
     class="flex items-center justify-center py-4 border rounded ">
       <a
-        href="#services" (click)="closeMenu()"
+      *ngIf="path === '/home'"
+      href="#services"  
+      
+        (click)="closeMenu()"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >SERVICES</a
+      >
+      <a
+      *ngIf="path === '/about' || path === '/faqs' "
+      routerLink="/home"  
+      
+        (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
         >SERVICES</a
       >
@@ -70,11 +92,23 @@
     <li
     class="flex items-center justify-center py-4 border rounded">
       <a
-        href="#projects" (click)="closeMenu()"
+       *ngIf="path === '/home'"
+        href="#projects"
+        (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
         >PROJECTS</a
       >
+      <a
+      *ngIf="path === '/about' || path === '/faqs' "
+      routerLink="/home"
+        (click)="closeMenu()"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >PROJECTS</a
+      >
+      
+      
     </li>
+
 
     <li class="relative group flex flex-col items-center justify-center border rounded">
       <a class="flex w-full transition-opacity duration-700 ease-in-out hover:opacity-80 items-center gap-2 justify-center py-4">PAGES
@@ -89,7 +123,16 @@
     <li
     class="flex items-center justify-center py-4 border rounded">
       <a
-       href="#info" (click)="closeMenu()"
+      *ngIf="path === '/home'"
+      href="#info"
+       (click)="closeMenu()"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >INFOS</a
+      >
+      <a
+      *ngIf="path === '/about' || path === '/faqs' "
+      routerLink="/home"
+       (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
         >INFOS</a
       >
@@ -97,7 +140,16 @@
     <li
     class="flex items-center justify-center py-4 border rounded">
       <a
-        href="#contact" (click)="closeMenu()"
+      *ngIf="path === '/home'"
+      href="#contact" 
+        (click)="closeMenu()"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >CONTACT</a
+      >
+      <a
+      *ngIf="path === '/about' || path === '/faqs' "
+      routerLink="/home" 
+        (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
         >CONTACT</a
       >
@@ -110,7 +162,16 @@
   >
     <li  class="flex items-center justify-center ">
       <a 
-        href="#home" (click)="closeMenu()"
+        *ngIf="path === '/home'"
+        href="#home"
+        (click)="closeMenu()"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 block w-full text-center"
+        >HOME</a
+      >
+      <a 
+        *ngIf="path === '/about' || path === '/faqs' "
+        routerLink="/home"
+        (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 block w-full text-center"
         >HOME</a
       >
@@ -118,7 +179,16 @@
     <li
     class="flex items-center justify-center  ">
       <a
-        href="#services"
+      *ngIf="path === '/home'"
+      href="#services"
+      
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >SERVICES</a
+      >
+      <a
+      *ngIf="path === '/about' || path === '/faqs'"
+       routerLink="/home"
+      
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
         >SERVICES</a
       >
@@ -126,7 +196,14 @@
     <li
     class="flex items-center justify-center  ">
       <a
-        href="#projects"
+      *ngIf="path === '/home'"
+      href="#projects"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >PROJECTS</a
+      >
+      <a
+      *ngIf="path === '/about' || path === '/faqs'"
+      routerLink="/home"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
         >PROJECTS</a
       >
@@ -148,7 +225,14 @@
     <li
     class="flex items-center justify-center  ">
       <a
-       href="#info"
+      *ngIf="path === '/home'"
+      href="#info"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >INFOS</a
+      >
+      <a
+      *ngIf="path === '/about' || path === '/faqs'"
+      routerLink="/home"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
         >INFOS</a
       >
@@ -156,7 +240,14 @@
     <li
     class="flex items-center justify-center  ">
       <a
-        href="#contact"
+      *ngIf="path === '/home'"
+       href="#contact"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >CONTACT</a
+      >
+      <a
+      *ngIf="path === '/about' || path === '/faqs'"
+       routerLink="/home"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
         >CONTACT</a
       >

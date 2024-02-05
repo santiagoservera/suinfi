@@ -10,7 +10,7 @@ export class FormContactService {
   constructor(private http: HttpClient) { }
 
   sendData(data: any) {
-    return this.http.post('../components/php-form/index.php', data);
+    return this.http.post('/index.php', data);
   }
 
 }

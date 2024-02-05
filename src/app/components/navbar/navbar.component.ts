@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet, Router } from '@angular/router';
 import { Scroll } from '@angular/router';
 @Component({
   selector: 'app-navbar',
@@ -12,9 +12,15 @@ import { Scroll } from '@angular/router';
 export class NavbarComponent {
   isScrolled: boolean = false;
   isMenuOpen: boolean = false;
+  isHomeActive = false;
+  path? : string;
+
+  
 
 
-  constructor(private elRef: ElementRef) {
+  constructor(private elRef: ElementRef, private router: Router ) {
+
+   
     
     
   }
@@ -61,6 +67,8 @@ closePagesDropdown(event: Event) {
 
   //scroll move action responsive
   ngAfterViewInit() {
+    this.path = this.router.url;
+    console.log(this.path)
     this.mainMenuRef?.nativeElement.addEventListener('click', (event: MouseEvent) => {
       const clickedElement = event.target as Element; // Conversión a Element
   
@@ -80,24 +88,25 @@ closePagesDropdown(event: Event) {
       }
       }
     });
+    
     //scroll move action lg
     this.lgMenuRef?.nativeElement.addEventListener('click', (event: MouseEvent) => {
-      const clickedElement = event.target as Element; // Conversión a Element
+      const clickedElement = event.target as Element;
   
       if (clickedElement.tagName === 'A') {
         event.preventDefault();
+  
         const targetSectionId = clickedElement?.getAttribute('href')?.substring(1);
         if (targetSectionId) {
-        const targetSection = document.getElementById(targetSectionId);
-        
-        if (targetSection) {
-          window.scrollTo({
-            top: targetSection.offsetTop,
-            behavior: 'smooth',
-           
-          });
+          const targetSection = document.getElementById(targetSectionId);
+  
+          if (targetSection) {
+            window.scrollTo({
+              top: targetSection.offsetTop,
+              behavior: 'smooth',
+            });
+          }
         }
-      }
       }
     });
   }
