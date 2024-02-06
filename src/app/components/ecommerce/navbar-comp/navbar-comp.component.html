@@ -1,1 +1,196 @@
-<p>navbar-comp works!</p>
+<div 
+  class="hidden lg:flex justify-between items-center bg-white  py-3 container-width"
+>
+  <!-- pre-header -->
+  <div class="gap-4 font-normal text-sm hidden lg:flex">
+    <div class="flex items-center flex-col lg:flex-row">
+      <img src="../../../assets/icons/telef.svg" class="w-5 h-5" alt="" />
+      <p class="text-[#a586bc]">+54 9 2644585555</p>
+    </div>
+    <div class="flex items-center">
+      <img src="../../../assets/icons/msj.svg" class="w-5 h-5 " alt="" />
+      <p class="text-[#a586bc]">info&#64;suinfi.com</p>
+    </div>
+    <div class="flex items-center">
+      <img src="../../../assets/icons/ubic.svg" class="w-5 h-5 " alt="" />
+      <p class="text-[#a586bc]">Rivadavia 524 Este Capital San Juan ARG</p>
+    </div>
+  </div>
+
+  <div class="flex gap-2  text-sm">
+    <a href="https://www.facebook.com/people/Suinfi/61553712893461/">
+      <img src="../../../assets/icons/facebook.svg" alt="" class="w-5 h-5" />
+    </a>
+
+    <a href="https://twitter.com/suinfi_info">
+      <img src="../../../assets/icons/twiiter.svg" alt="" class="w-5 h-5" />
+    </a>
+
+    <a href="https://www.linkedin.com/company/suinfi/?viewAsMember=true">
+      <img src="../../../assets/icons/linkedin.svg" alt="" class="w-5 h-5" />
+    </a>
+
+    <a href="https://www.instagram.com/suinfi/">
+      <img src="../../../assets/icons/instagram.svg" alt="" class="w-5 h-5" />
+    </a>
+  </div>
+</div>
+
+<header
+  [class.scrolled]="isScrolled"
+  class="w-full bg-[linear-gradient(90deg,_rgba(85,0,227,1)_0%,_rgba(198,61,255,1)_100%)] "
+>
+<div class="container-width flex justify-between items-center   ">
+
+  <img
+    routerLink="/welcome"
+    class="object-cover w-20 cursor-pointer"
+    src="assets/images/logo.png"
+    alt="logo Suinfi"
+  />
+  <!-- navbar responsive -->
+  <div #mainMenu class=""  [ngClass]="{'hidden': !isMenuOpen}" >
+    <ul class="font-bold w-full h-auto text-black fixed top-[82px] flex-col items-center justify-center gap-10 left-0 z-[100] bg-white lg:hidden"
+  >
+    <li  class="flex items-center justify-center py-4 border rounded">
+      
+      <a 
+      *ngIf="path === '/ecommerce' "
+      routerLink="/ecommerce"
+      [class.active]="isHomeActive"
+        (click)="closeMenu()"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 block w-full text-center"
+        >HOME</a
+      >
+    </li>
+    <li
+    class="flex items-center justify-center py-4 border rounded ">
+      
+      <a
+      *ngIf="path === '/ecommerce'"
+      routerLink="/ecommerce"  
+      
+        (click)="closeMenu()"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >PRODUCTS</a
+      >
+    </li>
+    
+
+
+    <li class="relative group flex flex-col items-center justify-center border rounded">
+      <a class="flex w-full transition-opacity duration-700 ease-in-out hover:opacity-80 items-center gap-2 justify-center py-4">PAGES
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></svg>
+      </a>
+      <ul class="sub-nav z-10 hidden w-full bg-white">
+        <li class="flex items-center justify-center py-4 border rounded"><a routerLink="/about" class="bg-white transition-opacity duration-700 ease-in-out hover:opacity-80">ABOUT US   </a></li>
+        <li class="flex items-center justify-center py-4 border rounded"><a routerLink="/faqs" class="bg-white transition-opacity duration-700 ease-in-out hover:opacity-80">FAQs   </a></li>
+      </ul>
+    </li>
+    
+    <li
+    class="flex items-center justify-center py-4 border rounded">
+      
+      <a
+      *ngIf="path === '/ecommerce' "
+      routerLink="/ecommerce"
+       (click)="closeMenu()"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >LOGIN</a
+      >
+    </li>
+    <li
+    class="flex items-center justify-center py-4 border rounded">
+      
+      <a
+      *ngIf="path === '/ecommerce' "
+      routerLink="/ecommerce" 
+        (click)="closeMenu()"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >SOPPING CART</a
+      >
+    </li>
+  </ul>
+  </div>
+<!-- nav bar LG -->
+
+  <ul #lgMenu class="hidden lg:flex text-white  gap-10 "
+  >
+    <li  class="flex items-center justify-center ">
+        <a 
+        *ngIf="path === '/ecommerce' "
+        routerLink="/ecommerce"
+        [class.active]="isHomeActive"
+          (click)="closeMenu()"
+          class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 block w-full text-center"
+          >HOME</a
+        >
+    </li>
+    <li
+    class="flex items-center justify-center  ">
+      
+      <a
+      *ngIf="path === '/ecommerce' "
+       routerLink="/ecommerce"
+      
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >PRODUCTS</a
+      >
+    </li>
+    
+    <li 
+    class="relative group flex">
+      <a
+        class="hover:text-white transition-opacity hover:opacity-80 cursor-pointer flex h-[85px] items-center justify-center"
+        >PAGES<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></svg> 
+
+        </a >
+      
+        <ul class="sub-menu absolute hidden h-[80px]  text-black top-[85px]  z-[100] bg-[#eeeeee] w-[120px] rounded-b-xl ">
+          <li><a routerLink="/about" class="block p-2 text-center hover:bg-gray-200  ">About Us</a></li>
+          <li><a routerLink="/faqs" class="block  p-2 text-center hover:bg-gray-200  rounded-b-xl ">FAQs</a></li>
+        </ul>
+      
+    </li>
+    <li
+    class="flex items-center justify-center  ">
+      <a
+      *ngIf="path === '/ecommerce' "
+      routerLink="/ecommerce"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >LOGIN</a
+      >
+    </li>
+    <li
+    class="flex items-center justify-center  ">
+      
+      <a
+      *ngIf="path === '/ecommerce'"
+       routerLink="/ecommerce"
+        class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
+        >SHOPPING CART</a
+      >
+    </li>
+  </ul>
+
+
+  <button
+    (click)="toggleMenu()"
+    class="block lg:hidden group cursor-pointer outline-none hover:rotate-90 duration-300"
+  >
+  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 6C8 7.10457 7.10457 8 6 8C4.89543 8 4 7.10457 4 6C4 4.89543 4.89543 4 6 4C7.10457 4 8 4.89543 8 6Z" fill="white" />
+    <path d="M8 12C8 13.1046 7.10457 14 6 14C4.89543 14 4 13.1046 4 12C4 10.8954 4.89543 10 6 10C7.10457 10 8 10.8954 8 12Z" fill="white" />
+    <path d="M6 20C7.10457 20 8 19.1046 8 18C8 16.8954 7.10457 16 6 16C4.89543 16 4 16.8954 4 18C4 19.1046 4.89543 20 6 20Z" fill="white" />
+    <path d="M14 6C14 7.10457 13.1046 8 12 8C10.8954 8 10 7.10457 10 6C10 4.89543 10.8954 4 12 4C13.1046 4 14 4.89543 14 6Z" fill="white" />
+    <path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="white" />
+    <path d="M14 18C14 19.1046 13.1046 20 12 20C10.8954 20 10 19.1046 10 18C10 16.8954 10.8954 16 12 16C13.1046 16 14 16.8954 14 18Z" fill="white" />
+    <path d="M18 8C19.1046 8 20 7.10457 20 6C20 4.89543 19.1046 4 18 4C16.8954 4 16 4.89543 16 6C16 7.10457 16.8954 8 18 8Z" fill="white" />
+    <path d="M20 12C20 13.1046 19.1046 14 18 14C16.8954 14 16 13.1046 16 12C16 10.8954 16.8954 10 18 10C19.1046 10 20 10.8954 20 12Z" fill="white" />
+    <path d="M18 20C19.1046 20 20 19.1046 20 18C20 16.8954 19.1046 16 18 16C16.8954 16 16 16.8954 16 18C16 19.1046 16.8954 20 18 20Z" fill="white" />
+  </svg>
+  
+  </button>
+</div>
+</header>
+
