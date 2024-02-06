@@ -16,9 +16,7 @@
 }
 
 .front,
-.back,
-.left,
-.right { /* Incluye la clase .button */
+.left{
     width: 100%;
     height: 100%;
     display: flex;
@@ -30,19 +28,14 @@
     transform: translate3d(0,0,110px);
 }
 
-.back {
-    transform: translateZ(-110px) rotateY(270deg);
-    transform-origin: center left;
-}
+
 
 .left {
     transform: rotateY(-270deg) translate3d(110px, 0, 0);
     transform-origin: top right;
 }
 
-.right {
-    transform: translateZ(-110px) rotateY(180deg);
-}
+
 
 .overlay {
     position: absolute;
@@ -50,3 +43,16 @@
     }
 
 
+    @media (min-width: 1750px) {
+        .photo-cube {
+            width: 270px; /* Aumentar el ancho proporcionalmente */
+            height: 360px; /* Aumentar la altura proporcionalmente */
+        }
+        .left {
+            transform: rotateY(-270deg) translate3d(120px, 0, 0);
+            transform-origin: top right;
+        }
+        .front {
+            transform: translate3d(0,0,150px);
+        }
+    }
