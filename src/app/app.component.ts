@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { WelcomeComponent } from './pages/softwareFactory/welcome/welcome.component';
 
 @Component({
   selector: 'app-root',

@@ -1,0 +1,27 @@
+<!-- Main-page -->
+
+<div class="overflow-hidden h-full lg:h-screen box text-white flex flex-col justify-between items-center lg:relative lg:pt-12 ">
+  <div class="  items-center flex justify-center pt-32 lg:pt-5 flex-col mb-16 gap-20 lg:gap-14 lg:mb-0"> 
+    <img src="/assets/images/logo2.png" class="w-[60%] lg:w-[50%]">
+    <h2 class="text-center text-lg lg:text-xl">All what you need</h2>
+  </div>
+
+  
+
+  <div class="flex flex-col items-center mt-20 justify-center gap-5 lg:gap-48 sm:justify-center lg:flex-row lg:z-[9999] lg:h-full ">
+    <div class="flex flex-col gap-10 items-center lg:justify-center">
+      <app-card-box routerLink="/home" class="mt-8 " [imageFront]="imageFront" [imageBack]="imageSoftwareFactory"/>
+      <a href="/home" class="text-white  hover:text-green-500 text-lg font-bold text-center lg:text-black">SOFTWARE FACTORY</a>
+    </div>
+    <div class="flex flex-col gap-10  lg:justify-center">
+      <app-card-box routerLink="/ecommerce" class="mt-8" [imageFront]="imageFront" [imageBack]="imageEcommerce" />
+      <a href="/ecommerce" class="text-white hover:text-green-500 text-lg font-bold text-center lg:text-black">E-COMMERCE</a>
+      
+    </div>
+  </div>
+  <div class="bg-white h-[10vh] lg:w-full lg:h-[25vh]  lg:absolute lg:bottom-0 ">
+  
+  </div>
+
+
+</div>

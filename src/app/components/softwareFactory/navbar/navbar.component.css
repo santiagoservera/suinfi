@@ -1,0 +1,28 @@
+header.scrolled {
+    /* Estilos para la barra de navegación cuando está "scrolled" */
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0; /* La coloca al inicio de la página */
+    z-index: 999; /* Asegura que se posicione encima de otros elementos */
+    /* Otros estilos que desee aplicar en el estado "scrolled" */
+  }
+
+  .dropdown-content {
+    transition: all 0.3s ease-in-out;
+  }
+
+  
+
+li.group:hover .sub-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+li.group:hover .sub-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sub-nav:hover > ul {
+  display: inline-block;
+}
