@@ -1,1 +1,21 @@
-<p>carousel-comp works!</p>
+<div class="h-[240px] lg:h-[400px] w-full overflow-hidden">
+    <div class="h-full w-full flex ease-in-out" [style]="galleryContainerStyle">
+      <div class="h-full min-w-full box-border gallery-item">
+        <img src="../../../../assets/images/ImagenesEcommerce/ig1.jpg" alt="imagen muestra 1" class="w-full block">
+      </div>
+      <div class="h-full min-w-full box-border gallery-item">
+        <img src="../../../../assets/images/ImagenesEcommerce/img5.jpg" alt="imagen muestra 2" class="w-full block">
+      </div>
+      <div class="h-full min-w-full box-border gallery-item">
+        <img src="../../../../assets/images/ImagenesEcommerce/img3.jpg" alt="imagen muestra 3" class="w-full block">
+      </div>
+    </div>
+    <nav class="flex justify-between items-center relative -top-[150px] lg:-top-[220px]">
+      <button class="lg:bg-gray-800 p-4 cursor-pointer rounded-full hover:bg-gray-700 relative lg:left-5" (click)="Navigate(-1)">
+        <img src="../../../../assets/icons/arrowIcon.svg" alt="arrow-back" class="w-6 rotate-180">
+      </button>
+      <button class="lg:bg-gray-800 p-4 cursor-pointer rounded-full hover:bg-gray-700 relative lg:right-5" (click)="Navigate(1)">
+        <img src="../../../../assets/icons/arrowIcon.svg" alt="arrow-back" class="w-6">
+      </button>
+    </nav>
+  </div>

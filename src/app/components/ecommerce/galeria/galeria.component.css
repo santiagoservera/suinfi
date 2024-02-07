@@ -1,0 +1,8 @@
+.container-grid-1{
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+.container-grid-2{
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}

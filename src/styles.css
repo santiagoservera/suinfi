@@ -14,6 +14,11 @@
   margin: 0 auto;
   width: 90%;
 }
+.container-width-ecommerce{
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 90%;
+}
 
 @screen lg {
   .lg\:container-width {

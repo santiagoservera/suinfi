@@ -1,11 +1,21 @@
 <app-navbar-comp></app-navbar-comp>
-<div class="w-[40%] h-[40%] m-auto">
-    <img src="../../../../assets/images/oops.jpg" alt="Img">
-    <p class="font-bold text-3xl text-center">Developing...</p>
-</div>
-
-
-Home ecommerce
-
+<!-- <div class="w-[40%] h-[40%] m-auto">
+  <img src="../../../../assets/images/oops.jpg" alt="Img" />
+  <p class="font-bold text-3xl text-center">Developing...</p>
+</div> -->
 <app-carousel-comp></app-carousel-comp>
-<app-footer-comp></app-footer-comp> 
+
+<section class="container-width-ecommerce py-5 lg:py-10 flex gap-2 lg:gap-0 items-center lg:items-start justify-between">
+  <div class="bg-gray-800 w-[200px] lg:w-[300px] xl:w-[350px] h-[200px] lg:h-[300px] rounded-xl flex items-end justify-center cursor-pointer transition-transform transform hover:scale-110">
+    <h1 class="text-white font-bold pb-3">Categoria 1</h1>
+  </div>
+  <div class="bg-violet-700 w-[200px] lg:w-[300px] xl:w-[350px] h-[200px] lg:h-[300px] rounded-xl flex items-end justify-center cursor-pointer transition-transform transform hover:scale-110">
+    <h1 class="text-white font-bold pb-3">Categoria 2</h1>
+  </div>
+  <div class="bg-violet-800 w-[200px] lg:w-[300px] xl:w-[350px] h-[200px] lg:h-[300px] rounded-xl flex items-end justify-center cursor-pointer transition-transform transform hover:scale-110">
+    <h1 class="text-white font-bold pb-3">Categoria 3</h1>
+  </div>
+</section>
+<app-products/>
+<app-galeria/>
+<app-footer-comp></app-footer-comp>
