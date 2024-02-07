@@ -17,4 +17,16 @@
     }
 }
 
+@media screen and (max-height: 1300px){
+    .cube-container{
+        margin-top: 40px;
+    }
+    .welcome-section{
+        padding-top: 20px;
+    }
+    .logo-container{
+        gap: 20px;
+    }
+}
+
 

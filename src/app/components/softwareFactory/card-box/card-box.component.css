@@ -4,7 +4,7 @@
 }
 
 .photo-cube {
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     width: 220px;
     height: 300px;
     transform-style: preserve-3d;
@@ -46,7 +46,7 @@
     @media (min-width: 1750px) {
         .photo-cube {
             width: 270px; /* Aumentar el ancho proporcionalmente */
-            height: 360px; /* Aumentar la altura proporcionalmente */
+            height: 380px; /* Aumentar la altura proporcionalmente */
         }
         .left {
             transform: rotateY(-270deg) translate3d(120px, 0, 0);
