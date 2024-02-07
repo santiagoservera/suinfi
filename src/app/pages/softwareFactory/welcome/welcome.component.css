@@ -5,4 +5,16 @@
 
 }
 
+@media screen and (max-height: 690px){
+    .cube-container{
+        margin-top: 40px;
+    }
+    .welcome-section{
+        padding-top: 20px;
+    }
+    .logo-container{
+        gap: 20px;
+    }
+}
+
 
