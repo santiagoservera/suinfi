@@ -9,13 +9,14 @@ import { FooterComponent } from '../../../components/softwareFactory/footer/foot
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { ChatWspComponent } from '../../../components/softwareFactory/chat-wsp/chat-wsp.component';
 import { ProjectsComponent } from '../../../components/softwareFactory/projects/projects.component';
+import { CustomersComponent } from "../../../components/softwareFactory/customers/customers.component";
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [NavbarComponent, CardBoxComponent, CardContactComponent,ServicesComponent, ProjectsComponent , InfoComponent,FooterComponent,RouterLink,RouterOutlet,ChatWspComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    standalone: true,
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css',
+    imports: [NavbarComponent, CardBoxComponent, CardContactComponent, ServicesComponent, ProjectsComponent, InfoComponent, FooterComponent, RouterLink, RouterOutlet, ChatWspComponent, CustomersComponent]
 })
 export class HomeComponent {
 
