@@ -1,6 +1,7 @@
 .cube-container {
     box-shadow: 0 18px 40px 5px rgba(0,0,0,.4);
     perspective: 1000px;
+  
 }
 
 .photo-cube {
@@ -9,10 +10,12 @@
     height: 300px;
     transform-style: preserve-3d;
     
+    
 }
 
 .photo-cube:hover {
     transform: rotateY(-75deg);
+    
 }
 
 .front,
@@ -21,11 +24,12 @@
     height: 100%;
     display: flex;
     position: absolute;
-    
+   
 }
 
 .front {
     transform: translate3d(0,0,110px);
+   
 }
 
 
@@ -33,6 +37,7 @@
 .left {
     transform: rotateY(-270deg) translate3d(110px, 0, 0);
     transform-origin: top right;
+    border-radius: 5px;
 }
 
 
