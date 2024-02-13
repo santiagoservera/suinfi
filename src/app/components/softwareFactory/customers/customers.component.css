@@ -17,7 +17,7 @@
 
 .slider .slide img {
   width: 200px;
-  filter: grayscale(100%);
+  
 
 }
 
@@ -34,3 +34,11 @@
     transform: translateX(calc(-100% - 20px));
   }
 }
+
+@media screen and (max-width:768px){
+  .slider .slide-track {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    -webkit-animation: scroll 10s linear infinite;
+  }
+} 
