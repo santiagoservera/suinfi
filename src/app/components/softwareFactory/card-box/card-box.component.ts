@@ -15,4 +15,6 @@ export class CardBoxComponent {
   //Backface image
   @Input() imageBack: string = '';
   
+  //Route button
+  @Input() buttonLink: string = ''; 
 }
