@@ -11,101 +11,12 @@ import { Scroll } from '@angular/router';
   styleUrl: './navbar-comp.component.css'
 })
 export class NavbarCompComponent {
-  isScrolled: boolean = false;
-  isMenuOpen: boolean = false;
-  isHomeActive = false;
-  path? : string;
-
-  constructor(private elRef: ElementRef, private router: Router ) {
-
-   
-    
-    
-  }
-
-  @HostListener('window:scroll', ['$event'])
-  onScroll() {
-    this.isScrolled = window.scrollY > 0;
-  }
+  ngAfterViewInit(): void {
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
   
-  //menu responsive 
-  @ViewChild('mainMenu') mainMenuRef?: ElementRef;
-  //menu lg
-  @ViewChild('lgMenu') lgMenuRef?: ElementRef;
-
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  
-    if (this.mainMenuRef) { // Verificamos si mainMenuRef tiene un valor
-      this.mainMenuRef.nativeElement.classList.toggle('hidden');
-    
-    }
-  }
-  //close menu
-  closeMenu() {
-    this.isMenuOpen = false;
-  }
-  //end menu responsive
-
-  
-  //submenu-pages responsive
-  isPagesDropdownOpen: boolean = false;
-
-  @HostListener('click') openPagesDropdown() {
-    this.isPagesDropdownOpen = true;
-  }
-
-  @HostListener('document:click', ['$event'])
-closePagesDropdown(event: Event) {
-  if (!((event.target as HTMLElement).closest('.pages-dropdown') ||
-      (event.target as HTMLElement).classList.contains('pages-dropdown'))) {
-    this.isPagesDropdownOpen = false;
-  }
-}
-
-  //scroll move action responsive
-  ngAfterViewInit() {
-    this.path = this.router.url;
-    
-    this.mainMenuRef?.nativeElement.addEventListener('click', (event: MouseEvent) => {
-      const clickedElement = event.target as Element; // Conversión a Element
-  
-      if (clickedElement.tagName === 'A') {
-        event.preventDefault();
-        const targetSectionId = clickedElement?.getAttribute('href')?.substring(1);
-        if (targetSectionId) {
-        const targetSection = document.getElementById(targetSectionId);
-        
-        if (targetSection) {
-          window.scrollTo({
-            top: targetSection.offsetTop,
-            behavior: 'smooth',
-           
-          });
-        }
-      }
-      }
-    });
-    
-    //scroll move action lg
-    this.lgMenuRef?.nativeElement.addEventListener('click', (event: MouseEvent) => {
-      const clickedElement = event.target as Element;
-  
-      if (clickedElement.tagName === 'A') {
-        event.preventDefault();
-  
-        const targetSectionId = clickedElement?.getAttribute('href')?.substring(1);
-        if (targetSectionId) {
-          const targetSection = document.getElementById(targetSectionId);
-  
-          if (targetSection) {
-            window.scrollTo({
-              top: targetSection.offsetTop,
-              behavior: 'smooth',
-            });
-          }
-        }
-      }
+    btn?.addEventListener("click", () => {
+      menu?.classList.toggle("hidden");
     });
   }
 }
