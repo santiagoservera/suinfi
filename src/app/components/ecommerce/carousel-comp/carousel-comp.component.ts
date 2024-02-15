@@ -1,41 +1,42 @@
-import { Component, OnDestroy, Inject, PLATFORM_ID, AfterViewInit } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { SwiperContainer, register } from 'swiper/element/bundle';
+import { SwiperOptions } from 'swiper/types';
+register();
 
 @Component({
   selector: 'app-carousel-comp',
   standalone: true,
   imports: [
+    CommonModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './carousel-comp.component.html',
   styleUrl: './carousel-comp.component.css'
 })
 
-export class CarouselCompComponent implements AfterViewInit, OnDestroy{
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
-  currentIndex: number = 0;
-  totalImages: number = 3;
-  intervalId: any;
-  get galleryContainerStyle(): any {
-    return {
-      transform: `translateX(${-this.currentIndex * 100}%)`,
-      transition: "transform 0.5s ease-in-out"
+export class CarouselCompComponent implements OnInit {
+  swiperElement = signal<SwiperContainer | null>(null);
+
+  ngOnInit(): void {
+    const swiperElemConstructor = document.querySelector('swiper-container');
+    const swiperOptions: SwiperOptions = {
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      speed: 1300,
+      centeredSlides: true,
+      allowTouchMove: false,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      }
     };
-  }
-  ngAfterViewInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      this.intervalId = setInterval(() => {
-        this.Navigate(1);
-      }, 3000);
-    }
-  }
-  ngOnDestroy(): void {
-    // Limpia el intervalo al destruir el componente
-    if (isPlatformBrowser(this.platformId)) {
-      // Coloca aquí el código que usa document
-      clearInterval(this.intervalId);
-    }
-  }
-  Navigate(direction: number): void {
-    this.currentIndex = (this.currentIndex + direction + this.totalImages) % this.totalImages;
+    Object.assign(swiperElemConstructor!, swiperOptions);
+    this.swiperElement.set(swiperElemConstructor as SwiperContainer);
+    this.swiperElement()?.initialize();
   }
 }
