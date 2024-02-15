@@ -10,7 +10,7 @@ export class FormContactService {
   constructor(private http: HttpClient) { }
 
   sendData(data: any) {
-    return this.http.post('/mail.php', data);
+    return this.http.post('https://formulariocontacto-production.up.railway.app/api/v1/formularios', data);
   }
 
 }

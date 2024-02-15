@@ -14,15 +14,20 @@ export class FormContactComponent {
   
   contactForm= new FormGroup({
     name: new FormControl(''),
-    surname: new FormControl(''),
+    surName: new FormControl(''),
     email: new FormControl(''),
     subject: new FormControl (''),
     message: new FormControl('')
     });
   
     send(){
-     this.service.sendData(this.contactForm.value).subscribe((data) => {
-        console.log(data);
+     this.service.sendData(this.contactForm.value).subscribe((response) => {
+        try {
+          console.log(response);
+          this.contactForm.reset();
+        } catch (e) {
+          console.error(e);
+        }
      });
     }
   }
