@@ -3,14 +3,28 @@ import { NavbarComponent } from '../../../components/softwareFactory/navbar/navb
 import { FooterComponent } from '../../../components/softwareFactory/footer/footer.component';
 import { FooterContactComponent } from '../../../components/softwareFactory/footer-contact/footer-contact.component';
 import { ChatWspComponent } from '../../../components/softwareFactory/chat-wsp/chat-wsp.component';
+import { HttpClientModule } from '@angular/common/http';
+
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
+
+
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [NavbarComponent,FooterComponent, FooterContactComponent, ChatWspComponent],
+  imports: [NavbarComponent,FooterComponent, FooterContactComponent, ChatWspComponent, CommonModule, TranslateModule, HttpClientModule],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
+  constructor(private translate: TranslateService) {
+    this.setAppLang();
+  }
+
+  setAppLang():void {
+    this.translate.setDefaultLang('en');
+    this.translate.use(this.translate.getBrowserLang()!);
+  }
 
 }
