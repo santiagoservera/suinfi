@@ -1,33 +1,54 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule,FormControl,FormGroup} from '@angular/forms';
 import { FormContactService } from '../../../services/form-contact.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+
+
 @Component({
   selector: 'app-form-contact',
   standalone: true,
-  imports: [FormsModule,ReactiveFormsModule, HttpClientModule],
+  imports: [FormsModule,ReactiveFormsModule, HttpClientModule, CommonModule],
   templateUrl: './form-contact.component.html',
-  styleUrl: './form-contact.component.css'
+  styleUrls: ['./form-contact.component.css']
 })
-export class FormContactComponent {
-  constructor(private service: FormContactService,  private http: HttpClient) {}
-  
-  contactForm= new FormGroup({
+
+export class FormContactComponent implements OnInit {
+  showSuccessMessage = false;
+  showErrorMessage = false;
+
+  constructor(private service: FormContactService, private http: HttpClient) {}
+
+  contactForm = new FormGroup({
     name: new FormControl(''),
     surName: new FormControl(''),
     email: new FormControl(''),
-    subject: new FormControl (''),
+    subject: new FormControl(''),
     message: new FormControl('')
-    });
-  
-    send(){
-     this.service.sendData(this.contactForm.value).subscribe((response) => {
-        try {
-          console.log(response);
-          this.contactForm.reset();
-        } catch (e) {
-          console.error(e);
-        }
-     });
-    }
+  });
+
+  ngOnInit() {
+    this.showSuccessMessage = false;
+    this.showErrorMessage = false;
   }
+
+  send() {
+    this.service.sendData(this.contactForm.value).subscribe(
+      (response) => {
+        console.log(response);
+        this.contactForm.reset();
+        this.showSuccessMessage = true;
+        setTimeout(() => {
+          this.showSuccessMessage = false;
+        }, 4000);
+      },
+      (error) => {
+        console.error(error);
+        this.showErrorMessage = true;
+        setTimeout(() => {
+          this.showErrorMessage = false;
+        }, 4000);
+      }
+    );
+  }
+}
