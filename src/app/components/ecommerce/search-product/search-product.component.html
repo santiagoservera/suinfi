@@ -1,17 +1,19 @@
 <app-navbar-comp></app-navbar-comp>
-<div class="container-width-ecommerce lg:pt-5 lg:pb-10">
-  <h1 class="text-lg font-semibold">Busquedas relacionadas:</h1>
+<div  class="container-width-ecommerce lg:pt-5 lg:pb-10" >
+  
+  <h1 class="text-lg font-semibold" *ngIf="articlesList().length > 1" >Busquedas relacionadas:</h1>
 </div>
-<div class="container-width-ecommerce">
+<div class="container-width-ecommerce " >
   <div class="lg:w-full lg:flex lg:flex-row">
     <aside class="lg:w-[30%] lg:h-full">
-      <h1>Busqueda:</h1>
-      <div class="lg:pt-10">
+      <h1 *ngIf="articlesList().length > 1">Busqueda:</h1>
+      <div class="lg:pt-10" *ngIf="articlesList().length > 1">
         <h1>Filtrado</h1>
       </div>
     </aside>
     <!-- Card de productos a iterar -->
     <div class="w-full h-full">
+      <app-loader></app-loader>
       @for (article of articlesList(); track $index) {
       <div class="bg-gray-500 lg:h-[300px] lg:w-full rounded-lg border-b-2">
         <div class="lg:w-full lg:flex lg:flex-row lg:py-5 lg:h-full">
@@ -34,9 +36,30 @@
           </div>
         </div>
       </div>
-    }
+    } 
+    
+      
     </div>
   
   </div>
-  
+  <div *ngIf="articlesList().length === 0" class="container-width-ecommerce lg:w-full text-center bg-white shadow-lg rounded-lg lg:flex lg:justify-between">
+    <div class="lg:w-[100%] flex flex-row py-10 px-5">
+      <div class="w-[30%]">
+        <img src="../../../../assets/images/noResultsEcommerce.jpg" alt="No Results img" class="w-[300px] h-[300px]">
+      </div>
+      <div class="">
+        
+        <h1 class="lg:font-bold lg:text-2xl">No hay publicaciones que coincidan con tu busqueda</h1>
+        <p class="text-lg font-semibold"> * Revisá la ortografía de la palabra </p>
+        <p class="text-lg font-semibold"> * Utilizá palabras más genéricas o menos palabras.</p>
+
+      </div>
+
+      
+        
+     
+      <p></p>
+    </div>
+    
+  </div>
 </div>

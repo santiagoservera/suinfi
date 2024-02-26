@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { FormsModule, ReactiveFormsModule,FormControl,FormGroup} from '@angular/forms';
 import { RouterLink, RouterOutlet, Router } from '@angular/router';
 import { Scroll } from '@angular/router';
 
@@ -7,7 +8,7 @@ import { Scroll } from '@angular/router';
 @Component({
   selector: 'app-navbar-comp',
   standalone: true,
-  imports: [RouterLink,CommonModule,RouterOutlet],
+  imports: [RouterLink,CommonModule,RouterOutlet,FormsModule,ReactiveFormsModule],
   templateUrl: './navbar-comp.component.html',
   styleUrl: './navbar-comp.component.css'
 })
@@ -15,8 +16,15 @@ export class NavbarCompComponent {
   
   constructor(private router: Router) {}
 
-  search(query: string) {
-    this.router.navigate(['/ecommerce/search'], { queryParams: { query } });
+  contactForm = new FormGroup({
+    searchProduct: new FormControl('')
+    
+  });
+
+
+  search() {
+    
+    this.router.navigate(['/ecommerce/search'], { queryParams: { query: this.contactForm.value.searchProduct } });
   }
 
   ngAfterViewInit(): void {
