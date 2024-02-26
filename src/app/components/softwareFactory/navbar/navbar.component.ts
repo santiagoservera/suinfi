@@ -1,11 +1,15 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule,  } from '@angular/common';
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { RouterLink, RouterOutlet, Router } from '@angular/router';
 import { Scroll } from '@angular/router';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink,CommonModule,RouterOutlet],
+  imports: [RouterLink,CommonModule,RouterOutlet, TranslateModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
@@ -18,9 +22,13 @@ export class NavbarComponent {
   
 
 
-  constructor(private elRef: ElementRef, private router: Router ) {
+  constructor(private elRef: ElementRef, private router: Router, public translate: TranslateService) {
 
-   
+    translate.addLangs(['en', 'es']);
+    translate.setDefaultLang('en');
+
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
     
     
   }

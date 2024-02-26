@@ -1,3 +1,26 @@
 {
-    "discover": "Discover More"
+    "navbar": {
+        "home": "HOME",
+        "services": "SERVICES",
+        "projects": "PROJECTS",
+        "pages": "PAGES",
+        "infos": "INFOS",
+        "about": "ABOUT",
+        "faqs": "FAQs",
+        "contact": "CONTACT"
+    },
+    "home": {
+        "title": "SOFTWARE FACTORY",
+        "dive": "Dive ",
+        "into": "Into the Software",
+        "world": "World",
+        "suinfi": "With Suinfi",
+        "description": "SUINFI is the best software factory for your company. We have a new way to build technology that transforms businesses while caring for the environment and society.",
+        "home": "Home",
+        "about": "About",
+        "faqs": "FAQs",
+        "or": "or",
+        "discover": "Discover More",
+        "check": "Check Our FAQs"
+    }
 }

@@ -1,3 +1,25 @@
 {
-    "discover": "Descubre Mas"
+    "navbar": {
+        "home": "INICIO",
+        "services": "SERVICIOS",
+        "projects": "PROYECTOS",
+        "pages": "PÁGINAS",
+        "infos": "INFO",
+        "about": "ACERCA DE",
+        "faqs": "FAQs",
+        "contact": "CONTACTO"
+    },
+    "home": {
+        "title": "FÁBRICA DE SOFTWARE",
+        "dive": "Sumergete ",
+        "into": "en el Mundo del Software",
+        "suinfi": "Con SUINFI",
+        "description": "SUINFI es la mejor fábrica de software para tu empresa. Tenemos una nueva forma de construir tecnología que transforma negocios mientras cuida el medio ambiente y la sociedad.",
+        "home": "Inicio",
+        "about": "Acerca de",
+        "faqs": "Preguntas Frecuentes",
+        "or": "o",
+        "discover": "Descubre más",
+        "check": "Consulta nuestras FAQs."
+    }
 }

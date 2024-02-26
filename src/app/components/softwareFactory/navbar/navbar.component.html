@@ -59,7 +59,7 @@
       [class.active]="isHomeActive"
         (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 block w-full text-center"
-        >HOME</a
+        >{{ "navbar.home" | translate }}</a
       >
       <a 
       *ngIf="path === '/about' || path === '/faqs' "
@@ -67,7 +67,7 @@
       [class.active]="isHomeActive"
         (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 block w-full text-center"
-        >HOME</a
+        >{{ "navbar.home" | translate }}</a
       >
     </li>
     <li
@@ -78,7 +78,7 @@
       
         (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >SERVICES</a
+        >{{ "navbar.services" | translate }}</a
       >
       <a
       *ngIf="path === '/about' || path === '/faqs' "
@@ -86,7 +86,7 @@
       
         (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >SERVICES</a
+        >{{ "navbar.services" | translate }}</a
       >
     </li>
     <li
@@ -96,14 +96,14 @@
         href="#projects"
         (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >PROJECTS</a
+        >{{ "navbar.projects" | translate }}</a
       >
       <a
       *ngIf="path === '/about' || path === '/faqs' "
       routerLink="/home"
         (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >PROJECTS</a
+        >{{ "navbar.projects" | translate }}</a
       >
       
       
@@ -127,14 +127,14 @@
       href="#info"
        (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >INFOS</a
+        >{{ "navbar.infos" | translate }}</a
       >
       <a
       *ngIf="path === '/about' || path === '/faqs' "
       routerLink="/home"
        (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >INFOS</a
+        >{{ "navbar.infos" | translate }}</a
       >
     </li>
     <li
@@ -144,14 +144,14 @@
       href="#contact" 
         (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >CONTACT</a
+        >{{ "navbar.contact" | translate }}</a
       >
       <a
       *ngIf="path === '/about' || path === '/faqs' "
       routerLink="/home" 
         (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >CONTACT</a
+        >{{ "navbar.contact" | translate }}</a
       >
     </li>
   </ul>
@@ -166,14 +166,14 @@
         href="#home"
         (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 block w-full text-center"
-        >HOME</a
+        >{{ "navbar.home" | translate }}</a
       >
       <a 
         *ngIf="path === '/about' || path === '/faqs' "
         routerLink="/home"
         (click)="closeMenu()"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80 block w-full text-center"
-        >HOME</a
+        >{{ "navbar.home" | translate }}</a
       >
     </li>
     <li
@@ -183,14 +183,14 @@
       href="#services"
       
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >SERVICES</a
+        >{{ "navbar.services" | translate }}</a
       >
       <a
       *ngIf="path === '/about' || path === '/faqs'"
        routerLink="/home"
       
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >SERVICES</a
+        >{{ "navbar.services" | translate }}</a
       >
     </li>
     <li
@@ -199,26 +199,26 @@
       *ngIf="path === '/home'"
       href="#projects"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >PROJECTS</a
+        >{{ "navbar.projects" | translate }}</a
       >
       <a
       *ngIf="path === '/about' || path === '/faqs'"
       routerLink="/home"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >PROJECTS</a
+        >{{ "navbar.projects" | translate }}</a
       >
     </li>
     <li 
     class="relative group flex">
       <a
         class="hover:text-white transition-opacity hover:opacity-80 cursor-pointer flex h-[85px] items-center justify-center"
-        >PAGES<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></svg> 
+        >{{ "navbar.pages" | translate }}<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5"/></svg> 
 
         </a >
       
         <ul class="sub-menu absolute hidden h-[80px]  text-black top-[85px]  z-[100] bg-[#eeeeee] w-[120px] rounded-b-xl ">
-          <li><a routerLink="/about" class="block p-2 text-center hover:bg-gray-200  ">About Us</a></li>
-          <li><a routerLink="/faqs" class="block  p-2 text-center hover:bg-gray-200  rounded-b-xl ">FAQs</a></li>
+          <li><a routerLink="/about" class="block p-2 text-center hover:bg-gray-200  ">{{ "navbar.about" | translate }}</a></li>
+          <li><a routerLink="/faqs" class="block  p-2 text-center hover:bg-gray-200  rounded-b-xl ">{{ "navbar.faqs" | translate }}</a></li>
         </ul>
       
     </li>
@@ -228,13 +228,13 @@
       *ngIf="path === '/home'"
       href="#info"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >INFOS</a
+        >{{ "navbar.infos" | translate }}</a
       >
       <a
       *ngIf="path === '/about' || path === '/faqs'"
       routerLink="/home"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >INFOS</a
+        >{{ "navbar.infos" | translate }}</a
       >
     </li>
     <li
@@ -243,14 +243,19 @@
       *ngIf="path === '/home'"
        href="#contact"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >CONTACT</a
+        >{{ "navbar.contact" | translate }}</a
       >
       <a
       *ngIf="path === '/about' || path === '/faqs'"
        routerLink="/home"
         class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80"
-        >CONTACT</a
+        >{{ "navbar.contact" | translate }}</a
       >
+    </li>
+    <li class="flex items-center justify-center">
+        <select #langSelect (change)="translate.use(langSelect.value)">
+          <option class="text-black" *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+        </select>
     </li>
   </ul>
 
