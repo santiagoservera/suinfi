@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule,FormControl,FormGroup} from '@angular/forms';
 import { FormContactService } from '../../../services/form-contact.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-form-contact',
   standalone: true,
-  imports: [FormsModule,ReactiveFormsModule, HttpClientModule],
+  imports: [FormsModule,ReactiveFormsModule, HttpClientModule, TranslateModule],
   templateUrl: './form-contact.component.html',
   styleUrl: './form-contact.component.css'
 })

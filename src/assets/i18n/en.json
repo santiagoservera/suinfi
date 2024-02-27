@@ -24,28 +24,81 @@
         "check": "Check Our FAQs"
     },
    "service":{
-     "title": "We Provide",
-     "title1": "Different Services ",
-     "title2": "Features",
-     "title3": "For Your Company",
-     "subtitle": "SUINFI is a company dedicated to the development of web pages, applications, digital marketing, technical support, sale of digital products, but mainly to the sale of software services in general.",
-     "cardmobile":"Mobile App and Websites",
-     "cardcustom":"Custom SYSTEMS, Financial, Management and Administration, Health.",
-     "carddata":"Data Base & Technology Consulting",
-     "cardmarketing":"Marketing & Design Community Manager"
-
+        "title": "We Provide",
+        "title1": "Different Services ",
+        "title2": "Features",
+        "title3": "For Your Company",
+        "subtitle": "SUINFI is a company dedicated to the development of web pages, applications, digital marketing, technical support, sale of digital products, but mainly to the sale of software services in general.",
+        "cardmobile":"Mobile App and Websites",
+        "cardcustom":"Custom SYSTEMS, Financial, Management and Administration, Health.",
+        "carddata":"Data Base & Technology Consulting",
+        "cardmarketing":"Marketing & Design Community Manager"
    },
    "projects": {
-    "discover":"Discover Our",
-    "wo": "Work",
-    "pro": "Projects",
-    "team": "We have a professional team fully committed to compliance and capable of providing multiple solutions quickly, creatively and effectively.",
-    "lasttitle": "Our effort is reflected in our projects, which add value to our clients.",
-    "carrumobi":"Mobile App",
-    "carrubrand":"Branding Marketing",
-    "carrufinance":"Financial System",
-    "carrtechno":"Technology Consulting",
-    "carruweb":"Web Pages<"
-   }
-
+        "discover":"Discover Our",
+        "wo": "Work",
+        "pro": "Projects",
+        "team": "We have a professional team fully committed to compliance and capable of providing multiple solutions quickly, creatively and effectively.",
+        "lasttitle": "Our effort is reflected in our projects, which add value to our clients.",
+        "carrumobi":"Mobile App",
+        "carrubrand":"Branding Marketing",
+        "carrufinance":"Financial System",
+        "carrtechno":"Technology Consulting",
+        "carruweb":"Web Pages<"
+   },
+   "info": {
+        "title1": "Explore",
+        "title2": "Digital",
+        "title3": "Infinity",
+        "success": "To succeed in today's competitive market you need to stay abreast of new technologies. This allows you to achieve:",
+        "efficiency": "Improved efficiency:",
+        "quality": "Product quality:",
+        "competitive": "Competitiveness:",
+        "satisfaction": "Customer satisfaction:",
+        "talent": "Attracting talent:",
+        "text1": "Tools are often designed to get work done faster, simplify processes, or automate repetitive tasks, improving efficiency in software production.",
+        "text2": "It can raise the quality of the developed software, improving the usability, security and stability of the final product.",
+        "text3": "Being up to date with the latest technological trends can give you a competitive advantage.",
+        "text4": "New technologies can enable the delivery of products that are more aligned with customer expectations.",
+        "text5": "Being at the technological forefront can attract talented and motivated professionals."
+    },
+    "customers": {
+         "our": "Our",
+         "clients": "Clients"
+    },
+    "form": {
+         "contact": "Contact Us",
+         "get": "& Get In",
+         "us": "Touch",
+         "name": "Your Name...",
+         "surname": "Your Surname...",
+         "email": "Your E-mail...",
+         "subject": "Subject...",
+         "message": "Your Message",
+         "send": "Send Message Now"
+    },
+    "about": {
+         "title": "SOFTWARE FACTORY",
+         "discover": "Discover More",
+         "about": "About Us", 
+         "main": "Our main objective is to develop new technologies that can modernize",
+         "objective": "the regional, national and international market in different areas.",
+         "check": "Check Our FAQs",
+         "or": "or",
+         "title1": "Mission & Vision",
+         "mission": "Mission",
+         "vision": "Vision",
+         "text1": "Our mission is to offer innovative and quality technological solutions that enhance the success of our clients in the digital world, providing personalized services and constant commitment.",
+         "text2": "Our vision is to inspire a world in which every organization, regardless of its size or industry, has the digital tools and strategies necessary to succeed in an environment in constant evolution. We seek to be the preferred partner of our clients, providing technological solutions that allow them to achieve their goals and stand out in the digital world."
+    },
+    "footer-contact": {
+         "ready": "Are You Ready To Work & Develop With Us?",
+         "contact": "Don't Hesitate & Contact Us!",
+        "contactus": "Contact Us Now!"
+    },
+    "footer": {
+         "copyright": "Copyright © 2024 ",
+         "suinfi": "SUINFI",
+         "rights": "All rights reserved."
+    }
 }

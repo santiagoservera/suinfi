@@ -41,5 +41,6 @@ export class HomeComponent implements OnInit {
     console.log(script)
     }
 
+    constructor(public translate: TranslateService) {}
 
 }

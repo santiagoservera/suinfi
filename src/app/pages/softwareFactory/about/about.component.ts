@@ -4,13 +4,14 @@ import { FooterComponent } from '../../../components/softwareFactory/footer/foot
 import { FooterContactComponent } from '../../../components/softwareFactory/footer-contact/footer-contact.component';
 import { ChatWspComponent } from '../../../components/softwareFactory/chat-wsp/chat-wsp.component';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [NavbarComponent,FooterComponent, FooterContactComponent, ChatWspComponent, CommonModule],
+  imports: [NavbarComponent,FooterComponent, FooterContactComponent, ChatWspComponent, CommonModule, TranslateModule],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })

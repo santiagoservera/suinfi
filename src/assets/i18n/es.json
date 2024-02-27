@@ -10,9 +10,10 @@
         "contact": "CONTACTO"
     },
     "home": {
-        "title": "FÁBRICA DE SOFTWARE",
+        "title": "FABRICA DE SOFTWARE",
         "dive": "Sumergete ",
-        "into": "en el Mundo del Software",
+        "into": "al Mundo del Software",
+        "world": "World",
         "suinfi": "Con SUINFI",
         "description": "SUINFI es la mejor fábrica de software para tu empresa. Tenemos una nueva forma de construir tecnología que transforma negocios mientras cuida el medio ambiente y la sociedad.",
         "home": "Inicio",
@@ -44,9 +45,60 @@
         "carrufinance": "Sistema Financiero",
         "carrtechno": "Consultoría Tecnológica",
         "carruweb": "Páginas Web"
+   },
+   "info": {
+        "title1": "Explora la",
+        "title2": "Infinidad",
+        "title3": "Digital",
+        "success": "Para tener éxito en el mercado competitivo actual, necesitas mantenerte al tanto de las nuevas tecnologías. Esto te permite lograr:",
+        "efficiency": "Mejora de la Eficiencia:",
+        "quality": "Calidad del Producto:",
+        "competitive": "Competitividad:",
+        "satisfaction": "Satisfacción del Cliente:",
+        "talent": "Atracción de Talento:",
+        "text1": "Las herramientas suelen diseñarse para realizar el trabajo de manera más rápida, simplificar procesos o automatizar tareas repetitivas, mejorando la eficiencia en la producción de software.",
+        "text2": "Puede elevar la calidad del software desarrollado, mejorando la usabilidad, seguridad y estabilidad del producto final.",
+        "text3": "Estar al día con las últimas tendencias tecnológicas puede brindarte una ventaja competitiva.",
+        "text4": "Las nuevas tecnologías pueden permitir la entrega de productos que están más alineados con las expectativas del cliente.",
+        "text5": "Estar en la vanguardia tecnológica puede atraer a profesionales talentosos y motivados."
+   },
+   "customers": {
+        "our": "Nuestros",
+        "clients": "Clientes"
+   },
+   "form": {
+        "contact": "Ponte en Contacto",
+        "get": "con",
+        "us": "Nosotros",
+        "name": "Tu Nombre...",
+        "surname": "Tu Apellido...",
+        "email": "Tu E-mail...",
+        "subject": "Asunto...",
+        "message": "Tu Mensaje",
+        "send": "Enviar Mensaje Ahora"
+   },
+   "about": {
+        "title": "FABRICA DE SOFTWARE",
+        "discover": "Descubre más",
+        "about": "Sobre Nosotros",
+        "main": "Nuestro principal objetivo es desarrollar nuevas tecnologías que puedan modernizar",
+        "objective": "el mercado regional, nacional e internacional en diferentes áreas.",
+        "check": "Consulta nuestras FAQs.",
+        "or": "o",
+        "title1": "Misión y Visión",
+        "mission": "Misión",
+        "vision": "Visión",
+        "text1": "Nuestra misión es ofrecer soluciones tecnológicas innovadoras y de calidad que potencien el éxito de nuestros clientes en el mundo digital, proporcionando servicios personalizados y un compromiso constante.",
+        "text2": "Nuestra visión es inspirar un mundo en el cual cada organización, independientemente de su tamaño o industria, tenga las herramientas digitales y estrategias necesarias para tener éxito en un entorno en constante evolución. Buscamos ser el socio preferido de nuestros clientes, proporcionando soluciones tecnológicas que les permitan alcanzar sus objetivos y destacarse en el mundo digital."
+   },
+   "footer-contact": {
+        "ready": "¿Estás listo para trabajar y desarrollarte con nosotros?",
+        "contact": "¡No dudes en contactarnos!",
+        "contactus": "¡Contáctanos Ahora!"
+   },
+   "footer": {
+        "copyright": "Copyright © 2024",
+        "suinfi": "SUINFI",
+        "rights": ". Todos los derechos reservados."
    }
 }
-
-
-    
-    
