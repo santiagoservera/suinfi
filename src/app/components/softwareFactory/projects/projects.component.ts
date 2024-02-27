@@ -1,11 +1,12 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 declare var $: any;
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })

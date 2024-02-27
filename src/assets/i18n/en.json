@@ -22,5 +22,30 @@
         "or": "or",
         "discover": "Discover More",
         "check": "Check Our FAQs"
-    }
+    },
+   "service":{
+     "title": "We Provide",
+     "title1": "Different Services ",
+     "title2": "Features",
+     "title3": "For Your Company",
+     "subtitle": "SUINFI is a company dedicated to the development of web pages, applications, digital marketing, technical support, sale of digital products, but mainly to the sale of software services in general.",
+     "cardmobile":"Mobile App and Websites",
+     "cardcustom":"Custom SYSTEMS, Financial, Management and Administration, Health.",
+     "carddata":"Data Base & Technology Consulting",
+     "cardmarketing":"Marketing & Design Community Manager"
+
+   },
+   "projects": {
+    "discover":"Discover Our",
+    "wo": "Work",
+    "pro": "Projects",
+    "team": "We have a professional team fully committed to compliance and capable of providing multiple solutions quickly, creatively and effectively.",
+    "lasttitle": "Our effort is reflected in our projects, which add value to our clients.",
+    "carrumobi":"Mobile App",
+    "carrubrand":"Branding Marketing",
+    "carrufinance":"Financial System",
+    "carrtechno":"Technology Consulting",
+    "carruweb":"Web Pages<"
+   }
+
 }
