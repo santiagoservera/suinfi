@@ -4,6 +4,7 @@ import { WelcomeComponent } from './pages/softwareFactory/welcome/welcome.compon
 import { HomeComponent } from './pages/softwareFactory/home/home.component';
 import { AboutComponent } from './pages/softwareFactory/about/about.component';
 import { FaqsComponent } from './pages/softwareFactory/faqs/faqs.component';
+import { LoginComponent } from './pages/ecommerce/login/login.component';
 //Import routes Ecommerce
 import { HomeECComponent } from "./pages/ecommerce/home/home.component";
 import { SearchProductComponent } from './components/ecommerce/search-product/search-product.component';
@@ -45,6 +46,10 @@ export const routes: Routes = [
 {
     path: 'ecommerce/search',
     component: SearchProductComponent
+},
+{
+    path: 'login',
+    component: LoginComponent
 }, 
 
 ];
