@@ -8,6 +8,7 @@ import { LoginComponent } from './pages/ecommerce/login/login.component';
 //Import routes Ecommerce
 import { HomeECComponent } from "./pages/ecommerce/home/home.component";
 import { SearchProductComponent } from './components/ecommerce/search-product/search-product.component';
+import { RegisterComponent } from './pages/ecommerce/register/register.component';
 
 //Routes
 export const routes: Routes = [
@@ -51,5 +52,9 @@ export const routes: Routes = [
     path: 'login',
     component: LoginComponent
 }, 
+{
+    path: 'register',
+    component: RegisterComponent
+}
 
 ];
