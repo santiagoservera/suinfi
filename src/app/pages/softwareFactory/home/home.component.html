@@ -19,48 +19,46 @@
       class="flex flex-col items-center lg:items-start w-[90%] md:w-[75%] lg:w-[65%] bg-white opacity-90 2xl:bg-transparent 2xl:opacity-100 py-4 md:p-10 2xl:p-0 rounded-xl"
     >
       <div class="flex flex-col items-center lg:items-start gap-8">
-        <h1 class="text-xl font-bold text-violet-700">SOFTWARE FACTORY</h1>
+        <h1 class="text-xl font-bold text-violet-700">{{ "home.title" | translate }}</h1>
         <div class="bg-[#DECDFA] h-0.5 w-[24%]"></div>
         <div
           class="flex flex-col items-center lg:items-start text-center lg:text-left gap-0 lg:gap-5"
         >
-          <h2 class="font-bold text-3xl opacity-80 lg:text-5xl">
-            Dive <span class="text-[#5b03e4]">Into the Software</span> World
-          </h2>
+        <h2 class="font-bold text-3xl opacity-80 lg:text-5xl">
+          {{ "home.dive" | translate }}
+          <span class="text-[#5b03e4]">{{ "home.into" | translate }} </span>
+          {{ translate.currentLang === 'en' ? ("home.world" | translate) : '' }}
+        </h2>
           <h2 class="font-bold text-3xl opacity-80 lg:text-5xl text-[#c03afe]">
-            With SUINFI
+            {{ "home.suinfi" | translate }}
           </h2>
         </div>
         <div
           class="text-pretty text-[#AFAFAF] text-sm lg:text-[15px] text-center xl:text-left px-3 lg:px-0"
         >
           <p class="leading-8 max-w-[600px]">
-            SUINFI is the best software factory for your company. We have a new
-            way to build technology that transforms businesses while caring for
-            the environment and society.
-          </p>
-          <p>
-            <a  class="text-blue-600" target="_blank"  routerLink="/home">Home, </a>
-            <a class="text-blue-600" target="_blank"  routerLink="/about">About </a> 
-            <a  target="_blank"  routerLink="/faqs"> or <span class='text-blue-600'> Faqs</span></a> 
+            {{ 'home.description' | translate }}
+            <a  class="text-blue-600" target="_blank"  routerLink="/home"> {{ "home.home" | translate }}, </a>
+            <a class="text-blue-600" target="_blank"  routerLink="/about"> {{ "home.about" | translate }} </a> 
+            <a  target="_blank"  routerLink="/faqs"> {{ "home.or" | translate }} <span class='text-blue-600'> {{ "home.faqs" | translate }} </span></a> 
           </p>
           
         </div>
         <div class="flex flex-col sm:flex-row">
           <button
             routerLink="/about"
-            class="text-base text-white bg-[#5b03e4] py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden"
+            class="text-base text-white bg-[#5b03e4] py-3 px-8 inline-block rounded-full font-normal  tracking-wide transition-all duration-300 relative overflow-hidden"
           >
-            Discover More
+          {{ "home.discover" | translate }}
           </button>
 
-          <p class="text-gray-500 p-4 text-center">or</p>
+          <p class="text-gray-500 p-4 text-center"> {{ "home.or" | translate }} </p>
 
           <button
             routerLink="/faqs"
-            class="text-base text-white bg-purple-600 py-3 px-8 inline-block rounded-full font-normal capitalize tracking-wide transition-all duration-300 relative overflow-hidden"
+            class="text-base text-white bg-purple-600 py-3 px-8 inline-block rounded-full font-normal tracking-wide transition-all duration-300 relative overflow-hidden"
           >
-            Check our FAQs
+          {{ "home.check" | translate }}
           </button>
         </div>
       </div>

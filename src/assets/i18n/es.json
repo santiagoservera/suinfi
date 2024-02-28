@@ -1,0 +1,128 @@
+{
+    "navbar": {
+        "home": "INICIO",
+        "services": "SERVICIOS",
+        "projects": "PROYECTOS",
+        "pages": "PÁGINAS",
+        "infos": "INFO",
+        "about": "ACERCA DE",
+        "faqs": "FAQs",
+        "contact": "CONTACTO",
+        "lang": "IDIOMA"
+    },
+    "home": {
+        "title": "FABRICA DE SOFTWARE",
+        "dive": "Sumergete ",
+        "into": "al Mundo del Software",
+        "world": "World",
+        "suinfi": "Con SUINFI",
+        "description": "SUINFI es la mejor fábrica de software para tu empresa. Tenemos una nueva forma de construir tecnología que transforma negocios mientras cuida el medio ambiente y la sociedad.",
+        "home": "Inicio",
+        "about": "Acerca de",
+        "faqs": "Preguntas Frecuentes",
+        "or": "o",
+        "discover": "Descubre más",
+        "check": "Consulta nuestras FAQs."
+    },
+    "service":{
+        "title": "Nosotros Proporcionamos",
+        "title1": "Diferentes Servicios",
+        "title2": "Características",
+        "title3": "Para su empresa",
+        "subtitle": "SUINFI es una empresa dedicada al desarrollo de páginas web, aplicaciones, marketing digital, soporte técnico, venta de productos digitales, pero principalmente a la venta de servicios de software en general.",
+        "cardmobile":"Aplicaciones móviles y sitios web",
+        "cardcustom":"SISTEMAS Personalizados, Financieros, Gestión y Administración, Salud.",
+        "carddata":"Base de datos y consultoría tecnológica",
+        "cardmarketing":"Community Manager de Marketing y Diseño"    
+    },
+    "projects":{
+        "discover": "Descubre nuestros",
+        "wo": "Trabajos",
+        "pro": "Proyectos",
+        "team": "Contamos con un equipo profesional totalmente comprometido con el cumplimiento y capaz de brindar múltiples soluciones de manera rápida, creativa y efectiva.",
+        "lasttitle": "Nuestro esfuerzo se refleja en nuestros proyectos, que aportan valor a nuestros clientes.",
+        "carrumobi": "Aplicación movil",
+        "carrubrand": "Marketing de Marca",
+        "carrufinance": "Sistema Financiero",
+        "carrtechno": "Consultoría Tecnológica",
+        "carruweb": "Páginas Web"
+   },
+   "info": {
+        "title1": "Explora la",
+        "title2": "Infinidad",
+        "title3": "Digital",
+        "success": "Para tener éxito en el mercado competitivo actual, necesitas mantenerte al tanto de las nuevas tecnologías. Esto te permite lograr:",
+        "efficiency": "Mejora de la Eficiencia:",
+        "quality": "Calidad del Producto:",
+        "competitive": "Competitividad:",
+        "satisfaction": "Satisfacción del Cliente:",
+        "talent": "Atracción de Talento:",
+        "text1": "Las herramientas suelen diseñarse para realizar el trabajo de manera más rápida, simplificar procesos o automatizar tareas repetitivas, mejorando la eficiencia en la producción de software.",
+        "text2": "Puede elevar la calidad del software desarrollado, mejorando la usabilidad, seguridad y estabilidad del producto final.",
+        "text3": "Estar al día con las últimas tendencias tecnológicas puede brindarte una ventaja competitiva.",
+        "text4": "Las nuevas tecnologías pueden permitir la entrega de productos que están más alineados con las expectativas del cliente.",
+        "text5": "Estar en la vanguardia tecnológica puede atraer a profesionales talentosos y motivados."
+   },
+   "customers": {
+        "our": "Nuestros",
+        "clients": "Clientes"
+   },
+   "form": {
+        "contact": "Ponte en Contacto",
+        "get": "con",
+        "us": "Nosotros",
+        "name": "Tu Nombre...",
+        "surname": "Tu Apellido...",
+        "email": "Tu E-mail...",
+        "subject": "Asunto...",
+        "message": "Tu Mensaje",
+        "send": "Enviar Mensaje Ahora"
+   },
+   "about": {
+        "title": "FABRICA DE SOFTWARE",
+        "discover": "Descubre más",
+        "about": "Sobre Nosotros",
+        "main": "Nuestro principal objetivo es desarrollar nuevas tecnologías que puedan modernizar",
+        "objective": "el mercado regional, nacional e internacional en diferentes áreas.",
+        "check": "Consulta nuestras FAQs.",
+        "or": "o",
+        "title1": "Misión y Visión",
+        "mission": "Misión",
+        "vision": "Visión",
+        "text1": "Nuestra misión es ofrecer soluciones tecnológicas innovadoras y de calidad que potencien el éxito de nuestros clientes en el mundo digital, proporcionando servicios personalizados y un compromiso constante.",
+        "text2": "Nuestra visión es inspirar un mundo en el cual cada organización, independientemente de su tamaño o industria, tenga las herramientas digitales y estrategias necesarias para tener éxito en un entorno en constante evolución. Buscamos ser el socio preferido de nuestros clientes, proporcionando soluciones tecnológicas que les permitan alcanzar sus objetivos y destacarse en el mundo digital."
+   },
+   "footer-contact": {
+        "ready": "¿Estás listo para trabajar y desarrollarte con nosotros?",
+        "contact": "¡No dudes en contactarnos!",
+        "contactus": "¡Contáctanos Ahora!"
+   },
+   "footer": {
+        "copyright": "Copyright © 2024",
+        "suinfi": "SUINFI",
+        "rights": ". Todos los derechos reservados."
+   },
+   "faqs":{
+     "factory": "FÁBRICA DE SOFTWARE",
+     "asked": "Preguntas más ",
+     "here": " frecuentes aquí",
+     "steps": "Nuestros 4 pasos hacia el éxito y clientes satisfechos",
+     "intro": "Introducción al proyecto",
+     "devel" : "Desarrollo laboral",
+     "dat" : "Análisis de los datos",
+     "finish": "Terminación del proyecto",
+
+     "commit": "Comprometidos con servir a nuestros clientes, en SUINFI queremos que estés informado sobre nuestra forma de trabajar",
+     "offer": "¿Ofrecemos atención personalizada?",
+     "yes": "¡Sí! Ofrecemos atención personalizada y seguimiento de cada proyecto.",
+     "intel": "¿Trabajamos con inteligencia artificial?",
+     "do": "En SUINFI fusionamos la innovación con la tecnología de punta. Nuestro compromiso con la excelencia se refleja en nuestra constante integración de la Inteligencia Artificial en cada etapa de nuestro trabajo. Desde la elaboración de soluciones personalizadas hasta el desarrollo de productos de última generación, la Inteligencia Artificial impulsa nuestra visión hacia un futuro digital apasionante.",
+     "does": "¿Se aplica a cualquier industria?",
+     "techno": "¡Sí! La tecnología es necesaria en cualquier industria.",
+     "chain": "¿Trabajamos con blockchain?",
+     "innova": "En SUINFI apostamos por la innovación y la eficiencia en todos los sectores. Desde la optimización de la cadena de suministro hasta las soluciones financieras descentralizadas, nuestro enfoque en blockchain impulsa el progreso y la seguridad en el mundo empresarial.",
+     "contact": "Contacta con nosotros",
+     "get": "",
+     "touch": ""
+ }
+}

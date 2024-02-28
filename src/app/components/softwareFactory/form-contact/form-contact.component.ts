@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule,FormControl,FormGroup} from '@angular/forms';
 import { FormContactService } from '../../../services/form-contact.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-form-contact',
   standalone: true,
-  imports: [FormsModule,ReactiveFormsModule, HttpClientModule, CommonModule],
+  imports: [FormsModule,ReactiveFormsModule, HttpClientModule, TranslateModule, CommonModule],
   templateUrl: './form-contact.component.html',
   styleUrls: ['./form-contact.component.css']
 })

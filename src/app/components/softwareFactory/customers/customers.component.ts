@@ -2,12 +2,13 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit, signal } from '@angular/core
 import { CommonModule } from '@angular/common';
 import { SwiperContainer, register } from 'swiper/element/bundle';
 import { SwiperOptions } from 'swiper/types';
+import { TranslateModule } from '@ngx-translate/core';
 register();
 
 @Component({
   selector: 'app-customers',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './customers.component.html',
   styleUrl: './customers.component.css',
