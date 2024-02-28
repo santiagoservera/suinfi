@@ -100,5 +100,28 @@
          "copyright": "Copyright © 2024 ",
          "suinfi": "SUINFI",
          "rights": "All rights reserved."
-    }
+    },
+    "faqs":{
+        "factory": "SOFTWARE FACTORY",
+        "asked": " Most Frequently ",
+        "here": "Asked Questions Here",
+        "steps": "Our 4 Steps To Success & Happy Clients",
+        "intro": "Project Introduction",
+        "devel" : "Work Development",
+        "dat" : "Data Analysis",
+        "finish": "Project Finishing",
+
+        "commit": "Committed to serving our clients, at SUINFI, we want you to be informed about our way of working",
+        "offer": "Do we offer personal attention?",
+        "yes": "Yes! We offer personal attention and follow-up on each project.",
+        "intel": "Do we work with artificial intelligence?",
+        "do": "At SUINFI, we merge innovation with cutting-edge technology. Our commitment to excellence is reflected in our constant integration of Artificial Intelligence at every stage of our work. From crafting personalized solutions to developing state-of-the-art products, Artificial Intelligence propels our vision towards an exciting digital future.",
+        "does": "Does it apply to any industry?",
+        "techno": "Yes! Technology is necessary in any industry.",
+        "chain": "Do we work with blockchain?",
+        "innova": "At SUINFI, we are committed to innovation and efficiency across all sectors. From supply chain optimization to decentralized financial solutions, our focus on blockchain drives progress and security in the business world.",
+        "contact": "Contact Us",
+        "get": "& Get In",
+        "touch": "Touch"
+     }
 }

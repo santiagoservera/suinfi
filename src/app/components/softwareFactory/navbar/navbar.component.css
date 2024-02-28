@@ -26,3 +26,26 @@ li.group:hover .sub-nav {
 .sub-nav:hover > ul {
   display: inline-block;
 }
+
+.select-translate {
+  width: 80px;
+  appearance: none; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  &:hover {
+    border-color: #ddd;
+  }
+  &:focus {
+    outline: 2px solid #cc02ff;
+  }
+}
+
+.select-translate option {
+  /* Common styles for the options */
+  padding: 5px 10px;
+  position:relative
+}

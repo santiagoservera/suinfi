@@ -6,12 +6,13 @@ import { FormContactComponent } from '../../../components/softwareFactory/form-c
 import { ChatWspComponent } from '../../../components/softwareFactory/chat-wsp/chat-wsp.component';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormContactService } from '../../../services/form-contact.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-faqs',
   standalone: true,
-  imports: [NavbarComponent, FooterContactComponent, FormContactComponent, CommonModule, ChatWspComponent, FormsModule, ReactiveFormsModule],
+  imports: [NavbarComponent, FooterContactComponent, FormContactComponent, CommonModule, ChatWspComponent, FormsModule, ReactiveFormsModule,TranslateModule],
   templateUrl: './faqs.component.html',
   styleUrl: './faqs.component.css'
 })

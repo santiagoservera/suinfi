@@ -253,9 +253,13 @@
       >
     </li>
     <li class="flex items-center justify-center">
-        <select #langSelect (change)="translate.use(langSelect.value)">
-          <option class="text-black" *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
-        </select>
+      <select #langSelect (change)="translate.use(langSelect.value)" class="select-translate">
+        <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">
+          {{ lang }}
+          <img src="../../../../assets/images/en.webp" class="flag flag-left" alt="{{ lang }} Flag">
+          <img src="../../../../assets/images/es.webp" class="flag flag-right" alt="{{ lang }} Flag">
+        </option>
+      </select>
     </li>
   </ul>
 

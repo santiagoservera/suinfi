@@ -1,24 +1,37 @@
 <app-navbar></app-navbar>
 
 <div class="w-full mx-auto relative mt-10 mb-24 lg:mt-0 lg:overflow-hidden">
-  <img src="../../../assets/images/banner-left.webp" alt=""
-    class="absolute left-0 -top-40 -ml-5 h-[28em] w-40 lg:h-[40em] lg:w-[12em] -z-10" />
+  <img
+    src="../../../assets/images/banner-left.webp"
+    alt=""
+    class="absolute left-0 -top-40 -ml-5 h-[28em] w-40 lg:h-[40em] lg:w-[12em] -z-10"
+  />
   <div class="container-width">
-    <div class="flex w-full flex-col items-center justify-between lg:flex-row lg:pt-36 lg:pb-10">
+    <div
+      class="flex w-full flex-col items-center justify-between lg:flex-row lg:pt-36 lg:pb-10"
+    >
       <div class="header-text text-[#2a2a2a] text-center lg:text-left">
-        <h6 class="text-[#5b03e4] font-bold mb-1 text-2xl">SOFTWARE FACTORY</h6>
-        <hr class="border-t-0 border-[#decdfa] mt-5 mb-2 w-44 mx-auto lg:ml-0 border-2 h-[1px]" />
-        <h4 class="text-[45px] lg:text-[55px] font-[700] -mb-1">
-          Most Frequently Asked
+        <h6 class="text-[#5b03e4] font-bold mb-1 text-2xl">
+          {{ "faqs.factory" | translate }}
+        </h6>
+        <hr
+          class="border-t-0 border-[#decdfa] mt-5 mb-2 w-44 mx-auto lg:ml-0 border-2 h-[1px]"
+        />
+        <h4 class="text-[45px] lg:text-[55px] font-[700] -mb-1 text-[#5b03e4] ">
+          {{ "faqs.asked" | translate }}
         </h4>
-        <h4 class="text-[45px] lg:text-[55px] font-[700] whitespace-normal lg:whitespace-normal lg">
-          <label class="text-[#5b03e4]">Questions</label> Here
-          <label class="text-[#5b03e4]">?</label>
-        </h4>
+        <h4
+        
+          class="text-[45px] lg:text-[55px] font-[700] whitespace-normal lg:whitespace-normal lg"
+        >{{ "faqs.here" | translate }}<label class="text-[#5b03e4]">?</label>
+      </h4>
       </div>
       <div class="mt-5 lg:mt-0">
-        <img class="object-cover mx-auto lg:mx-0 w-full lg:w-auto" src="../../../assets/images/faqs-image.webp"
-          alt="" />
+        <img
+          class="object-cover mx-auto lg:mx-0 w-full lg:w-auto"
+          src="../../../assets/images/faqs-image.webp"
+          alt=""
+        />
       </div>
     </div>
   </div>
@@ -27,42 +40,75 @@
 <!-- Our 4 steps -->
 
 <div class="w-full">
-  <div class="w-full bg-center bg-cover bg-no-repeat h-[70em] lg:h-[430px]"
-    style="background-image: url(../../../assets/images/video-bg.webp)">
-    <h2 class="text-3xl font-bold mb-2 text-center text-[#ffffff] pt-24 pb-10 lg:pt-[2.5em] lg:pb-1">
-      Our 4 Steps To Success & Happy Clients
+  <div
+    class="w-full bg-center bg-cover bg-no-repeat h-[70em] lg:h-[430px]"
+    style="background-image: url(../../../assets/images/video-bg.webp)"
+  >
+    <h2
+      class="text-3xl font-bold mb-2 text-center text-[#ffffff] pt-24 pb-10 lg:pt-[2.5em] lg:pb-1"
+    >
+      {{ "faqs.steps" | translate }}
     </h2>
     <div class="container-width lg:flex lg:justify-center lg:items-center">
       <div
-        class="lg:h-[180px] lg:w-[85em] w-full flex flex-col lg:flex-row lg:justify-center items-center bg-gradient-to-r from-[#8037eb] to-[#c85efc] mt-6 py-4 lg:mt-10 lg:py-0 lg:ml-[0px] lg:mr-[0px]  rounded-3xl text-[#ffffff]">
-        <div class="flex flex-col items-center justify-around my-5 lg:my-0 w-full lg:mx-16 lg:w-1/4">
-          <img src="../../../assets/images/services-01.webp" alt=""
-            class="max-w-full rounded-full mt-2 mb-3 mx-auto w-20 h-20" />
-          <h4 class="font-bold text-xl text-center">Project Introduction</h4>
+        class="lg:h-[180px] lg:w-[85em] w-full flex flex-col lg:flex-row lg:justify-center items-center bg-gradient-to-r from-[#8037eb] to-[#c85efc] mt-6 py-4 lg:mt-10 lg:py-0 lg:ml-[0px] lg:mr-[0px] rounded-3xl text-[#ffffff]"
+      >
+        <div
+          class="flex flex-col items-center justify-around my-5 lg:my-0 w-full lg:mx-16 lg:w-1/4"
+        >
+          <img
+            src="../../../assets/images/services-01.webp"
+            alt=""
+            class="max-w-full rounded-full mt-2 mb-3 mx-auto w-20 h-20"
+          />
+          <h4 class="font-bold text-xl text-center">
+            {{ "faqs.intro" | translate }}
+          </h4>
         </div>
         <div
-          class="border-t border-b lg:border-l lg:border-b-0 lg:border-t-0 lg:h-28 border-[#b56cf4] w-[85%] lg:w-0 lg:border my-4">
-        </div>
-        <div class="flex flex-col items-center justify-around mx-4 w-full my-5 lg:my-0 lg:mx-16 lg:w-1/4">
-          <img src="../../../assets/images/services-02.webp" alt=""
-            class="max-w-full rounded-full mt-2 mb-3 mx-auto w-20 h-20" />
-          <h4 class="font-bold text-xl text-center">Work Development</h4>
+          class="border-t border-b lg:border-l lg:border-b-0 lg:border-t-0 lg:h-28 border-[#b56cf4] w-[85%] lg:w-0 lg:border my-4"
+        ></div>
+        <div
+          class="flex flex-col items-center justify-around mx-4 w-full my-5 lg:my-0 lg:mx-16 lg:w-1/4"
+        >
+          <img
+            src="../../../assets/images/services-02.webp"
+            alt=""
+            class="max-w-full rounded-full mt-2 mb-3 mx-auto w-20 h-20"
+          />
+          <h4 class="font-bold text-xl text-center">
+            {{ "faqs.devel" | translate }}
+          </h4>
         </div>
         <div
-          class="border-t border-b lg:border-l lg:border-b-0 lg:border-t-0 lg:h-28 border-[#b56cf4] w-[85%] lg:w-0 lg:border my-4">
-        </div>
-        <div class="flex flex-col items-center justify-around mx-4 w-full my-5 lg:my-0 lg:mx-16 lg:w-1/4">
-          <img src="../../../assets/images/services-03.webp" alt=""
-            class="max-w-full rounded-full mt-2 mb-3 mx-auto w-20 h-20" />
-          <h4 class="font-bold text-xl text-center">Data Analysis</h4>
+          class="border-t border-b lg:border-l lg:border-b-0 lg:border-t-0 lg:h-28 border-[#b56cf4] w-[85%] lg:w-0 lg:border my-4"
+        ></div>
+        <div
+          class="flex flex-col items-center justify-around mx-4 w-full my-5 lg:my-0 lg:mx-16 lg:w-1/4"
+        >
+          <img
+            src="../../../assets/images/services-03.webp"
+            alt=""
+            class="max-w-full rounded-full mt-2 mb-3 mx-auto w-20 h-20"
+          />
+          <h4 class="font-bold text-xl text-center">
+            {{ "faqs.dat" | translate }}
+          </h4>
         </div>
         <div
-          class="border-t border-b lg:border-l lg:border-b-0 lg:border-t-0 lg:h-28 border-[#b56cf4] w-[85%] lg:w-0 lg:border my-4">
-        </div>
-        <div class="flex flex-col items-center justify-around mx-4 w-full my-5 lg:my-0 lg:mx-16 lg:w-1/4">
-          <img src="../../../assets/images/services-04.webp" alt=""
-            class="max-w-full rounded-full mt-2 mb-3 mx-auto w-20 h-20" />
-          <h4 class="font-bold text-xl text-center">Project Finishing</h4>
+          class="border-t border-b lg:border-l lg:border-b-0 lg:border-t-0 lg:h-28 border-[#b56cf4] w-[85%] lg:w-0 lg:border my-4"
+        ></div>
+        <div
+          class="flex flex-col items-center justify-around mx-4 w-full my-5 lg:my-0 lg:mx-16 lg:w-1/4"
+        >
+          <img
+            src="../../../assets/images/services-04.webp"
+            alt=""
+            class="max-w-full rounded-full mt-2 mb-3 mx-auto w-20 h-20"
+          />
+          <h4 class="font-bold text-xl text-center">
+            {{ "faqs.finish" | translate }}
+          </h4>
         </div>
       </div>
     </div>
@@ -71,24 +117,32 @@
 
 <!-- Parent div -->
 <section class="w-full relative">
-
-  <div class="lg:container-width lg:h-auto flex flex-col items-center justify-between gap-24 px-4 lg:px-0 py-4 lg:py-0">
+  <div
+    class="lg:container-width lg:h-auto flex flex-col items-center justify-between gap-24 px-4 lg:px-0 py-4 lg:py-0"
+  >
     <div class="mt-0 w-full">
-      <img src="../../../assets/images/contact-left.webp" alt=""
-        class="absolute left-0 -top-10 ml-0 -z-10 w-[100px] h-[500px] " />
-      <img src="../../../assets/images/contact-left.webp" alt=""
-        class="absolute right-0 bottom-0 mr-0 -z-10 w-[100px] h-[500px] transform scale-x-[-1]" />
+      <img
+        src="../../../assets/images/contact-left.webp"
+        alt=""
+        class="absolute left-0 -top-10 ml-0 -z-10 w-[100px] h-[500px]"
+      />
+      <img
+        src="../../../assets/images/contact-left.webp"
+        alt=""
+        class="absolute right-0 bottom-0 mr-0 -z-10 w-[100px] h-[500px] transform scale-x-[-1]"
+      />
     </div>
     <!-- Title -->
     <div class="w-full flex flex-col gap-8">
       <h2 class="text-3xl font-bold text-[#2a2a2a]">
-        Most <span class="text-[#5b03e4]">Frequently</span> Asked
-        <span class="text-[#c03afe]">Questions</span> ?
+       <span class="text-[#5b03e4]"></span>  {{ "faqs.asked" | translate }}
+        <span class="text-[#c03afe]">{{ "faqs.here" | translate }}</span> ?
       </h2>
-      <div class="line-dec bg-gradient-to-r from-[#5601e3] to-[#c53cff] h-[1.5px] w-[3.9em]"></div>
+      <div
+        class="line-dec bg-gradient-to-r from-[#5601e3] to-[#c53cff] h-[1.5px] w-[3.9em]"
+      ></div>
       <p class="text-[14px] lg:text-sm text-[#949494]">
-        Committed to serving our clients, at SUINFI, we want you to be informed
-        about our way of working
+        {{ "faqs.commit" | translate }}
       </p>
     </div>
 
@@ -97,67 +151,91 @@
 
     <div class="flex flex-col lg:flex-row gap-5">
       <div class="flex flex-col lg:w-[50%] gap-[5rem]">
-        <div class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]" tabindex="1">
+        <div
+          class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]"
+          tabindex="1"
+        >
           <div class="flex cursor-pointer items-center justify-between mx-1">
-            <span class="font-bold text-[1.4em] text-[#2f2f2f] group-focus:text-[#5b03e4]">
-              Do we offer personal attention?
+            <span
+              class="font-bold text-[1.4em] text-[#2f2f2f] group-focus:text-[#5b03e4]"
+            >
+              {{ "faqs.offer" | translate }}
             </span>
-            <img src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
-              class="h-5 w-6 ml-3 transition-all duration-[500ms] group-focus:-rotate-180 filter filter-hue-rotate-180" />
+            <img
+              src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
+              class="h-5 w-6 ml-3 transition-all duration-[500ms] group-focus:-rotate-180 filter filter-hue-rotate-180"
+            />
           </div>
           <div
-            class="text-[18px] invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700">
-            Yes! We offer personal attention and follow-up on each project.
+            class="text-[18px] invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700"
+          >
+            {{ "faqs.yes" | translate }}
           </div>
         </div>
 
-        <div class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]" tabindex="2">
+        <div
+          class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]"
+          tabindex="2"
+        >
           <div class="flex cursor-pointer items-center justify-between mx-1">
-            <span class="font-bold text-[1.4em] text-[#2f2f2f group-focus:text-[#5b03e4]">
-              Do we work with artificial intelligence?
+            <span
+              class="font-bold text-[1.4em] text-[#2f2f2f group-focus:text-[#5b03e4]"
+            >
+              {{ "faqs.yes" | translate }}
             </span>
-            <img src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
-              class="h-5 w-6 ml-3 transition-all duration-[800ms] group-focus:-rotate-180" />
+            <img
+              src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
+              class="h-5 w-6 ml-3 transition-all duration-[800ms] group-focus:-rotate-180"
+            />
           </div>
           <div
-            class="text-[18px] invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700">
-            At SUINFI, we merge innovation with cutting-edge technology. Our
-            commitment to excellence is reflected in our constant integration of
-            Artificial Intelligence at every stage of our work. From crafting
-            personalized solutions to developing state-of-the-art products,
-            Artificial Intelligence propels our vision towards an exciting
-            digital future.
+            class="text-[18px] invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700"
+          >
+            {{ "faqs.do" | translate }}
           </div>
         </div>
 
-        <div class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]" tabindex="3">
+        <div
+          class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]"
+          tabindex="3"
+        >
           <div class="flex cursor-pointer items-center justify-between mx-1">
-            <span class="font-bold text-[1.4em] text-[#2f2f2f] group-focus:text-[#5b03e4]">
-              Does it apply to any industry?
+            <span
+              class="font-bold text-[1.4em] text-[#2f2f2f] group-focus:text-[#5b03e4]"
+            >
+              {{ "faqs.does" | translate }}
             </span>
-            <img src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
-              class="h-5 w-6 ml-3 transition-all duration-[500ms] group-focus:-rotate-180" />
+            <img
+              src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
+              class="h-5 w-6 ml-3 transition-all duration-[500ms] group-focus:-rotate-180"
+            />
           </div>
           <div
-            class="text-[18px]invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700">
-            Yes! Technology is necessary in any industry.
+            class="text-[18px]invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700"
+          >
+            {{ "faqs.techno" | translate }}
           </div>
         </div>
 
-        <div class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]" tabindex="3">
+        <div
+          class="group flex flex-col gap-2 rounded-lg bg-none text-[#2a2a2a]"
+          tabindex="3"
+        >
           <div class="flex cursor-pointer items-center justify-between mx-1">
-            <span class="font-bold text-[1.4em] text-[#2f2f2f] group-focus:text-[#5b03e4]">
-              Do we work with blockchain?
+            <span
+              class="font-bold text-[1.4em] text-[#2f2f2f] group-focus:text-[#5b03e4]"
+            >
+              {{ "faqs.chain" | translate }}
             </span>
-            <img src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
-              class="h-5 w-6 ml-3 transition-all duration-[500ms] group-focus:-rotate-180 drop-list-icon filter invert(17%) sepia(39%) saturate(6309%) hue-rotate(259deg) brightness(95%) contrast(142%)" />
+            <img
+              src="https://www.pngmart.com/files/3/Down-Arrow-PNG-Image.png"
+              class="h-5 w-6 ml-3 transition-all duration-[500ms] group-focus:-rotate-180 drop-list-icon filter invert(17%) sepia(39%) saturate(6309%) hue-rotate(259deg) brightness(95%) contrast(142%)"
+            />
           </div>
           <div
-            class="text-[18px] invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700 text-[#3c3c3c]">
-            At SUINFI, we are committed to innovation and efficiency across all
-            sectors. From supply chain optimization to decentralized financial
-            solutions, our focus on blockchain drives progress and security in
-            the business world.
+            class="text-[18px] invisible mx-1 h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-700 text-[#3c3c3c]"
+          >
+            {{ "faqs.innova" | translate }}
           </div>
         </div>
       </div>
@@ -165,27 +243,54 @@
 
       <div class="w-full lg:w-[50%] flex flex-col gap-10 pt-24 lg:pt-0">
         <h1 class="text-[28px] text-center font-bold">
-          <span class="text-[#5b03e4]">Contact Us</span> & Get In
-          <span class="text-[#c03afe]">Touch</span>
+          <span class="text-[#5b03e4]">{{ "faqs.contact" | translate }} </span>
+          {{ "faqs.get" | translate }}
+          <span class="text-[#c03afe]">{{ "faqs.touch" | translate }}</span>
         </h1>
-        <form [formGroup]="contactForm" class="w-full items-center font-bold flex flex-col lg:-mt-3">
-          <div class="w-full  gap-4 flex flex-col lg:grid lg:grid-cols-2">
-            <input class="border-none outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full" type="text"
-              placeholder="Your Name..." formControlName="name" />
-            <input class="border-none outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full" type="text"
-              placeholder="Your Surname..." formControlName="surName" />
-            <input class="border-none outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full" type="email"
-              placeholder="Your E-mail..." formControlName="email" />
-            <input class="border-none outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full" type="text"
-              formControlName="subject" placeholder="Your Subject..." />
+        <form
+          [formGroup]="contactForm"
+          class="w-full items-center font-bold flex flex-col lg:-mt-3"
+        >
+          <div class="w-full gap-4 flex flex-col lg:grid lg:grid-cols-2">
+            <input
+              class="border-none outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full"
+              type="text"
+              [placeholder]="'form.name' | translate"
+              formControlName="name"
+            />
+            <input
+              class="border-none outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full"
+              type="text"
+              [placeholder]="'form.surname' | translate"
+              formControlName="surName"
+            />
+            <input
+              class="border-none outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full"
+              type="email"
+              [placeholder]="'form.email' | translate"
+              formControlName="email"
+            />
+            <input
+              class="border-none outline-none bg-[#f9ebff] rounded-3xl p-3 placeholder-black w-full"
+              type="text"
+              formControlName="subject"
+              [placeholder]="'form.subject' | translate" 
+            />
           </div>
           <div class="w-full mt-4">
-            <textarea class="border-none outline-none bg-[#f9ebff] w-full h-32 rounded-3xl p-3 placeholder-black"
-              formControlName="message" id="" placeholder="Your Message"></textarea>
+            <textarea
+              class="border-none outline-none bg-[#f9ebff] w-full h-32 rounded-3xl p-3 placeholder-black"
+              formControlName="message"
+              id=""
+              [placeholder]="'form.message' | translate"
+            ></textarea>
           </div>
-          <button (click)="send()" type="submit"
-            class="bg-[#5b03e4] border-none text-white rounded-3xl w-[80%] mx-auto h-11 max-h-24 lg:mt-4 ">
-            Send Message Now
+          <button
+            (click)="send()"
+            type="submit"
+            class="bg-[#5b03e4] border-none text-white rounded-3xl w-[80%] mx-auto h-11 max-h-24 lg:mt-4"
+          >
+           {{ "form.send" | translate }}
           </button>
         </form>
       </div>
