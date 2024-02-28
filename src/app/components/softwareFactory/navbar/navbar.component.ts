@@ -19,9 +19,6 @@ export class NavbarComponent {
   isHomeActive = false;
   path? : string;
 
-  
-
-
   constructor(private elRef: ElementRef, private router: Router, public translate: TranslateService) {
 
     translate.addLangs(['en', 'es']);
