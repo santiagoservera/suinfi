@@ -5,7 +5,14 @@
         @for (article of articlesList(); track $index) {
 
             <div class="w-[300px] h-[460px] rounded-md">
-                <img src="../../../../assets/images/ImagenesEcommerce/ad2.webp" alt="article img">
+                @for (articleImg of article.imagen; track $index) { @if(article.id
+                    === articleImg.id){
+
+                        <img src="{{articleImg.imagenNew }}" alt="article img">
+
+                    } }
+                
+
                 <td>{{article.nombre}}</td>
                 <td>{{article.precio}}</td>
                 <td>{{article.categoria.nombre}}</td>

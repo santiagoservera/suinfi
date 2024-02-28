@@ -3,7 +3,7 @@ export interface IArticles {
     nombre:      string;
     descripcion: null;
     precio:      number;
-    imagen1:     null;
+    imagen1:     string;
     categoria:   Categoria;
 }
 

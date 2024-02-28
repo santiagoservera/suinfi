@@ -21,7 +21,39 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit(): void {
     this.articulosApi.getData().subscribe((data:any) =>{
-      this.articlesList.set(data)
+      // Convertir los datos de Buffer a ArrayBuffer
+      const dataImg = data.map((img: any) => {
+        const arrayBuffer = new Uint8Array(img?.imagen1?.data).buffer;
+
+        // Convertir el ArrayBuffer a Uint8Array
+        const uint8Array = new Uint8Array(arrayBuffer);
+
+        // Convertir los datos binarios en una cadena base64
+        let binaryString = '';
+        uint8Array.forEach((byte) => {
+          binaryString += String.fromCharCode(byte);
+        });
+        const base64Data = btoa(binaryString);
+
+        const dataUrl = `data:image/png;base64,${base64Data}`;
+        
+
+        return {
+          id: img.id,
+          imagenNew: dataUrl,
+        };
+      });
+      
+      const dataNew = data.map((item: any) => {
+        return {
+          ...item,
+          imagen: dataImg.map((itemImg: any) => {
+            return itemImg;
+          }),
+        };
+      });
+      this.articlesList.set(dataNew);
+      
     })
   }
 
