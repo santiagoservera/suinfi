@@ -24,8 +24,8 @@ export class NavbarComponent {
     translate.addLangs(['en', 'es']);
     translate.setDefaultLang('en');
 
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
+    // const browserLang = translate.getBrowserLang();
+    // translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
     
     
   }
