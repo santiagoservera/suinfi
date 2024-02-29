@@ -12,7 +12,7 @@ import { IArticles } from '../models/article.model';
 })
 export class ArticulosApiService {
 
-  private articlesApiUrl = `https://ecommerce-suinfi-production.up.railway.app/api/v1/articulos/findAll?limit=12&offset=${50}`
+  private articlesApiUrl = `https://ecommerce-suinfi-production.up.railway.app/api/v1/articulos/findAll?limit=12&offset=${0}`
 
   constructor(private http:HttpClient) { }
 

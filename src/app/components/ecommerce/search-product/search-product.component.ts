@@ -27,28 +27,32 @@ import { CommonModule } from '@angular/common';
   templateUrl: './search-product.component.html',
   styleUrls: ['./search-product.component.css'],
 })
-export class SearchProductComponent implements AfterViewInit {
+export class SearchProductComponent implements OnInit {
   @ViewChild(LoaderComponent) loader?: LoaderComponent;
   filteredArticles = signal<any>([]);
   articlesList = signal<any>([]);
+  isLoading:boolean = false
 
   constructor(
     private route: ActivatedRoute,
     private articulosApiService: ArticulosApiService
   ) {}
 
-  ngAfterViewInit() {
+  ngOnInit() {
     this.route.queryParams.subscribe((params) => {
       const query = params['query'] || ''; // Obtener el parámetro "query" o usar una cadena vacía por defecto
-      this.buscarProductos(query);
+      if (query) this.buscarProductos(query);
+      
     });
   }
 
   buscarProductos(query: string) {
-    setTimeout(() => {
-      this.loader?.showLoader(true);
+      this.isLoading = true
+    
+      
       this.articulosApiService.getDataByQuery(query).subscribe((data: any) => {
         // Convertir los datos de Buffer a ArrayBuffer
+        
         const dataImg = data.map((img: any) => {
           const arrayBuffer = new Uint8Array(img?.imagen1?.data).buffer;
 
@@ -81,8 +85,8 @@ export class SearchProductComponent implements AfterViewInit {
         });
         this.articlesList.set(dataNew);
         
-        this.loader?.showLoader(false);
+        this.isLoading = false
       });
-    });
+    
   }
 }
