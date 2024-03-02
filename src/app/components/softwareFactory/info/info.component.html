@@ -1,5 +1,40 @@
-
 <div class="w-full">
+    <div class="flex flex-col justify-center items-center w-full bg-cover h-auto bg-center bg-no-repeat bg-[url('/assets/images/infos-bg.webp')] lg:flex-row">
+        <div class="flex flex-col w-[90%] max-w-[600px] rounded-3xl overflow-hidden my-[50px] lg:flex-row lg:max-w-none lg:w-[90%] xl:w-[80%] 2xl:w-[67%]">
+            <div class="w-full lg:w-[50%] object-cover">
+                <img class="w-full h-full" src="/assets/images/left-infos.webp" alt="info-img">
+            </div>
+            <div class="p-[20px] sm:p-[40px] bg-white lg:w-[50%]">
+                <h1 class="font-bold text-3xl"> {{ "info.title1" | translate }} <span class='text-[rgb(86,1,227)]'> {{ "info.title2" | translate }}  </span>{{ "info.title3" | translate }}</h1>
+                <div class="mt-6 mb-3 bg-gradient-to-r from-[rgb(86,1,227)] to-[rgb(197,60,255)] h-0.5 w-[60px] xl:h-0.5"></div>
+                <div class="flex flex-col gap-5 2xl:text-lg">
+                    <h2 class="">
+                        {{ "info.success" | translate }}
+                    </h2>
+                    <h3 class=''>
+                        <span class="font-bold"> {{ "info.efficiency" | translate }} </span><span > {{ "info.text1" | translate }} </span>
+                    </h3>
+                    <h3 class="">
+                        <span class="font-bold">{{ "info.quality" | translate }}</span> <span> {{ "info.text2" | translate }} </span>
+                    </h3>
+                    <h3 class="">
+                        <span class="font-bold">{{ "info.competitive" | translate }}</span> <span> {{ "info.text3" | translate }} </span>
+                    </h3>
+                    <h3 class="">
+                        <span  class="font-bold">{{ "info.satisfaction" | translate }}</span> <span> {{ "info.text4" | translate }} </span>
+                    </h3>
+                    <h3 class="">
+                        <span class="font-bold">{{ "info.talent" | translate }}</span> <span> {{ "info.text5" | translate }} </span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--  <div class="w-full">
     <div class="w-full bg-center bg-cover bg-no-repeat h-auto xl:h-screen flex items-center justify-center" style="background-image: url(../../../assets/images/infos-bg.webp);">
         <div class="flex flex-col min-h-[100dvh] bg-white w-[90%] my-5 rounded-3xl overflow-hidden sm:w-[70%] lg:grid lg:grid-cols-2 lg:h-[80%] lg:w-[80%] lg:min-h-fit 2xl:w-[70%]">
             <img class="h-[40%] lg:h-full" src="/assets/images/left-infos.webp" alt="">
@@ -29,5 +64,5 @@
         </div>
         </div>  
     </div>
-</div> 
+</div>  -->
  
