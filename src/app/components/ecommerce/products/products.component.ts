@@ -51,7 +51,7 @@ export class ProductsComponent implements OnInit {
             return itemImg;
           }),
         };
-      });
+      }).slice(0,9);
       this.articlesList.set(dataNew);
       
     })
