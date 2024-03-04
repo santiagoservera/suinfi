@@ -8,30 +8,39 @@
 <section class="container-width-ecommerce py-10 lg:py-10 bg-gray-400  bg-opacity-50 rounded-2xl">
  
 
-    <div class="mt-16 grid diego place-items-center ">
+    <!-- <div class="mt-16 grid diego place-items-center ">
       @for (article of articlesList(); track $index) {
-  
       <div class="w-[300px] h-[460px] lg:pb-5">
         <div class="lg:h-[70%]  w-full">
           @for (articleImg of article.imagen; track $index) { @if(article.id ===
           articleImg.id){
-
             <div class="">
               <img src="{{ articleImg.imagenNew }}" alt="article img" class=" rounded-full"  />
-
             </div>
-  
-  
           } }
         </div>
-  
         <div class="flex flex-col gap-1 text-center lg:h-[30%] ">
           <td class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</td>
-         
         </div>
       </div>
-  
       }
-    </div>
-  
+    </div> -->
+    <swiper-container slides-per-view="3" loop="true" space-between="250">
+      @for (article of articlesList(); track $index) {
+      <swiper-slide>
+        <div class="w-[300px] h-[460px] lg:pb-5">
+          <div class="lg:h-[70%]  w-full">
+            @for (articleImg of article.imagen; track $index) { @if(article.id === articleImg.id){
+              <div class="">
+                <img src="{{ articleImg.imagenNew }}" alt="article img" class=" rounded-full"  />
+              </div>
+            } }
+          </div>
+          <div class="flex flex-col gap-1 text-center lg:h-[30%] ">
+            <td class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</td>
+          </div>
+        </div>
+      </swiper-slide>
+      }
+    </swiper-container>
 </section>
