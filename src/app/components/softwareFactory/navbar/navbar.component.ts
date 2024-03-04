@@ -19,15 +19,25 @@ export class NavbarComponent {
   isHomeActive = false;
   path? : string;
 
-  constructor(private elRef: ElementRef, private router: Router, public translate: TranslateService) {
+  constructor(private elRef: ElementRef, private router: Router, public translate: TranslateService) {}
 
-    translate.addLangs(['en', 'es']);
-    translate.setDefaultLang('en');
+  ngOnInit() {
+    this.translate.addLangs(['en', 'es']);
+    this.translate.setDefaultLang('en');
 
-    // const browserLang = translate.getBrowserLang();
-    // translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
-    
-    
+    const selectedLanguage = localStorage.getItem('selectedLanguage');
+
+    if (selectedLanguage) {
+      this.translate.use(selectedLanguage);
+    } else {
+      const browserLang = this.translate.getBrowserLang();
+      this.translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
+    }
+  }
+
+  switchLanguage(language: string) {
+    this.translate.use(language);
+    localStorage.setItem('selectedLanguage', language);
   }
 
   @HostListener('window:scroll', ['$event'])
