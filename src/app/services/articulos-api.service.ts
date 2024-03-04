@@ -12,10 +12,13 @@ import { IArticles } from '../models/article.model';
 })
 export class ArticulosApiService {
 
+  //ArticleApi URL
   private articlesApiUrl = `https://ecommerce-suinfi-production.up.railway.app/api/v1/articulos/findAll?limit=12&offset=${50}`
 
   constructor(private http:HttpClient) { }
 
+
+  //Get articles with URL
   public getData(): Observable<IArticles>{
     return this.http.get<IArticles>(`${this.articlesApiUrl}`);
   }
@@ -23,7 +26,7 @@ export class ArticulosApiService {
   public postData(data:IArticles):Observable<IArticles>{
     return this.http.post<IArticles>(`${this.articlesApiUrl}`,data)
   }
-
+  //Search article by query
   public getDataByQuery(nombre: string): Observable<IArticles[]> {
     // Construye la URL correctamente, sincatenando los parámetros con '?' y '&'
     const url = `${this.articlesApiUrl}&nombre=${nombre}`;

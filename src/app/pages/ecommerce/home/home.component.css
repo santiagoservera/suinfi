@@ -1,0 +1,9 @@
+.bg-ecommerce{
+    width: 100%;
+    background: url('../../../../assets/images/ImagenesEcommerce/backgroundEcommerce.png') center center/cover no-repeat,
+    linear-gradient(4.4deg, #5B1B67 -18.98%, #0E040F 100.96%);
+    height: auto;
+    
+}
+
+
