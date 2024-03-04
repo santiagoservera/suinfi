@@ -25,58 +25,59 @@
       </div>
       }
     </div> -->
-    <swiper-container slides-per-view="3" loop="true" space-between="250">
+    <swiper-container slides-per-view="3" loop="true" space-between="0" navigation="true">
       @for (article of articlesList().slice(0,9); track $index) {
-      <swiper-slide>
-        <div class="w-[300px] h-[460px] lg:pb-5">
-          <div class="lg:h-[70%]  w-full">
+      <swiper-slide class="flex justify-center items-center">
+        <div class="w-[300px] h-[460px] flex flex-col justify-center items-center gap-2">
+          <div class="">
             @for (articleImg of article.imagen; track $index) { @if(article.id === articleImg.id){
               <div class="">
                 <img src="{{ articleImg.imagenNew }}" alt="article img" class=" rounded-full"  />
               </div>
             } }
           </div>
-          <div class="flex flex-col gap-1 text-center lg:h-[30%] ">
-            <td class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</td>
+          <div class="text-center">
+            <p class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</p>
           </div>
         </div>
       </swiper-slide>
       }
     </swiper-container>
-    <swiper-container slides-per-view="3" loop="true" space-between="250">
+    <swiper-container slides-per-view="3" loop="true" space-between="0" navigation="true">
       @for (article of articlesList().slice(10,19); track $index) {
-      <swiper-slide>
-        <div class="w-[300px] h-[460px] lg:pb-5">
-          <div class="lg:h-[70%]  w-full">
+      <swiper-slide class="flex justify-center items-center">
+        <div class="w-[300px] h-[460px] flex flex-col justify-center items-center gap-2">
+          <div class="">
             @for (articleImg of article.imagen; track $index) { @if(article.id === articleImg.id){
               <div class="">
                 <img src="{{ articleImg.imagenNew }}" alt="article img" class=" rounded-full"  />
               </div>
             } }
           </div>
-          <div class="flex flex-col gap-1 text-center lg:h-[30%] ">
-            <td class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</td>
+          <div class="text-center">
+            <p class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</p>
           </div>
         </div>
       </swiper-slide>
       }
     </swiper-container>
-    <swiper-container slides-per-view="3" loop="true" space-between="250">
+    <swiper-container slides-per-view="3" loop="true" space-between="0" navigation="true">
       @for (article of articlesList().slice(20,29); track $index) {
-      <swiper-slide>
-        <div class="w-[300px] h-[460px] lg:pb-5">
-          <div class="lg:h-[70%]  w-full">
+      <swiper-slide class="flex justify-center items-center">
+        <div class="w-[300px] h-[460px] flex flex-col justify-center items-center gap-2">
+          <div class="">
             @for (articleImg of article.imagen; track $index) { @if(article.id === articleImg.id){
               <div class="">
                 <img src="{{ articleImg.imagenNew }}" alt="article img" class=" rounded-full"  />
               </div>
             } }
           </div>
-          <div class="flex flex-col gap-1 text-center lg:h-[30%] ">
-            <td class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</td>
+          <div class="text-center">
+            <p class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</p>
           </div>
         </div>
       </swiper-slide>
       }
     </swiper-container>
+
 </section>
