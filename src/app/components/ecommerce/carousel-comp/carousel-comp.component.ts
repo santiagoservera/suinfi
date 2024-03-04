@@ -22,6 +22,7 @@ export class CarouselCompComponent implements OnInit {
     const swiperElemConstructor = document.querySelector('swiper-container');
     const swiperOptions: SwiperOptions = {
       slidesPerView: 1,
+      pagination: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
