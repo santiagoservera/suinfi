@@ -1,28 +1,37 @@
-<section class="container-width-ecommerce py-10 lg:py-24">
-  <h1 class="text-2xl lg:text-3xl font-bold uppercase text-center">
+<div class="bg-gray-400  bg-opacity-50 w-fit mx-auto rounded-t-3xl py-2 px-7">
+
+  <h1 class="text-2xl lg:text-lg font-semibold  text-center text-white">
     Lista de Productos
   </h1>
-  <p class="text-gray-500 text-center">productos destacados</p>
-  <div class="mt-16 grid diego place-items-center lg:items-start gap-16">
-    @for (article of articlesList(); track $index) {
+</div>
 
-    <div class="w-[300px] h-[460px] rounded-md border border-gray-200 lg:pb-5">
-      <div class="lg:h-[70%]">
-        @for (articleImg of article.imagen; track $index) { @if(article.id ===
-        articleImg.id){
+<section class="container-width-ecommerce py-10 lg:py-10 bg-gray-400  bg-opacity-50 rounded-2xl">
+ 
 
-        <img src="{{ articleImg.imagenNew }}" alt="article img" />
+    <div class="mt-16 grid diego place-items-center ">
+      @for (article of articlesList(); track $index) {
+  
+      <div class="w-[300px] h-[460px] lg:pb-5">
+        <div class="lg:h-[70%]  w-full">
+          @for (articleImg of article.imagen; track $index) { @if(article.id ===
+          articleImg.id){
 
-        } }
+            <div class="">
+              <img src="{{ articleImg.imagenNew }}" alt="article img" class=" rounded-full"  />
+
+            </div>
+  
+  
+          } }
+        </div>
+  
+        <div class="flex flex-col gap-1 text-center lg:h-[30%] ">
+          <td class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</td>
+         
+        </div>
       </div>
-
-      <div class="flex flex-col gap-1 text-center lg:h-[30%] ">
-        <td class="font-semibold text-lg lg:w-[100%]">{{ article.nombre }}</td>
-        <td class="font-semibold text-lg flex flex-row text-center justify-center"><p>$</p> {{ article.precio }}</td>
-        <td>{{ article.categoria.nombre }}</td>
-      </div>
+  
+      }
     </div>
-
-    }
-  </div>
+  
 </section>
