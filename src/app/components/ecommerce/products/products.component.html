@@ -25,7 +25,7 @@
       </div>
       }
     </div> -->
-    <swiper-container slides-per-view="3" loop="true" space-between="0" navigation="true">
+    <swiper-container class="swiper-1" slides-per-view="3" loop="true" space-between="0" navigation="true">
       @for (article of articlesList().slice(0,9); track $index) {
       <swiper-slide class="flex justify-center items-center">
         <div class="w-[300px] h-[460px] flex flex-col justify-center items-center gap-2">
@@ -43,7 +43,7 @@
       </swiper-slide>
       }
     </swiper-container>
-    <swiper-container slides-per-view="3" loop="true" space-between="0" navigation="true">
+    <swiper-container class="swiper-2" slides-per-view="3" loop="true" space-between="0" navigation="true">
       @for (article of articlesList().slice(10,19); track $index) {
       <swiper-slide class="flex justify-center items-center">
         <div class="w-[300px] h-[460px] flex flex-col justify-center items-center gap-2">
@@ -61,7 +61,7 @@
       </swiper-slide>
       }
     </swiper-container>
-    <swiper-container slides-per-view="3" loop="true" space-between="0" navigation="true">
+    <swiper-container class="swiper-3" slides-per-view="3" loop="true" space-between="0" navigation="true">
       @for (article of articlesList().slice(20,29); track $index) {
       <swiper-slide class="flex justify-center items-center">
         <div class="w-[300px] h-[460px] flex flex-col justify-center items-center gap-2">
