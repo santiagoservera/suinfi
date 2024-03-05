@@ -6,3 +6,9 @@
     grid-template-columns: 1fr 2fr;
     gap: 10px;
 }
+
+.custom-color {
+    --custom-color: rgba(188, 134, 198, 1);
+    caret-color: var(--custom-color);
+  }
+  
