@@ -1,6 +1,6 @@
 import { Component , OnInit, signal, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SwiperOptions } from 'swiper/types';
+import { Swiper, SwiperOptions } from 'swiper/types';
 import { SwiperContainer, register } from 'swiper/element';
 register();
 
@@ -25,8 +25,28 @@ export class ProductsComponent implements OnInit {
   constructor(private articulosApi:ArticulosApiService){}
 
   ngOnInit(): void {
-    const swiperElemConstructor = document.querySelector('swiper-container')
+    const swiperElemConstructor = document.querySelector('.swiper-1');
+    const swiperElemConstructor2 = document.querySelector('.swiper-2');
+    const swiperElemConstructor3 = document.querySelector('.swiper-3');
+    const swiperOptions: SwiperOptions = {
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    };
+    Object.assign(swiperElemConstructor!, swiperOptions);
+    Object.assign(swiperElemConstructor2!, swiperOptions);
+    Object.assign(swiperElemConstructor3!, swiperOptions);
     this.swiperElement.set(swiperElemConstructor as SwiperContainer);
+    this.swiperElement.set(swiperElemConstructor2 as SwiperContainer);
+    this.swiperElement.set(swiperElemConstructor3 as SwiperContainer);
     this.swiperElement()?.initialize();
 
     this.articulosApi.getData().subscribe((data:any) =>{
