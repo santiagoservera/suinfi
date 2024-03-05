@@ -4,11 +4,12 @@ import { WelcomeComponent } from './pages/softwareFactory/welcome/welcome.compon
 import { HomeComponent } from './pages/softwareFactory/home/home.component';
 import { AboutComponent } from './pages/softwareFactory/about/about.component';
 import { FaqsComponent } from './pages/softwareFactory/faqs/faqs.component';
-import { LoginComponent } from './pages/ecommerce/login/login.component';
 //Import routes Ecommerce
 import { HomeECComponent } from "./pages/ecommerce/home/home.component";
 import { SearchProductComponent } from './components/ecommerce/search-product/search-product.component';
-import { RegisterComponent } from './pages/ecommerce/register/register.component';
+import { AuthComponent } from './pages/ecommerce/auth/auth.component';
+import { LoginComponent } from './components/ecommerce/login/login.component';
+import { RegisterComponent } from './components/ecommerce/register/register.component';
 
 //Routes
 export const routes: Routes = [
@@ -49,12 +50,13 @@ export const routes: Routes = [
     component: SearchProductComponent
 },
 {
-    path: 'login',
-    component: LoginComponent
+    path: 'auth',
+    component: AuthComponent,
+    children: [
+        { path: '', redirectTo: 'login', pathMatch: 'full' },
+        { path: 'login', component: LoginComponent },
+        { path: 'register', component: RegisterComponent }
+    ]
 }, 
-{
-    path: 'register',
-    component: RegisterComponent
-}
 
 ];

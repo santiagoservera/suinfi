@@ -1,0 +1,8 @@
+.menu > a {
+    transition: color .5s;
+}
+
+.menu > a:target {
+    color: #000;
+    background: #f5f5f5;
+}
