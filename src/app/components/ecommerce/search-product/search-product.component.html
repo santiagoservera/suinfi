@@ -1,21 +1,26 @@
 <app-navbar-comp></app-navbar-comp>
 <div *ngIf="isLoading" class="w-full h-screen items-center flex justify-center"><app-loader></app-loader></div>
-<div class="container-width-ecommerce lg:pt-5 lg:pb-10">
-  <h1 class="text-lg font-semibold" *ngIf="articlesList().length >= 1">
-    Busquedas relacionadas:
-  </h1>
+<div class="container-width-ecommerce lg:pt-5">
 </div>
-<div class="container-width-ecommerce">
+<div class="w-full h-[1000px]">
   <div class="lg:w-full lg:flex lg:flex-row">
-    <aside class="lg:w-[30%] lg:h-full">
-      <h1 *ngIf="articlesList().length >= 1">Busqueda:</h1>
-      <div class="lg:pt-10" *ngIf="articlesList().length >= 1">
-        <h1>Filtrado</h1>
-      </div>
-    </aside>
+    <div class=" bg-[#37133E]  lg:w-[30%] lg:h-full">
+
+      <aside class=" text-white mx-auto">
+        <h1 class="text-xl font-semibold " *ngIf="articlesList().length >= 1">
+          Busquedas relacionadas:
+        </h1>
+        <h1 *ngIf="articlesList().length >= 1" >Busqueda:</h1>
+        <div class="lg:pt-10" *ngIf="articlesList().length >= 1">
+          <h1>Filtrado</h1>
+        </div>
+      </aside>
+
+    </div>
+    
     <!-- Card de productos a iterar -->
     
-    <div class="w-full h-full " *ngIf="!isLoading && articlesList() && articlesList().length > 0">
+    <div class="w-full h-full bgSearch px-7 py-7" *ngIf="!isLoading && articlesList() && articlesList().length > 0">
       
       @for (article of articlesList(); track $index) {
       <div class="bg-white lg:h-[300px] lg:w-full rounded-lg shadow-lg border border-red-100 lg:mt-5">
