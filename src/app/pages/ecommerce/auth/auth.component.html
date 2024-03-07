@@ -1,13 +1,17 @@
 <section class="w-full h-[100vh] bg-gradient-to-r from-[#56245F] to-[#000000] flex justify-center items-center">
     <div class="bg-white w-[85%] md:w-[95%] md:max-w-[800px] rounded-3xl flex shadow-2xl justify-center items-center relative">
         <!-- <a routerLink="/auth/register" class="">SIGN IN</a> -->
-        <img class="absolute top-5 left-9 md:hidden invert" src="../../../../assets/images/ImagenesEcommerce/logo-login.png" alt="logo-login">
+        <a routerLink="/ecommerce" class="absolute top-5 left-9 md:hidden cursor-pointer">
+            <img class="invert" src="../../../../assets/images/ImagenesEcommerce/logo-login.png" alt="logo-login">
+        </a>
         <a class="font-bold absolute top-5 right-5 md:hidden flex gap-1" [routerLink]="isLoginPage() ? '/auth/register' : '/auth/login'">
             {{ isLoginPage() ? 'SIGN IN' : 'LOGIN' }} <img src="../../../../assets/images/ImagenesEcommerce/arrow.png" alt="arrow">
         </a>
         <div class="relative">
-            <img class="absolute top-5 left-9" src="../../../../assets/images/ImagenesEcommerce/logo-login.png" alt="logo-login">
-            <img class="hidden md:block w-full h-full" src="../../../../assets/images/ImagenesEcommerce/login.png" alt="login-img">
+            <a routerLink="/ecommerce" class="absolute top-5 left-9">
+                <img src="../../../../assets/images/ImagenesEcommerce/logo-login.png" alt="logo-login">
+            </a>   
+            <img class="hidden md:block w-full h-full md:min-w-[370px]" src="../../../../assets/images/ImagenesEcommerce/login.png" alt="login-img">
             <div class="menu absolute top-[35%] right-0 flex flex-col gap-4">
                 <a routerLink="/auth/login" routerLinkActive="active" class="a-button hidden md:block">LOGIN</a>
                 <a routerLink="/auth/register" routerLinkActive="active" class="b-button hidden md:block">SIGN IN</a>
