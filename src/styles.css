@@ -2,20 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.container-width{
+.container-width {
   max-width: 1300px;
   margin: 0 auto;
   width: 90%;
 }
-.container-width-ecommerce{
-  max-width: 1400px;
+.container-width-ecommerce {
+  max-width: 1600px;
   margin: 0 auto;
   width: 90%;
 }
@@ -28,46 +27,45 @@
   }
 }
 
-
 .projects .owl-nav {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    top: -60px;
-  }
-  
-  .projects .owl-nav .owl-prev span,
-  .projects .owl-nav .owl-next span {
-    text-align: center;
-    padding-bottom: 10px;
-    width: 46px;
-    height: 46px;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background-color: #5b03e4;
-    border-radius: 50%;
-    opacity: 0.5;
-    transition: all .3s;
-  }
-  
-  .projects .owl-nav .owl-next span {
-    margin-left: 15px;
-  }
-  
-  .projects .owl-nav .owl-prev span:hover,
-  .projects .owl-nav .owl-next span:hover {
-    opacity: 1;
-  }
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: -60px;
+}
 
-    @media screen and (min-width: 1024px){
-    .projects .owl-nav {
-        top: -145px;
-        right: 15%;
-        justify-content: flex-end;
-        }
+.projects .owl-nav .owl-prev span,
+.projects .owl-nav .owl-next span {
+  text-align: center;
+  padding-bottom: 10px;
+  width: 46px;
+  height: 46px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #5b03e4;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.projects .owl-nav .owl-next span {
+  margin-left: 15px;
+}
+
+.projects .owl-nav .owl-prev span:hover,
+.projects .owl-nav .owl-next span:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .projects .owl-nav {
+    top: -145px;
+    right: 15%;
+    justify-content: flex-end;
   }
+}
