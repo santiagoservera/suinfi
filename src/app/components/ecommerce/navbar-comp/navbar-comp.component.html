@@ -5,7 +5,7 @@
       <div class="lg:flex gap-20 items-center">
         <!-- Item 1 -->
         <a href="#" class="lg:text-base lg:font-semibold">
-          <img src="../../../../assets/images/ImagenesEcommerce/suinfiIconNavbar.png" alt="" class="min-w-7 ml-7">
+          <img src="../../../../assets/images/ImagenesEcommerce/suinfiIconNavbar.png" alt="suinfi-icon" class="min-w-7 ml-7">
         </a>
         <!-- Item 2 to Item 5 -->
         <a class="block hover:text-[#9468a9] text-nowrap" href="#">Categorías</a>
@@ -18,17 +18,17 @@
         <!-- Search Bar -->
         <form class="relative items-center" [formGroup]="contactForm" (submit)="search()">
           <input formControlName="searchProduct" type="text" class="relative flex w-[200px] h-7 lg:h-9 lg:w-[400px] rounded-full border-none bg-gradient-to-r from-[#4f1f57] to-[#2f0f35] pl-5 pr-12 text-[#d8d8d8] outline-none focus:cursor-text font-normal" />
-          <img src="../../../../assets/images/ImagenesEcommerce/searchIcon.png" alt="" class="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer min-w-7" />
+          <img src="../../../../assets/images/ImagenesEcommerce/searchIcon.png" alt="search-icon" class="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer min-w-7" />
         </form>
 
         <!-- Item 7 -->
-        <a href="">
-          <img src="../../../../assets/images/ImagenesEcommerce/userIconNavBar.png" alt="" class="hover:cursor-pointer  min-w-7">
+        <a routerLink="/auth/login">
+          <img src="../../../../assets/images/ImagenesEcommerce/userIconNavBar.png" alt="user-icon" class="hover:cursor-pointer  min-w-7">
         </a>
         <!-- Item 8 -->
-        <a href="">
-          <img src="../../../../assets/images/ImagenesEcommerce/ShoppingCart.png" alt="" class="hover:cursor-pointer min-w-10">
-        </a>
+        <div>
+          <img src="../../../../assets/images/ImagenesEcommerce/ShoppingCart.png" alt="cart-icon" class="hover:cursor-pointer min-w-10">
+        </div>
       </div>
     </div>
   </nav>
