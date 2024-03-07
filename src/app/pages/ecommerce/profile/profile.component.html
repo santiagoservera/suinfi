@@ -1,0 +1,28 @@
+<!-- Profile section-->
+
+<app-navbar-comp></app-navbar-comp>
+
+<div class="container-profile flex justify-between bg-gradient-to-b from-[#EFD0EC] to-[#F8F8F8] w-full min-h-screen">
+
+
+    <!-- Left Section-->
+    <aside class="bg-[#37133E] w-1/4 my-0 text-[#D1C0D4] flex flex-col gap-1 text-center">
+
+        <button routerLink="/ecommerce/profile/account" routerLinkActive="bg-[#7637839C]" class=" flex items-center mx-0 mt-6 rounded-md p-4 transition duration-300 hover:bg-[#7637839C] cursor-pointer gap-2 ">
+            <img src="../../../../assets/images/ImagenesEcommerce/Customer.png" alt="Info de la cuenta"  class="w-4 h-4 mr-4 ml-2">
+            INFORMACION DE TU CUENTA
+        </button>
+
+        <button routerLink="/ecommerce/profile/security" routerLinkActive="bg-[#7637839C]" class="flex items-center mx-0 my-0 rounded-md p-4 transition duration-300 hover:bg-[#7637839C] cursor-pointer gap-2">
+            <img src="../../../../assets/images/ImagenesEcommerce/Security Shield.png" alt="Seguridad"  class="w-4 h-4 mr-4 ml-2">
+            SEGURIDAD
+        </button>            
+
+    </aside>
+
+
+    <!-- Right Section  -->
+    <div class="w-9/12 m-4 ">
+    <router-outlet></router-outlet>
+</div>
+

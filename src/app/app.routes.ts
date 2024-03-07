@@ -13,6 +13,9 @@ import { RegisterComponent } from './components/ecommerce/register/register.comp
 import { CreateProductComponent } from './components/ecommerce/create-product/create-product.component';
 import { YourProductsComponent } from './components/ecommerce/your-products/your-products.component';
 import { NewProductComponent } from './components/ecommerce/new-product/new-product.component';
+import { ProfileComponent } from './pages/ecommerce/profile/profile.component';
+import { AccountComponent } from './components/ecommerce/account/account.component';
+import { SecurityComponent } from './components/ecommerce/security/security.component';
 
 //Routes
 export const routes: Routes = [
@@ -70,6 +73,14 @@ export const routes: Routes = [
         { path: 'newProduct', component: NewProductComponent }
     ]
 }, 
-
+{
+    path: 'ecommerce/profile',
+    component: ProfileComponent,
+    children: [
+        { path: '', redirectTo: 'account', pathMatch: 'full'  },
+        { path: 'account', component: AccountComponent },
+        { path: 'security', component: SecurityComponent }
+    ]
+},
 
 ];
