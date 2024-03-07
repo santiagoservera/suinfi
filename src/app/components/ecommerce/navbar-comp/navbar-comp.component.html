@@ -1,33 +1,34 @@
-<header class="w-full z-10">
-  <nav class="flex flex-wrap justify-between items-center py-4 lg:py-0 text-lg h-20 text-[#d8d8d8] bg-[#2F0F35] border-b-[1px] border-[#855E98] overflow-hidden">
+<header class="w-full z-10 bg-[#2F0F35] border-[1px] border-[#855E98] overflow-hidden">
+  <nav  class="container-width-ecommerce flex flex-wrap justify-between items-center py-4 lg:py-0 text-lg h-20 text-[#d8d8d8] ">
 
     <div class="text-base text-[#d8d8d8] lg:text-lg font-semibold flex  w-full justify-between items-center">
       <div class="lg:flex gap-20 items-center">
         <!-- Item 1 -->
         <a href="#" class="lg:text-base lg:font-semibold">
-          <img src="../../../../assets/images/ImagenesEcommerce/suinfiIconNavbar.png" alt="" class="min-w-6 ml-7">
+          <img src="../../../../assets/images/ImagenesEcommerce/suinfiIconNavbar.png" alt="" class="min-w-7 ml-7">
         </a>
         <!-- Item 2 to Item 5 -->
-        <a class="hidden lg:block hover:text-[#9468a9] text-nowrap" href="#">Categorías</a>
-        <a class="hidden lg:block hover:text-[#9468a9] text-nowrap" href="#">SECCIÓN 2</a>
-        <a class="hidden lg:block hover:text-[#9468a9] text-nowrap" href="#">SECCIÓN 3</a>
-        <a class="hidden lg:block hover:text-[#9468a9] text-nowrap" href="#">Vender</a>
+        <a class="block hover:text-[#9468a9] text-nowrap" href="#">Categorías</a>
+        <a class="block hover:text-[#9468a9] text-nowrap" href="#">SECCIÓN 2</a>
+        <a class="block hover:text-[#9468a9] text-nowrap" href="#">SECCIÓN 3</a>
+        <a class="block hover:text-[#9468a9] text-nowrap" href="#">Vender</a>
       </div>
 
       <div class="lg:flex gap-10 mr-10 ml-10">
         <!-- Search Bar -->
-        <form class="relative items-center" [formGroup]="contactForm" (submit)="search()">
-          <input formControlName="searchProduct" type="text" class="relative flex w-[200px] h-7 lg:h-8 lg:w-[400px] rounded-full border-none bg-gradient-to-r from-[#4f1f57] to-[#2f0f35] pl-5 pr-12 text-[#d8d8d8] outline-none focus:cursor-text font-normal" />
+        <form class="relative items-center"  (submit)="search()">
+          
+          <input [formControl]="contactForm"  type="text" value="" class="relative flex w-[200px] h-7 lg:h-9 lg:w-[400px] rounded-full border-none bg-gradient-to-r from-[#4f1f57] to-[#2f0f35] pl-5 pr-12 text-[#d8d8d8] outline-none focus:cursor-text font-normal searchValue" />
           <img src="../../../../assets/images/ImagenesEcommerce/searchIcon.png" alt="" class="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer min-w-7" />
         </form>
 
         <!-- Item 7 -->
         <a href="">
-          <img src="../../../../assets/images/ImagenesEcommerce/userIconNavBar.png" alt="" class="hover:cursor-pointer min-w-6 hidden lg:block">
+          <img src="../../../../assets/images/ImagenesEcommerce/userIconNavBar.png" alt="" class="hover:cursor-pointer  min-w-7">
         </a>
         <!-- Item 8 -->
         <a href="">
-          <img src="../../../../assets/images/ImagenesEcommerce/ShoppingCart.png" alt="" class="hover:cursor-pointer min-w-9 hidden lg:block">
+          <img src="../../../../assets/images/ImagenesEcommerce/ShoppingCart.png" alt="" class="hover:cursor-pointer min-w-10">
         </a>
       </div>
     </div>

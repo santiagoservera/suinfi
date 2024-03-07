@@ -10,6 +10,9 @@ import { SearchProductComponent } from './components/ecommerce/search-product/se
 import { AuthComponent } from './pages/ecommerce/auth/auth.component';
 import { LoginComponent } from './components/ecommerce/login/login.component';
 import { RegisterComponent } from './components/ecommerce/register/register.component';
+import { CreateProductComponent } from './components/ecommerce/create-product/create-product.component';
+import { YourProductsComponent } from './components/ecommerce/your-products/your-products.component';
+import { NewProductComponent } from './components/ecommerce/new-product/new-product.component';
 
 //Routes
 export const routes: Routes = [
@@ -58,5 +61,15 @@ export const routes: Routes = [
         { path: 'register', component: RegisterComponent }
     ]
 }, 
+{
+    path: 'createProduct',
+    component: CreateProductComponent,
+    children: [
+        { path: '', redirectTo: 'yourProduct', pathMatch: 'full' },
+        { path: 'yourProduct', component: YourProductsComponent },
+        { path: 'newProduct', component: NewProductComponent }
+    ]
+}, 
+
 
 ];

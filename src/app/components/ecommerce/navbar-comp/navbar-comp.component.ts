@@ -16,15 +16,13 @@ export class NavbarCompComponent {
   
   constructor(private router: Router) {}
 
-  contactForm = new FormGroup({
-    searchProduct: new FormControl('')
-    
-  });
+  contactForm = new FormControl('');
 
 
   search() {
     
-    this.router.navigate(['/ecommerce/search'], { queryParams: { query: this.contactForm.value.searchProduct } });
+    this.router.navigate(['/ecommerce/search'], { queryParams: { query: this.contactForm.value } });
+    
   }
 
   ngAfterViewInit(): void {

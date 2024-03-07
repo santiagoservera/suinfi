@@ -2,9 +2,9 @@
 <div *ngIf="isLoading" class="w-full h-screen items-center flex justify-center">
   <app-loader></app-loader>
 </div>
-<div class="w-full h-full min-h-screen">
+<div class="w-full h-full min-h-screen" >
   <div class="lg:w-full lg:flex lg:flex-row h-full ">
-    <div class=" lg:w-[30%] h-full flex items-center">
+    <div class=" lg:w-[30%] h-full flex items-center " *ngIf="articlesList().length >= 1 ">
       <aside class="text-white bg-[#37133E] min-h-screen  h-full w-full my-auto">
         <div class="py-10 px-7 h-full">
           <h1 class="text-xl font-semibold" *ngIf="articlesList().length >= 1">
