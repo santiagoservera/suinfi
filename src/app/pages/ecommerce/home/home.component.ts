@@ -9,13 +9,14 @@ import { FormsModule, ReactiveFormsModule,FormControl,FormGroup} from '@angular/
 //Service with api import
 import {ArticulosApiService} from '../../../services/articulos-api.service'
 import { IArticles } from '../../../models/article.model';
+import { ProductFeaturedComponent } from '../../../components/ecommerce/product-featured/product-featured.component';
 
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderCompComponent,FooterCompComponent,CarouselCompComponent,NavbarCompComponent, ProductsComponent, GaleriaComponent,FormsModule,ReactiveFormsModule],
+  imports: [HeaderCompComponent,FooterCompComponent,CarouselCompComponent,NavbarCompComponent, ProductsComponent, GaleriaComponent,FormsModule,ReactiveFormsModule,ProductFeaturedComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
