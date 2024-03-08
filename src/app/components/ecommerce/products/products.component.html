@@ -1,30 +1,13 @@
-<div class="bg-gray-400  bg-opacity-50 w-fit mx-auto rounded-t-3xl py-2 px-7">
+<div class="bg-white  bg-opacity-90 w-fit mx-auto rounded-t-3xl py-2 px-7">
 
-  <h1 class="text-2xl lg:text-lg font-semibold  text-center text-white">
+  <h1 class="text-2xl lg:text-lg font-semibold  text-center text-black">
     Lista de Productos
   </h1>
 </div>
 
-<section class="container-width-ecommerce py-10 lg:py-10 bg-gray-400  bg-opacity-50 rounded-2xl">
+<section class="container-width-ecommerce py-10 lg:py-10 bg-white  bg-opacity-90 rounded-2xl ">
  
 
-    <!-- <div class="mt-16 grid diego place-items-center ">
-      @for (article of articlesList(); track $index) {
-      <div class="w-[300px] h-[460px] lg:pb-5">
-        <div class="lg:h-[70%]  w-full">
-          @for (articleImg of article.imagen; track $index) { @if(article.id ===
-          articleImg.id){
-            <div class="">
-              <img src="{{ articleImg.imagenNew }}" alt="article img" class=" rounded-full"  />
-            </div>
-          } }
-        </div>
-        <div class="flex flex-col gap-1 text-center lg:h-[30%] ">
-          <td class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</td>
-        </div>
-      </div>
-      }
-    </div> -->
     <swiper-container class="swiper-1" slides-per-view="3" loop="true" space-between="0" navigation="true">
       @for (article of articlesList().slice(0,9); track $index) {
       <swiper-slide class="flex justify-center items-center">
@@ -37,7 +20,7 @@
             } }
           </div>
           <div class="text-center">
-            <p class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</p>
+            <p class="font-semibold text-sm lg:w-[100%] text-black">{{ article.nombre }}</p>
           </div>
         </div>
       </swiper-slide>
@@ -55,7 +38,7 @@
             } }
           </div>
           <div class="text-center">
-            <p class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</p>
+            <p class="font-semibold text-sm lg:w-[100%] text-black">{{ article.nombre }}</p>
           </div>
         </div>
       </swiper-slide>
@@ -73,7 +56,7 @@
             } }
           </div>
           <div class="text-center">
-            <p class="font-semibold text-sm lg:w-[100%] text-white">{{ article.nombre }}</p>
+            <p class="font-semibold text-sm lg:w-[100%] text-black">{{ article.nombre }}</p>
           </div>
         </div>
       </swiper-slide>
