@@ -38,8 +38,7 @@
   class="w-full bg-[linear-gradient(90deg,_rgba(85,0,227,1)_0%,_rgba(198,61,255,1)_100%)] ">
   <div class="container-width flex justify-between items-center   ">
 
-    <img routerLink="/home" class="object-cover w-20 cursor-pointer" src="assets/images/logo.png"
-      alt="logo Suinfi" />
+    <img routerLink="/home" class="object-cover w-20 cursor-pointer" src="assets/images/logo.png" alt="logo Suinfi" />
     <!-- navbar responsive -->
     <!-- <li class="flex items-center justify-center py-4 border rounded">
       <ul class="z-10 w-full flex flex-row items-center justify-center">
@@ -109,7 +108,8 @@
           <a (click)="toggleMenuResponsive()"
             class="flex w-full transition-opacity duration-700 ease-in-out hover:opacity-80 items-center gap-2 justify-center py-4">
             {{ "navbar.pages" | translate}}
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <svg [ngClass]="{'rotate-180': isOpen()}" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
               <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="m7 10l5 5m0 0l5-5" />
             </svg>
@@ -141,13 +141,13 @@
             class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">{{ "navbar.contact" |
             translate }}</a>
         </li>
-        
+
       </ul>
     </div>
     <!-- nav bar LG -->
 
-    <div class="flex gap-10">
-      <ul  #lgMenu class="hidden lg:flex text-white  gap-10 ">
+    <div class="flex gap-10 ">
+      <ul #lgMenu class="hidden lg:flex text-white  gap-10 ">
 
         <li class="flex items-center justify-center ">
           <a *ngIf="path === '/home'" href="#home" (click)="closeMenu()"
@@ -173,7 +173,7 @@
             class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">{{ "navbar.projects" |
             translate }}</a>
         </li>
-  
+
         <li class="relative group flex">
           <a
             class="hover:text-white transition-opacity hover:opacity-80 cursor-pointer flex h-[85px] items-center justify-center">{{
@@ -191,7 +191,7 @@
                 translate }}</a></li>
           </ul>
         </li>
-  
+
         <li class="flex items-center justify-center  ">
           <a *ngIf="path === '/home'" href="#info"
             class="hover:text-white transition-opacity duration-700 ease-in-out hover:opacity-80">{{ "navbar.infos" |
@@ -209,8 +209,8 @@
             translate }}</a>
         </li>
       </ul>
-      
-      
+
+
       <ul class="flex items-center justify-center">
         <li (click)="switchLanguage('en')" class=" p-2 text-center cursor-pointer flex items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 36 36">
