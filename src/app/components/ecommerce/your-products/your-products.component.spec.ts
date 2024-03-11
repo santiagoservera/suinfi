@@ -21,3 +21,8 @@ describe('YourProductsComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+// const { addDynamicIconSelectors } = require('@iconify/tailwind')
+
+// module.exports = {
+//   plugins: [addDynamicIconSelectors()]
+// }
