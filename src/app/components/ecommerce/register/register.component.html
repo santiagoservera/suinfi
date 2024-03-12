@@ -1,49 +1,56 @@
 <div class="w-full h-[442px] flex justify-center items-center relative">
-    <h1 class="absolute top-[12%] font-bold text-4xl md:hidden">SIGN IN</h1>
-    <div class="w-full h-full flex justify-center items-center">
-      <form action="" class="flex flex-col items-center w-full mx-auto">
+  <h1 class="absolute top-[12%] font-bold text-4xl md:hidden">SIGN IN</h1>
+  <div class="w-full h-full flex justify-center items-center">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" action="" class="flex flex-col items-center w-full mx-auto">
+      <div class="flex items-center mb-6">
+        <div class="relative">
+          <img src="../../../../assets/images/ImagenesEcommerce/arrowIconSignUp.png" alt="" class="absolute left-0 top-1/2 transform -translate-y-1/2" />
+          <input formControlName="name" type="text" placeholder="Name" class="border-black border-b-[1px] pl-8 w-[250px] sm:w-[400px] md:w-[300px] outline-none" />
+        </div>
+      </div>
+      <div class="flex items-center mb-6">
+        <div class="relative">
+          <img src="../../../../assets/images/ImagenesEcommerce/arrowIconSignUp.png" alt="" class="absolute left-0 top-1/2 transform -translate-y-1/2" />
+          <input formControlName="lastName" type="text" placeholder="Last Name" class="border-black border-b-[1px] pl-8 w-[250px] sm:w-[400px] md:w-[300px] outline-none" />
+        </div>
+      </div>
+      <div class="flex items-center mb-6">
+          <div class="relative">
+            <img src="../../../../assets/images/ImagenesEcommerce/arrowIconSignUp.png" alt="" class="absolute left-0 top-1/2 transform -translate-y-1/2" />
+            <input formControlName="email" type="email" placeholder="Email" class="border-black border-b-[1px] pl-8 w-[250px] sm:w-[400px] md:w-[300px] outline-none" />
+          </div>
+        </div>
         <div class="flex items-center mb-6">
           <div class="relative">
             <img src="../../../../assets/images/ImagenesEcommerce/arrowIconSignUp.png" alt="" class="absolute left-0 top-1/2 transform -translate-y-1/2" />
-            <input type="text" placeholder="Nombre" class="border-black border-b-[1px] pl-8 w-[250px] sm:w-[400px] md:w-[300px] outline-none" />
+            <input formControlName="password" type="password" placeholder="Password" class="border-black border-b-[1px] pl-8 w-[250px] sm:w-[400px] md:w-[300px] outline-none" />
           </div>
         </div>
         <div class="flex items-center mb-6">
           <div class="relative">
             <img src="../../../../assets/images/ImagenesEcommerce/arrowIconSignUp.png" alt="" class="absolute left-0 top-1/2 transform -translate-y-1/2" />
-            <input type="text" placeholder="Apellido" class="border-black border-b-[1px] pl-8 w-[250px] sm:w-[400px] md:w-[300px] outline-none" />
+            <input formControlName="confirmPassword" type="password" placeholder="Confirm Password" class="border-black border-b-[1px] pl-8 w-[250px] sm:w-[400px] md:w-[300px] outline-none" />
           </div>
         </div>
-        <div class="flex items-center mb-6">
-            <div class="relative">
-              <img src="../../../../assets/images/ImagenesEcommerce/arrowIconSignUp.png" alt="" class="absolute left-0 top-1/2 transform -translate-y-1/2" />
-              <input type="email" placeholder="Email" class="border-black border-b-[1px] pl-8 w-[250px] sm:w-[400px] md:w-[300px] outline-none" />
-            </div>
-          </div>
-          <div class="flex items-center mb-6">
-            <div class="relative">
-              <img src="../../../../assets/images/ImagenesEcommerce/arrowIconSignUp.png" alt="" class="absolute left-0 top-1/2 transform -translate-y-1/2" />
-              <input type="password" placeholder="Password" class="border-black border-b-[1px] pl-8 w-[250px] sm:w-[400px] md:w-[300px] outline-none" />
-            </div>
-          </div>
-        <div class="flex flex-row justify-end items-center w-full">
-          <button type="submit" class="text-white rounded-full bg-black w-32 h-8 shadow-md hover:shadow-xl font-semibold">SIGN IN</button>
-        </div>
-      </form>
+      <div class="flex flex-row justify-end items-center w-full">
+        <button type="submit" class="text-white rounded-full bg-black w-32 h-8 shadow-md hover:shadow-xl font-semibold">SIGN IN</button>
+      </div>
+    </form>
+  </div>
+  <div class="absolute bottom-5 w-full flex justify-between text-gray-400 text-xs">
+    <div class="flex justify-center items-center font-semibold">
+      <p>Or connect with</p>
     </div>
-    <div class="absolute bottom-5 w-full flex justify-between text-gray-400 text-xs">
-      <div class="flex justify-center items-center font-semibold">
-        <p>Or connect with</p>
-      </div>
-      <div class="flex justify-center items-center gap-4">
-        <a href="" class="flex items-center gap-2">
-          <img src="./../../../assets/images/ImagenesEcommerce/googleIcon.png" alt="google-icon" class="w-[12px] h-[12px]">
-          <p>Google</p>
-        </a>
-        <a href="" class="flex items-center gap-2">
-          <img src="./../../../assets/images/ImagenesEcommerce/facebookIcon.png" alt="facebook-icon" class="w-[12px] h-[12px]">
-          <p>Facebook</p>
-        </a>
-      </div>
+    <div class="flex justify-center items-center gap-4">
+      <a href="" class="flex items-center gap-2">
+        <img src="./../../../assets/images/ImagenesEcommerce/googleIcon.png" alt="google-icon" class="w-[12px] h-[12px]">
+        <p>Google</p>
+      </a>
+      <a href="" class="flex items-center gap-2">
+        <img src="./../../../assets/images/ImagenesEcommerce/facebookIcon.png" alt="facebook-icon" class="w-[12px] h-[12px]">
+        <p>Facebook</p>
+      </a>
     </div>
   </div>
+</div>
+
