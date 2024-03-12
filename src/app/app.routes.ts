@@ -16,6 +16,7 @@ import { NewProductComponent } from './components/ecommerce/new-product/new-prod
 import { ProfileComponent } from './pages/ecommerce/profile/profile.component';
 import { AccountComponent } from './components/ecommerce/account/account.component';
 import { SecurityComponent } from './components/ecommerce/security/security.component';
+import { CardsComponent } from './components/ecommerce/cards/cards.component';
 
 //Routes
 export const routes: Routes = [
@@ -79,7 +80,8 @@ export const routes: Routes = [
     children: [
         { path: '', redirectTo: 'account', pathMatch: 'full'  },
         { path: 'account', component: AccountComponent },
-        { path: 'security', component: SecurityComponent }
+        { path: 'security', component: SecurityComponent },
+        { path: 'cards', component: CardsComponent}
     ]
 },
 
